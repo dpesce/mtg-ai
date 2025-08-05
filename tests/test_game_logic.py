@@ -1,0 +1,116 @@
+import unittest
+from core.card import Card
+from core.game_state import Player, GameState
+from core.game_actions import (
+    cast_creature,
+    parse_mana_cost,
+    can_pay_mana_cost,
+    get_attackers,
+    attack,
+)
+
+# Sample MTGJSON-style cards
+LAND_DATA = {
+    "name": "Forest",
+    "uuid": "f-001",
+    "types": ["Land"],
+    "subtypes": ["Forest"],
+}
+
+CREATURE_DATA = {
+    "name": "Grizzly Bears",
+    "uuid": "g-001",
+    "types": ["Creature"],
+    "subtypes": ["Bear"],
+    "manaCost": "{1}{G}",
+    "convertedManaCost": 2,
+    "power": "2",
+    "toughness": "2",
+    "colors": ["Green"],
+}
+
+
+class TestMagicGameLogic(unittest.TestCase):
+    def setUp(self):
+        self.land = Card(LAND_DATA)
+        self.creature = Card(CREATURE_DATA)
+
+        self.player = Player("TestPlayer", [])
+        self.player.hand = [self.creature.copy()]
+        self.player.battlefield = [self.land.copy(), self.land.copy()]
+        self.player.reset_mana_pool()
+
+    def test_card_copy_is_unique(self):
+        c1 = self.creature.copy()
+        c2 = self.creature.copy()
+        self.assertNotEqual(id(c1), id(c2))
+        c1.tapped = True
+        self.assertFalse(c2.tapped)
+
+    def test_tap_land_adds_correct_mana(self):
+        self.assertTrue(self.player.tap_land_for_mana(self.player.battlefield[0]))
+        self.assertEqual(self.player.mana_pool["G"], 1)
+
+    def test_parse_mana_cost(self):
+        cost = parse_mana_cost("{2}{G}{G}")
+        self.assertEqual(cost["G"], 2)
+        self.assertEqual(cost["generic"], 2)
+
+    def test_can_pay_mana_cost(self):
+        # Tap both lands first
+        for land in self.player.battlefield:
+            self.player.tap_land_for_mana(land)
+        self.assertTrue(can_pay_mana_cost(self.player, "{1}{G}"))
+
+    def test_cast_creature_pays_correct_mana(self):
+        # Tap lands
+        for land in self.player.battlefield:
+            self.player.tap_land_for_mana(land)
+        success = cast_creature(self.player, self.player.hand[0])
+        self.assertTrue(success)
+        self.assertEqual(len(self.player.battlefield), 3)  # 2 lands + 1 creature
+        self.assertEqual(len(self.player.hand), 0)
+
+    def test_summoning_sickness_prevents_attack(self):
+        # Play creature and test summoning sickness
+        for land in self.player.battlefield:
+            self.player.tap_land_for_mana(land)
+        cast_creature(self.player, self.player.hand[0])
+        attackers = get_attackers(self.player)
+        self.assertEqual(len(attackers), 0)
+
+        # Remove summoning sickness
+        for card in self.player.battlefield:
+            card.summoning_sick = False
+        attackers = get_attackers(self.player)
+        self.assertEqual(len(attackers), 1)
+
+    def test_attack_damage_applies(self):
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+
+        # Play creature and remove sickness
+        for land in self.player.battlefield:
+            self.player.tap_land_for_mana(land)
+        cast_creature(self.player, self.player.hand[0])
+        for card in self.player.battlefield:
+            if card.is_creature():
+                card.summoning_sick = False
+
+        attackers = get_attackers(self.player)
+        attack(game, attackers)
+
+        self.assertEqual(opponent.life_total, 18)  # Grizzly Bears does 2
+
+    def test_turn_progression(self):
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        game.phase = "ENDING"
+        current_turn = game.turn_number
+        game.next_phase()
+        self.assertEqual(game.turn_number, current_turn + 1)
+        self.assertEqual(game.phase, "BEGINNING")
+
+
+if __name__ == "__main__":
+    unittest.main()
