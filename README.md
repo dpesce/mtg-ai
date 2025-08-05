@@ -11,10 +11,11 @@ The project focuses on rule enforcement, card logic, game state tracking, and AI
 
 ## Features
 
-- Core `Card` and `GameState` data structures
-- Card data compatible with [MTGJSON](https://github.com/mtgjson/mtgjson)
-- Casting creatures and tapping lands
+- Turn-based structure with phase progression
+- Mana cost parsing and payment logic
+- Creature summoning, tapping, attacking
 - Summoning sickness and attack logic
+- Card data compatible with [MTGJSON](https://github.com/mtgjson/mtgjson)
 
 ---
 
@@ -33,10 +34,16 @@ pip install -r requirements.txt
 ## High-level roadmap
 
 ✅ Basic game mechanics: lands, creatures, combat
+
 ✅ Mana cost enforcement
+
 ⬜ Priority passing, stack, instants/sorceries
+
 ⬜ Basic AI agents for self-play
+
 ⬜ Expand card pool beyond test stubs
+
 ⬜ Neural network integration (RL, supervised fine-tuning)
+
 ⬜ Match simulation for training datasets
 
