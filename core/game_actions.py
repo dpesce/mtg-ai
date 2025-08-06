@@ -1,6 +1,6 @@
 from typing import Dict
 from core.card import Card
-from core.game_state import GameState, Player
+from core.game_state import Player, GameState
 import re
 
 

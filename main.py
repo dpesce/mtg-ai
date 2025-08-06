@@ -1,6 +1,6 @@
 import json
 from core.card import Card
-from core.game_state import GameState, Player
+from core.game_state import Player, GameState
 from core.game_actions import cast_creature, attack, get_attackers
 
 ###############################################
