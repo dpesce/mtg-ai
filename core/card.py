@@ -1,4 +1,4 @@
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Union, cast
 
 
 class Card:
@@ -7,8 +7,8 @@ class Card:
         self.card_data = card_data
 
         # Required fields from MTGJSON structure
-        self.uuid: str = card_data.get("uuid")
-        self.name: str = card_data.get("name")
+        self.uuid: str = cast(str, card_data.get("uuid"))
+        self.name: str = cast(str, card_data.get("name"))
         self.types: List[str] = card_data.get("types", [])
         self.subtypes: List[str] = card_data.get("subtypes", [])
         self.mana_cost: Optional[str] = card_data.get("manaCost")
@@ -27,7 +27,9 @@ class Card:
     def copy(self) -> "Card":
         return Card(self.card_data)
 
-    def _safe_int(self, val):
+    def _safe_int(self, val: Union[str, int, float, None]) -> Optional[int]:
+        if val is None:
+            return None
         try:
             return int(val)
         except (ValueError, TypeError):
@@ -39,5 +41,5 @@ class Card:
     def is_land(self) -> bool:
         return "Land" in self.types
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"<Card {self.name} ({self.mana_cost})>"

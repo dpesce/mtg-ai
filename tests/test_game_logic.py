@@ -31,7 +31,7 @@ CREATURE_DATA = {
 
 
 class TestMagicGameLogic(unittest.TestCase):
-    def setUp(self):
+    def setUp(self) -> None:
         self.land = Card(LAND_DATA)
         self.creature = Card(CREATURE_DATA)
 
@@ -40,29 +40,29 @@ class TestMagicGameLogic(unittest.TestCase):
         self.player.battlefield = [self.land.copy(), self.land.copy()]
         self.player.reset_mana_pool()
 
-    def test_card_copy_is_unique(self):
+    def test_card_copy_is_unique(self) -> None:
         c1 = self.creature.copy()
         c2 = self.creature.copy()
         self.assertNotEqual(id(c1), id(c2))
         c1.tapped = True
         self.assertFalse(c2.tapped)
 
-    def test_tap_land_adds_correct_mana(self):
+    def test_tap_land_adds_correct_mana(self) -> None:
         self.assertTrue(self.player.tap_land_for_mana(self.player.battlefield[0]))
         self.assertEqual(self.player.mana_pool["G"], 1)
 
-    def test_parse_mana_cost(self):
+    def test_parse_mana_cost(self) -> None:
         cost = parse_mana_cost("{2}{G}{G}")
         self.assertEqual(cost["G"], 2)
         self.assertEqual(cost["generic"], 2)
 
-    def test_can_pay_mana_cost(self):
+    def test_can_pay_mana_cost(self) -> None:
         # Tap both lands first
         for land in self.player.battlefield:
             self.player.tap_land_for_mana(land)
         self.assertTrue(can_pay_mana_cost(self.player, "{1}{G}"))
 
-    def test_cast_creature_pays_correct_mana(self):
+    def test_cast_creature_pays_correct_mana(self) -> None:
         # Tap lands
         for land in self.player.battlefield:
             self.player.tap_land_for_mana(land)
@@ -71,7 +71,7 @@ class TestMagicGameLogic(unittest.TestCase):
         self.assertEqual(len(self.player.battlefield), 3)  # 2 lands + 1 creature
         self.assertEqual(len(self.player.hand), 0)
 
-    def test_summoning_sickness_prevents_attack(self):
+    def test_summoning_sickness_prevents_attack(self) -> None:
         # Play creature and test summoning sickness
         for land in self.player.battlefield:
             self.player.tap_land_for_mana(land)
@@ -85,7 +85,7 @@ class TestMagicGameLogic(unittest.TestCase):
         attackers = get_attackers(self.player)
         self.assertEqual(len(attackers), 1)
 
-    def test_attack_damage_applies(self):
+    def test_attack_damage_applies(self) -> None:
         opponent = Player("Opponent", [])
         game = GameState(self.player, opponent)
 
@@ -102,7 +102,7 @@ class TestMagicGameLogic(unittest.TestCase):
 
         self.assertEqual(opponent.life_total, 18)  # Grizzly Bears does 2
 
-    def test_turn_progression(self):
+    def test_turn_progression(self) -> None:
         opponent = Player("Opponent", [])
         game = GameState(self.player, opponent)
         game.phase = "ENDING"

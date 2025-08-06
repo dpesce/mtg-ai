@@ -24,7 +24,7 @@ class Player:
             "C": 0,  # Colorless
         }
 
-    def draw_card(self):
+    def draw_card(self) -> None:
         if self.library:
             card = self.library.pop(0)
             card.zone = "hand"
@@ -33,7 +33,7 @@ class Player:
             # Lose game on deck out rule not yet enforced
             pass
 
-    def play_land(self, card: Card):
+    def play_land(self, card: Card) -> None:
         if card in self.hand and card.is_land():
             self.hand.remove(card)
             card.zone = "battlefield"
@@ -60,16 +60,16 @@ class Player:
         land.tapped = True
         return True
 
-    def reset_mana_pool(self):
+    def reset_mana_pool(self) -> None:
         for color in self.mana_pool:
             self.mana_pool[color] = 0
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"<Player {self.name}: {self.life_total} Life>"
 
 
 class GameState:
-    def __init__(self, player1: Player, player2: Player, linelength=80):
+    def __init__(self, player1: Player, player2: Player, linelength: int=80):
         self.players = [player1, player2]
         self.active_player_index = 0
         self.turn_number = 1
@@ -79,7 +79,7 @@ class GameState:
 
         self.winner: Optional[Player] = None
 
-    def next_phase(self):
+    def next_phase(self) -> None:
         for player in self.players:
             player.reset_mana_pool()
         idx = phases.index(self.phase)
@@ -89,7 +89,7 @@ class GameState:
             self.phase = "BEGINNING"
             self.next_turn()
 
-    def next_turn(self):
+    def next_turn(self) -> None:
         self.turn_number += 1
         self.active_player_index = 1 - self.active_player_index
         player = self.get_active_player()
@@ -110,13 +110,13 @@ class GameState:
     def is_game_over(self) -> bool:
         return self.winner is not None
 
-    def check_winner(self):
+    def check_winner(self) -> None:
         if self.players[self.active_player_index].life_total <= 0:
             self.winner = self.players[1 - self.active_player_index]
         elif self.players[1 - self.active_player_index].life_total <= 0:
             self.winner = self.players[self.active_player_index]
 
-    def board_state(self):
+    def board_state(self) -> str:
 
         p1 = self.get_active_player()
         p2 = self.get_opponent()
@@ -212,6 +212,6 @@ class GameState:
 
         return strout
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         p1, p2 = self.players
         return f"Turn {self.turn_number} | Phase: {self.phase} | {p1.name}: {p1.life_total} Life, {p2.name}: {p2.life_total} Life"

@@ -1,9 +1,10 @@
+from typing import Dict
 from core.card import Card
 from core.game_state import GameState, Player
 import re
 
 
-def parse_mana_cost(mana_cost: str) -> dict:
+def parse_mana_cost(mana_cost: str) -> Dict[str, int]:
     """
     Example: '{2}{R}{R}' => {'R': 2, 'generic': 2}
     """
@@ -39,23 +40,25 @@ def cast_creature(player: Player, card: Card) -> bool:
     if card not in player.hand or not card.is_creature():
         return False
 
-    # Player must tap lands manually to build mana pool
-    if not can_pay_mana_cost(player, card.mana_cost):
-        return False
+    if card.mana_cost is not None:
 
-    # Pay colored mana
-    cost = parse_mana_cost(card.mana_cost)
-    for color, amount in cost.items():
-        if color == "generic":
-            continue
-        player.mana_pool[color] -= amount
+        # Player must tap lands manually to build mana pool
+        if not can_pay_mana_cost(player, card.mana_cost):
+            return False
 
-    # Pay generic using leftover mana
-    generic = cost.get("generic", 0)
-    for color in list(player.mana_pool.keys()):
-        while generic > 0 and player.mana_pool[color] > 0:
-            player.mana_pool[color] -= 1
-            generic -= 1
+        # Pay colored mana
+        cost = parse_mana_cost(card.mana_cost)
+        for color, amount in cost.items():
+            if color == "generic":
+                continue
+            player.mana_pool[color] -= amount
+
+        # Pay generic using leftover mana
+        generic = cost.get("generic", 0)
+        for color in list(player.mana_pool.keys()):
+            while generic > 0 and player.mana_pool[color] > 0:
+                player.mana_pool[color] -= 1
+                generic -= 1
 
     # Move to battlefield
     player.hand.remove(card)
@@ -86,7 +89,8 @@ def attack(game: GameState, attacking_creatures: list[Card]) -> None:
     for creature in attacking_creatures:
         if creature in player.battlefield and not creature.tapped and not creature.summoning_sick:
             creature.tapped = True
-            total_damage += creature.power
+            if creature.power is not None:
+                total_damage += creature.power
 
     opponent.life_total -= total_damage
     print(
