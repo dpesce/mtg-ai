@@ -6,7 +6,7 @@ The project focuses on rule enforcement, card logic, game state tracking, and AI
 [![CI](https://github.com/dpesce/mtg-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/dpesce/mtg-ai/actions)
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
-[![codecov](https://codecov.io/gh/dpesce/mtg-ai/branch/master/graph/badge.svg)](https://codecov.io/gh/dpesce/mtg-ai)
+[![codecov](https://codecov.io/github/dpesce/mtg-ai/branch/master/graph/badge.svg?token=AILG4KS1FD)](https://codecov.io/github/dpesce/mtg-ai)
 
 ---
 
