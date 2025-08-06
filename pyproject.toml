@@ -10,6 +10,7 @@ exclude = [
 ]
 ignore = [
     "E203",  # space before ':'
+    "E501",  # line too long
     "W503",  # line break before binary operator
 ]
 

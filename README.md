@@ -23,9 +23,8 @@ The project focuses on rule enforcement, card logic, game state tracking, and AI
 ## Requirements
 
 - Python 3.11+
-- No third-party libraries required (yet)
 
-Install dependencies (if any are added later):
+Install dependencies:
 ```
 pip install -r requirements.txt
 ```
