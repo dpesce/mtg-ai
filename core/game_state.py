@@ -2,7 +2,29 @@ from typing import List, Dict, Optional
 from core.card import Card
 import random
 
-phases = ["BEGINNING", "MAIN1", "COMBAT", "MAIN2", "ENDING"]
+phases = [
+    "BEGINNING",
+    "MAIN1",
+    "BEGINNING_OF_COMBAT",
+    "DECLARE_ATTACKERS",
+    "DECLARE_BLOCKERS",
+    "COMBAT_DAMAGE",
+    "END_OF_COMBAT",
+    "MAIN2",
+    "ENDING"
+]
+
+phase_step_map = {
+    "BEGINNING": "Beginning phase",
+    "MAIN1": "Precombat main phase",
+    "BEGINNING_OF_COMBAT": "Beginning of combat",
+    "DECLARE_ATTACKERS": "Declare attackers",
+    "DECLARE_BLOCKERS": "Declare blockers",
+    "COMBAT_DAMAGE": "Combat damage",
+    "END_OF_COMBAT": "End of combat",
+    "MAIN2": "Postcombat main phase",
+    "ENDING": "Ending phase",
+}
 
 
 class Player:
@@ -78,6 +100,9 @@ class GameState:
 
         self.winner: Optional[Player] = None
 
+        self.attackers: List[Card] = []
+        self.blocking_assignments: Dict[Card, Card] = {}
+
     def next_phase(self) -> None:
         for player in self.players:
             player.reset_mana_pool()
@@ -99,6 +124,10 @@ class GameState:
             if card.is_creature():
                 card.summoning_sick = False
             card.tapped = False
+
+        # Reset mana pool at the beginning of the turn
+        for p in self.players:
+            p.reset_mana_pool()
 
     def get_active_player(self) -> Player:
         return self.players[self.active_player_index]
@@ -211,6 +240,44 @@ class GameState:
 
         return strout
 
+    #######################
+    # combat
+
+    def is_combat_phase(self) -> bool:
+        return self.phase in {
+            "BEGINNING_OF_COMBAT",
+            "DECLARE_ATTACKERS",
+            "DECLARE_BLOCKERS",
+            "COMBAT_DAMAGE",
+            "END_OF_COMBAT"
+        }
+
+    def can_block(self, blocker: Card, attacker: Card) -> bool:
+        if blocker.tapped or not blocker.is_creature():
+            return False
+        # Add more rules (e.g., flying/blocking rules) here
+        return True
+
+    def declare_blockers(self, blocking_assignments: Dict[Card, Card]) -> None:
+        defending_player_index = 1 - self.active_player_index
+        defending_player = self.players[defending_player_index]
+
+        for blocker, attacker in blocking_assignments.items():
+            if blocker not in defending_player.battlefield:
+                raise ValueError(f"{blocker.name} is not controlled by the defending player.")
+            if not blocker.is_creature():
+                raise ValueError(f"{blocker.name} is not a creature and can't block.")
+            if blocker.tapped:
+                raise ValueError(f"{blocker.name} is tapped and can't block.")
+            if attacker not in self.attackers:
+                raise ValueError(f"{attacker.name} is not attacking.")
+
+            # Add additional combat rules here (e.g., flying/evasion)
+
+            self.blocking_assignments[blocker] = attacker
+
+    #######################
+
     def __repr__(self) -> str:
         p1, p2 = self.players
-        return f"Turn {self.turn_number} | Phase: {self.phase} | {p1.name}: {p1.life_total} Life, {p2.name}: {p2.life_total} Life"
+        return f"Turn {self.turn_number} | Phase: {phase_step_map[self.phase]} | {p1.name}: {p1.life_total} Life, {p2.name}: {p2.life_total} Life"

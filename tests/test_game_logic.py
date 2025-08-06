@@ -177,8 +177,8 @@ class TestMagicGameLogic(unittest.TestCase):
             if card.is_creature():
                 card.summoning_sick = False
 
-        attackers = get_attackers(self.player)
-        attack(game, attackers)
+        game.attackers = get_attackers(self.player)
+        attack(game)
 
         self.assertEqual(self.opponent.life_total, 18)  # Grizzly Bears does 2
 

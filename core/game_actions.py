@@ -81,19 +81,57 @@ def get_attackers(player: Player) -> list:
     ]
 
 
-def attack(game: GameState, attacking_creatures: list[Card]) -> None:
+def attack(game: GameState) -> None:
     player = game.get_active_player()
     opponent = game.get_opponent()
 
     total_damage = 0
-    for creature in attacking_creatures:
-        if creature in player.battlefield and not creature.tapped and not creature.summoning_sick:
-            creature.tapped = True
-            if creature.power is not None:
-                total_damage += creature.power
+    unblocked_attackers = set(game.attackers)
+
+    # Tap attackers
+    for attacker in game.attackers:
+        attacker.tapped = True
+
+    # Handle blocking
+    for blocker, attacker in game.blocking_assignments.items():
+        if blocker.toughness is None or attacker.power is None:
+            continue  # Skip edge cases
+
+        # Simple 1v1 blocker: attacker and blocker destroy each other if power ≥ toughness
+        if attacker.power >= blocker.toughness:
+            opponent.battlefield.remove(blocker)
+            blocker.zone = "graveyard"
+            opponent.graveyard.append(blocker)
+        if (blocker.power is not None) and (attacker.toughness is not None) and blocker.power >= attacker.toughness:
+            player.battlefield.remove(attacker)
+            attacker.zone = "graveyard"
+            player.graveyard.append(attacker)
+
+        # Remove from unblocked list
+        unblocked_attackers.discard(attacker)
+
+    # Deal damage from unblocked attackers
+    for attacker in unblocked_attackers:
+        if attacker.power:
+            total_damage += attacker.power
 
     opponent.life_total -= total_damage
-    print(
-        f"{player.name} attacks with {len(attacking_creatures)} creature(s) for {total_damage} damage!"
-    )
+    print(f"{player.name} deals {total_damage} unblocked damage to {opponent.name}!")
     game.check_winner()
+
+    # Cleanup
+    game.attackers = []
+    game.blocking_assignments = {}
+
+
+def declare_attackers(game: GameState, attackers: list[Card]) -> None:
+    player = game.get_active_player()
+    legal_attackers = []
+
+    for creature in attackers:
+        if creature in player.battlefield and creature.is_creature() and not creature.tapped and not creature.summoning_sick:
+            legal_attackers.append(creature)
+        else:
+            print(f"{creature.name} is not a valid attacker.")
+
+    game.attackers = legal_attackers
