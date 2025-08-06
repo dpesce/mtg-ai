@@ -111,6 +111,51 @@ class TestMagicGameLogic(unittest.TestCase):
         self.assertEqual(game.turn_number, current_turn + 1)
         self.assertEqual(game.phase, "BEGINNING")
 
+    def test_play_land_moves_card(self) -> None:
+        land = self.land.copy()
+        self.player.hand.append(land)
+        self.player.play_land(land)
+        self.assertIn(land, self.player.battlefield)
+        self.assertNotIn(land, self.player.hand)
+
+    def test_draw_card_adds_to_hand(self) -> None:
+        self.player.library = [self.creature.copy()]
+        self.player.hand = []
+        self.player.draw_card()
+        self.assertEqual(len(self.player.hand), 1)
+        self.assertEqual(len(self.player.library), 0)
+
+    def test_draw_card_empty_library(self) -> None:
+        self.player.library = []
+        self.player.hand = []
+        self.player.draw_card()
+        self.assertEqual(len(self.player.hand), 0)
+
+    def test_get_active_and_opponent(self) -> None:
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        self.assertEqual(game.get_active_player(), self.player)
+        self.assertEqual(game.get_opponent(), opponent)
+
+    def test_check_winner_sets_winner_correctly(self) -> None:
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        self.player.life_total = 0
+        game.check_winner()
+        self.assertEqual(game.winner, opponent)
+
+    def test_board_state_returns_string(self) -> None:
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        board_output = game.board_state()
+        self.assertIsInstance(board_output, str)
+        self.assertIn("Turn", board_output)
+
+    def test_game_state_repr(self) -> None:
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        self.assertIn("Turn", repr(game))
+
 
 if __name__ == "__main__":
     unittest.main()
