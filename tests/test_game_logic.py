@@ -40,6 +40,8 @@ class TestMagicGameLogic(unittest.TestCase):
         self.player.battlefield = [self.land.copy(), self.land.copy()]
         self.player.reset_mana_pool()
 
+        self.opponent = Player("Opponent", [])
+
     def test_card_copy_is_unique(self) -> None:
         c1 = self.creature.copy()
         c2 = self.creature.copy()
@@ -50,6 +52,84 @@ class TestMagicGameLogic(unittest.TestCase):
     def test_tap_land_adds_correct_mana(self) -> None:
         self.assertTrue(self.player.tap_land_for_mana(self.player.battlefield[0]))
         self.assertEqual(self.player.mana_pool["G"], 1)
+
+    def test_tap_plains_adds_white_mana(self):
+        land_data = {
+                        "name": "Plains",
+                        "uuid": "f-001",
+                        "types": ["Land"],
+                        "subtypes": ["Plains"],
+                    }
+        land = Card(land_data)
+        result = self.player.tap_land_for_mana(land)
+        self.assertTrue(result)
+        self.assertEqual(self.player.mana_pool["W"], 1)
+        self.assertTrue(land.tapped)
+
+    def test_tap_island_adds_blue_mana(self):
+        land_data = {
+                        "name": "Island",
+                        "uuid": "f-001",
+                        "types": ["Land"],
+                        "subtypes": ["Island"],
+                    }
+        land = Card(land_data)
+        result = self.player.tap_land_for_mana(land)
+        self.assertTrue(result)
+        self.assertEqual(self.player.mana_pool["U"], 1)
+        self.assertTrue(land.tapped)
+
+    def test_tap_swamp_adds_black_mana(self):
+        land_data = {
+                        "name": "Swamp",
+                        "uuid": "f-001",
+                        "types": ["Land"],
+                        "subtypes": ["Swamp"],
+                    }
+        land = Card(land_data)
+        result = self.player.tap_land_for_mana(land)
+        self.assertTrue(result)
+        self.assertEqual(self.player.mana_pool["B"], 1)
+        self.assertTrue(land.tapped)
+    
+    def test_tap_mountain_adds_red_mana(self):
+        land_data = {
+                        "name": "Mountain",
+                        "uuid": "f-001",
+                        "types": ["Land"],
+                        "subtypes": ["Mountain"],
+                    }
+        land = Card(land_data)
+        result = self.player.tap_land_for_mana(land)
+        self.assertTrue(result)
+        self.assertEqual(self.player.mana_pool["R"], 1)
+        self.assertTrue(land.tapped)
+
+    def test_tap_forest_adds_green_mana(self):
+        land_data = {
+                        "name": "Forest",
+                        "uuid": "f-001",
+                        "types": ["Land"],
+                        "subtypes": ["Forest"],
+                    }
+        land = Card(land_data)
+        result = self.player.tap_land_for_mana(land)
+        self.assertTrue(result)
+        self.assertEqual(self.player.mana_pool["G"], 1)
+        self.assertTrue(land.tapped)
+
+    def test_tap_land_already_tapped(self) -> None:
+        card = self.land
+        card.tapped = True
+        result = self.player.tap_land_for_mana(card)
+        self.assertFalse(result)
+        self.assertEqual(self.player.mana_pool["G"], 0)
+
+    def test_tap_non_land_card(self) -> None:
+        card = self.creature
+        result = self.player.tap_land_for_mana(card)
+        self.assertFalse(result)
+        self.assertEqual(sum(self.player.mana_pool.values()), 0)
 
     def test_parse_mana_cost(self) -> None:
         cost = parse_mana_cost("{2}{G}{G}")
@@ -86,8 +166,8 @@ class TestMagicGameLogic(unittest.TestCase):
         self.assertEqual(len(attackers), 1)
 
     def test_attack_damage_applies(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        self.opponent.life_total = 20
+        game = GameState(self.player, self.opponent)
 
         # Play creature and remove sickness
         for land in self.player.battlefield:
@@ -100,11 +180,10 @@ class TestMagicGameLogic(unittest.TestCase):
         attackers = get_attackers(self.player)
         attack(game, attackers)
 
-        self.assertEqual(opponent.life_total, 18)  # Grizzly Bears does 2
+        self.assertEqual(self.opponent.life_total, 18)  # Grizzly Bears does 2
 
     def test_turn_progression(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         game.phase = "ENDING"
         current_turn = game.turn_number
         game.next_phase()
@@ -121,8 +200,7 @@ class TestMagicGameLogic(unittest.TestCase):
     def test_draw_card_adds_to_hand(self) -> None:
         self.player.library = [self.creature.copy()]
         self.player.hand = []
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.player.draw_card(game)
         self.assertEqual(len(self.player.hand), 1)
         self.assertEqual(len(self.player.library), 0)
@@ -130,43 +208,37 @@ class TestMagicGameLogic(unittest.TestCase):
     def test_draw_card_empty_library(self) -> None:
         self.player.library = []
         self.player.hand = []
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.player.draw_card(game)
         self.assertEqual(len(self.player.hand), 0)
 
     def test_get_active_and_opponent(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.assertEqual(game.get_active_player(), self.player)
-        self.assertEqual(game.get_opponent(), opponent)
+        self.assertEqual(game.get_opponent(), self.opponent)
 
     def test_check_winner_sets_winner_correctly(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.player.life_total = 0
         game.check_winner()
-        self.assertEqual(game.winner, opponent)
+        self.assertEqual(game.winner, self.opponent)
 
     def test_board_state_returns_string(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         board_output = game.board_state()
         self.assertIsInstance(board_output, str)
         self.assertIn("Turn", board_output)
 
     def test_game_state_repr(self) -> None:
-        opponent = Player("Opponent", [])
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.assertIn("Turn", repr(game))
 
     def test_milling_causes_game_loss(self) -> None:
-        opponent = Player("Opponent", [])
         self.player.library = []
         self.player.hand = []
-        game = GameState(self.player, opponent)
+        game = GameState(self.player, self.opponent)
         self.player.draw_card(game)
-        self.assertIs(game.winner, opponent)
+        self.assertIs(game.winner, self.opponent)
 
 
 if __name__ == "__main__":
