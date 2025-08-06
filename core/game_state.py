@@ -69,7 +69,7 @@ class Player:
 
 
 class GameState:
-    def __init__(self, player1: Player, player2: Player, linelength: int=80):
+    def __init__(self, player1: Player, player2: Player, linelength: int = 80):
         self.players = [player1, player2]
         self.active_player_index = 0
         self.turn_number = 1
