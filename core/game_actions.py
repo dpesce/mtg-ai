@@ -84,11 +84,7 @@ def attack(game: GameState, attacking_creatures: list[Card]) -> None:
 
     total_damage = 0
     for creature in attacking_creatures:
-        if (
-            creature in player.battlefield
-            and not creature.tapped
-            and not creature.summoning_sick
-        ):
+        if creature in player.battlefield and not creature.tapped and not creature.summoning_sick:
             creature.tapped = True
             total_damage += creature.power
 

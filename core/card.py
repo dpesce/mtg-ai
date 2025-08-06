@@ -22,9 +22,7 @@ class Card:
         # Runtime properties (not in MTGJSON)
         self.tapped: bool = False
         self.summoning_sick: bool = True
-        self.zone: str = (
-            "library"  # Possible: library, hand, battlefield, graveyard, exile
-        )
+        self.zone: str = "library"  # Possible: library, hand, battlefield, graveyard, exile
 
     def copy(self) -> "Card":
         return Card(self.card_data)

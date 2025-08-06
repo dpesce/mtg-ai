@@ -126,42 +126,22 @@ class GameState:
 
         strout = "*" * self.linelength + "\n"
         strout += (
-            (f"* Turn {self.turn_number} | Phase: {self.phase}").ljust(
-                self.linelength - 1
-            )
+            (f"* Turn {self.turn_number} | Phase: {self.phase}").ljust(self.linelength - 1)
             + "*"
             + "\n"
         )
         strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (f"* Active player: {p1.name}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Life total: {p1.life_total}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Cards in hand: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Cards in library: {len(p1.library)}").ljust(self.linelength - 1) + "*" + "\n"
         strout += (
-            (f"* Active player: {p1.name}").ljust(self.linelength - 1) + "*" + "\n"
+            (f"* Cards in graveyard: {len(p1.graveyard)}").ljust(self.linelength - 1) + "*" + "\n"
         )
-        strout += (
-            (f"* Life total: {p1.life_total}").ljust(self.linelength - 1) + "*" + "\n"
-        )
-        strout += (
-            (f"* Cards in hand: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        )
-        strout += (
-            (f"* Cards in library: {len(p1.library)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
-        strout += (
-            (f"* Cards in graveyard: {len(p1.graveyard)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
-        strout += (
-            (f"* Cards in exile: {len(p1.hand)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
+        strout += (f"* Cards in exile: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
         strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
         strout += (
-            (f"* Cards on battlefield: {len(p1.battlefield)}").ljust(
-                self.linelength - 1
-            )
+            (f"* Cards on battlefield: {len(p1.battlefield)}").ljust(self.linelength - 1)
             + "*"
             + "\n"
         )
@@ -192,35 +172,17 @@ class GameState:
         ########################
         # Player 2's field
 
+        strout += (f"* Opposing player: {p2.name}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Life total: {p2.life_total}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Cards in hand: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Cards in library: {len(p2.library)}").ljust(self.linelength - 1) + "*" + "\n"
         strout += (
-            (f"* Opposing player: {p2.name}").ljust(self.linelength - 1) + "*" + "\n"
+            (f"* Cards in graveyard: {len(p2.graveyard)}").ljust(self.linelength - 1) + "*" + "\n"
         )
-        strout += (
-            (f"* Life total: {p2.life_total}").ljust(self.linelength - 1) + "*" + "\n"
-        )
-        strout += (
-            (f"* Cards in hand: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        )
-        strout += (
-            (f"* Cards in library: {len(p2.library)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
-        strout += (
-            (f"* Cards in graveyard: {len(p2.graveyard)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
-        strout += (
-            (f"* Cards in exile: {len(p2.hand)}").ljust(self.linelength - 1)
-            + "*"
-            + "\n"
-        )
+        strout += (f"* Cards in exile: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
         strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
         strout += (
-            (f"* Cards on battlefield: {len(p2.battlefield)}").ljust(
-                self.linelength - 1
-            )
+            (f"* Cards on battlefield: {len(p2.battlefield)}").ljust(self.linelength - 1)
             + "*"
             + "\n"
         )
