@@ -53,65 +53,65 @@ class TestMagicGameLogic(unittest.TestCase):
         self.assertTrue(self.player.tap_land_for_mana(self.player.battlefield[0]))
         self.assertEqual(self.player.mana_pool["G"], 1)
 
-    def test_tap_plains_adds_white_mana(self):
+    def test_tap_plains_adds_white_mana(self) -> None:
         land_data = {
-                        "name": "Plains",
-                        "uuid": "f-001",
-                        "types": ["Land"],
-                        "subtypes": ["Plains"],
-                    }
+            "name": "Plains",
+            "uuid": "f-001",
+            "types": ["Land"],
+            "subtypes": ["Plains"],
+        }
         land = Card(land_data)
         result = self.player.tap_land_for_mana(land)
         self.assertTrue(result)
         self.assertEqual(self.player.mana_pool["W"], 1)
         self.assertTrue(land.tapped)
 
-    def test_tap_island_adds_blue_mana(self):
+    def test_tap_island_adds_blue_mana(self) -> None:
         land_data = {
-                        "name": "Island",
-                        "uuid": "f-001",
-                        "types": ["Land"],
-                        "subtypes": ["Island"],
-                    }
+            "name": "Island",
+            "uuid": "f-001",
+            "types": ["Land"],
+            "subtypes": ["Island"],
+        }
         land = Card(land_data)
         result = self.player.tap_land_for_mana(land)
         self.assertTrue(result)
         self.assertEqual(self.player.mana_pool["U"], 1)
         self.assertTrue(land.tapped)
 
-    def test_tap_swamp_adds_black_mana(self):
+    def test_tap_swamp_adds_black_mana(self) -> None:
         land_data = {
-                        "name": "Swamp",
-                        "uuid": "f-001",
-                        "types": ["Land"],
-                        "subtypes": ["Swamp"],
-                    }
+            "name": "Swamp",
+            "uuid": "f-001",
+            "types": ["Land"],
+            "subtypes": ["Swamp"],
+        }
         land = Card(land_data)
         result = self.player.tap_land_for_mana(land)
         self.assertTrue(result)
         self.assertEqual(self.player.mana_pool["B"], 1)
         self.assertTrue(land.tapped)
-    
-    def test_tap_mountain_adds_red_mana(self):
+
+    def test_tap_mountain_adds_red_mana(self) -> None:
         land_data = {
-                        "name": "Mountain",
-                        "uuid": "f-001",
-                        "types": ["Land"],
-                        "subtypes": ["Mountain"],
-                    }
+            "name": "Mountain",
+            "uuid": "f-001",
+            "types": ["Land"],
+            "subtypes": ["Mountain"],
+        }
         land = Card(land_data)
         result = self.player.tap_land_for_mana(land)
         self.assertTrue(result)
         self.assertEqual(self.player.mana_pool["R"], 1)
         self.assertTrue(land.tapped)
 
-    def test_tap_forest_adds_green_mana(self):
+    def test_tap_forest_adds_green_mana(self) -> None:
         land_data = {
-                        "name": "Forest",
-                        "uuid": "f-001",
-                        "types": ["Land"],
-                        "subtypes": ["Forest"],
-                    }
+            "name": "Forest",
+            "uuid": "f-001",
+            "types": ["Land"],
+            "subtypes": ["Forest"],
+        }
         land = Card(land_data)
         result = self.player.tap_land_for_mana(land)
         self.assertTrue(result)
