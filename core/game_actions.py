@@ -2,6 +2,7 @@ from core.card import Card
 from core.game_state import GameState, Player
 import re
 
+
 def parse_mana_cost(mana_cost: str) -> dict:
     """
     Example: '{2}{R}{R}' => {'R': 2, 'generic': 2}
@@ -16,10 +17,11 @@ def parse_mana_cost(mana_cost: str) -> dict:
             mana[symbol] = mana.get(symbol, 0) + 1
     return mana
 
+
 def can_pay_mana_cost(player: Player, mana_cost: str) -> bool:
     required = parse_mana_cost(mana_cost)
     pool = player.mana_pool.copy()
-    
+
     # Pay colored mana
     for color, amount in required.items():
         if color == "generic":
@@ -31,6 +33,7 @@ def can_pay_mana_cost(player: Player, mana_cost: str) -> bool:
     # Sum remaining pool for generic payment
     remaining = sum(pool.values())
     return remaining >= required.get("generic", 0)
+
 
 def cast_creature(player: Player, card: Card) -> bool:
     if card not in player.hand or not card.is_creature():
@@ -62,11 +65,18 @@ def cast_creature(player: Player, card: Card) -> bool:
     player.battlefield.append(card)
     return True
 
+
 def count_untapped_lands(player: Player) -> int:
     return sum(1 for card in player.battlefield if card.is_land() and not card.tapped)
 
+
 def get_attackers(player: Player) -> list:
-    return [card for card in player.battlefield if card.is_creature() and not card.summoning_sick and not card.tapped]
+    return [
+        card
+        for card in player.battlefield
+        if card.is_creature() and not card.summoning_sick and not card.tapped
+    ]
+
 
 def attack(game: GameState, attacking_creatures: list[Card]) -> None:
     player = game.get_active_player()
@@ -74,10 +84,16 @@ def attack(game: GameState, attacking_creatures: list[Card]) -> None:
 
     total_damage = 0
     for creature in attacking_creatures:
-        if creature in player.battlefield and not creature.tapped and not creature.summoning_sick:
+        if (
+            creature in player.battlefield
+            and not creature.tapped
+            and not creature.summoning_sick
+        ):
             creature.tapped = True
             total_damage += creature.power
 
     opponent.life_total -= total_damage
-    print(f"{player.name} attacks with {len(attacking_creatures)} creature(s) for {total_damage} damage!")
+    print(
+        f"{player.name} attacks with {len(attacking_creatures)} creature(s) for {total_damage} damage!"
+    )
     game.check_winner()

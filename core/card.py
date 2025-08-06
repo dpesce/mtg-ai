@@ -1,10 +1,11 @@
 from typing import Optional, List, Dict
 
+
 class Card:
     def __init__(self, card_data: Dict):
-        
+
         self.card_data = card_data
-        
+
         # Required fields from MTGJSON structure
         self.uuid: str = card_data.get("uuid")
         self.name: str = card_data.get("name")
@@ -21,7 +22,9 @@ class Card:
         # Runtime properties (not in MTGJSON)
         self.tapped: bool = False
         self.summoning_sick: bool = True
-        self.zone: str = "library"  # Possible: library, hand, battlefield, graveyard, exile
+        self.zone: str = (
+            "library"  # Possible: library, hand, battlefield, graveyard, exile
+        )
 
     def copy(self) -> "Card":
         return Card(self.card_data)

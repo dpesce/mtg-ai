@@ -4,6 +4,7 @@ import random
 
 phases = ["BEGINNING", "MAIN1", "COMBAT", "MAIN2", "ENDING"]
 
+
 class Player:
     def __init__(self, name: str, deck: List[Card]):
         self.name = name
@@ -14,13 +15,14 @@ class Player:
         self.battlefield: List[Card] = []
         self.graveyard: List[Card] = []
         self.exile: List[Card] = []
-        self.mana_pool: Dict[str, int] = {"W": 0,  # White
-                                          "U": 0,  # Blue
-                                          "B": 0,  # Black
-                                          "R": 0,  # Red
-                                          "G": 0,  # Green
-                                          "C": 0,  # Colorless
-                                          }
+        self.mana_pool: Dict[str, int] = {
+            "W": 0,  # White
+            "U": 0,  # Blue
+            "B": 0,  # Black
+            "R": 0,  # Red
+            "G": 0,  # Green
+            "C": 0,  # Colorless
+        }
 
     def draw_card(self):
         if self.library:
@@ -64,6 +66,7 @@ class Player:
 
     def __repr__(self):
         return f"<Player {self.name}: {self.life_total} Life>"
+
 
 class GameState:
     def __init__(self, player1: Player, player2: Player, linelength=80):
@@ -114,82 +117,136 @@ class GameState:
             self.winner = self.players[self.active_player_index]
 
     def board_state(self):
-        
+
         p1 = self.get_active_player()
         p2 = self.get_opponent()
 
         ########################
         # Player 1's field
 
-        strout = '*'*self.linelength + '\n'
-        strout += (f'* Turn {self.turn_number} | Phase: {self.phase}').ljust(self.linelength-1) + '*' + '\n'
-        strout += '* ' + '-'*(self.linelength-4) + ' *' + '\n'
-        strout += (f'* Active player: {p1.name}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Life total: {p1.life_total}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in hand: {len(p1.hand)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in library: {len(p1.library)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in graveyard: {len(p1.graveyard)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in exile: {len(p1.hand)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += '* ' + '-'*(self.linelength-4) + ' *' + '\n'
-        strout += (f'* Cards on battlefield: {len(p1.battlefield)}').ljust(self.linelength-1) + '*' + '\n'
-        
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
+        strout = "*" * self.linelength + "\n"
+        strout += (
+            (f"* Turn {self.turn_number} | Phase: {self.phase}").ljust(
+                self.linelength - 1
+            )
+            + "*"
+            + "\n"
+        )
+        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (
+            (f"* Active player: {p1.name}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Life total: {p1.life_total}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Cards in hand: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Cards in library: {len(p1.library)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += (
+            (f"* Cards in graveyard: {len(p1.graveyard)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += (
+            (f"* Cards in exile: {len(p1.hand)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (
+            (f"* Cards on battlefield: {len(p1.battlefield)}").ljust(
+                self.linelength - 1
+            )
+            + "*"
+            + "\n"
+        )
 
-        strland = '* '
-        strcrea = '* '
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+
+        strland = "* "
+        strcrea = "* "
         for card in p1.battlefield:
-            if 'Land' in card.types:
+            if "Land" in card.types:
                 strland += card.name[0]
                 if card.tapped:
-                    strland += '(T)'
-                strland += ' '
-            if 'Creature' in card.types:
+                    strland += "(T)"
+                strland += " "
+            if "Creature" in card.types:
                 strcrea += card.name[0]
                 if card.tapped:
-                    strcrea += '(T)'
-                strcrea += ' '
-        strland = strland.ljust(self.linelength-1) + '*' + '\n'
-        strcrea = strcrea.ljust(self.linelength-1) + '*' + '\n'
+                    strcrea += "(T)"
+                strcrea += " "
+        strland = strland.ljust(self.linelength - 1) + "*" + "\n"
+        strcrea = strcrea.ljust(self.linelength - 1) + "*" + "\n"
         strout += strland
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
         strout += strcrea
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
-        strout += '*'*self.linelength + '\n'
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "*" * self.linelength + "\n"
 
         ########################
         # Player 2's field
-        
-        strout += (f'* Opposing player: {p2.name}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Life total: {p2.life_total}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in hand: {len(p2.hand)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in library: {len(p2.library)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in graveyard: {len(p2.graveyard)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += (f'* Cards in exile: {len(p2.hand)}').ljust(self.linelength-1) + '*' + '\n'
-        strout += '* ' + '-'*(self.linelength-4) + ' *' + '\n'
-        strout += (f'* Cards on battlefield: {len(p2.battlefield)}').ljust(self.linelength-1) + '*' + '\n'
-        
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
 
-        strland = '* '
-        strcrea = '* '
+        strout += (
+            (f"* Opposing player: {p2.name}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Life total: {p2.life_total}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Cards in hand: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
+        )
+        strout += (
+            (f"* Cards in library: {len(p2.library)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += (
+            (f"* Cards in graveyard: {len(p2.graveyard)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += (
+            (f"* Cards in exile: {len(p2.hand)}").ljust(self.linelength - 1)
+            + "*"
+            + "\n"
+        )
+        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (
+            (f"* Cards on battlefield: {len(p2.battlefield)}").ljust(
+                self.linelength - 1
+            )
+            + "*"
+            + "\n"
+        )
+
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+
+        strland = "* "
+        strcrea = "* "
         for card in p2.battlefield:
-            if 'Land' in card.types:
+            if "Land" in card.types:
                 strland += card.name[0]
                 if card.tapped:
-                    strland += '(T)'
-                strland += ' '
-            if 'Creature' in card.types:
+                    strland += "(T)"
+                strland += " "
+            if "Creature" in card.types:
                 strcrea += card.name[0]
                 if card.tapped:
-                    strcrea += '(T)'
-                strcrea += ' '
-        strland = strland.ljust(self.linelength-1) + '*' + '\n'
-        strcrea = strcrea.ljust(self.linelength-1) + '*' + '\n'
+                    strcrea += "(T)"
+                strcrea += " "
+        strland = strland.ljust(self.linelength - 1) + "*" + "\n"
+        strcrea = strcrea.ljust(self.linelength - 1) + "*" + "\n"
         strout += strland
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
         strout += strcrea
-        strout += '* '.ljust(self.linelength-1) + '*' + '\n'
-        strout += '*'*self.linelength + '\n'
+        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "*" * self.linelength + "\n"
 
         return strout
 
