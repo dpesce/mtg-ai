@@ -121,14 +121,18 @@ class TestMagicGameLogic(unittest.TestCase):
     def test_draw_card_adds_to_hand(self) -> None:
         self.player.library = [self.creature.copy()]
         self.player.hand = []
-        self.player.draw_card()
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        self.player.draw_card(game)
         self.assertEqual(len(self.player.hand), 1)
         self.assertEqual(len(self.player.library), 0)
 
     def test_draw_card_empty_library(self) -> None:
         self.player.library = []
         self.player.hand = []
-        self.player.draw_card()
+        opponent = Player("Opponent", [])
+        game = GameState(self.player, opponent)
+        self.player.draw_card(game)
         self.assertEqual(len(self.player.hand), 0)
 
     def test_get_active_and_opponent(self) -> None:
@@ -155,6 +159,14 @@ class TestMagicGameLogic(unittest.TestCase):
         opponent = Player("Opponent", [])
         game = GameState(self.player, opponent)
         self.assertIn("Turn", repr(game))
+
+    def test_milling_causes_game_loss(self) -> None:
+        opponent = Player("Opponent", [])
+        self.player.library = []
+        self.player.hand = []
+        game = GameState(self.player, opponent)
+        self.player.draw_card(game)
+        self.assertIs(game.winner, opponent)
 
 
 if __name__ == "__main__":

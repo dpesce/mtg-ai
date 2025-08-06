@@ -49,8 +49,8 @@ game = GameState(p1, p2)
 
 # Draw opening hands
 for _ in range(7):
-    p1.draw_card()
-    p2.draw_card()
+    p1.draw_card(game)
+    p2.draw_card(game)
 
 while not game.is_game_over():
     player = game.get_active_player()

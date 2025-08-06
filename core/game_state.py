@@ -24,14 +24,13 @@ class Player:
             "C": 0,  # Colorless
         }
 
-    def draw_card(self) -> None:
-        if self.library:
-            card = self.library.pop(0)
-            card.zone = "hand"
-            self.hand.append(card)
-        else:
-            # Lose game on deck out rule not yet enforced
-            pass
+    def draw_card(self, game: "GameState") -> None:
+        if not self.library:
+            game.winner = game.get_opponent()
+            return
+        card = self.library.pop(0)
+        card.zone = "hand"
+        self.hand.append(card)
 
     def play_land(self, card: Card) -> None:
         if card in self.hand and card.is_land():
@@ -93,7 +92,7 @@ class GameState:
         self.turn_number += 1
         self.active_player_index = 1 - self.active_player_index
         player = self.get_active_player()
-        player.draw_card()
+        player.draw_card(self)
 
         # Reset summoning sickness and untap cards
         for card in player.battlefield:
