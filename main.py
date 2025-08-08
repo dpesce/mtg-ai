@@ -12,24 +12,7 @@ def run_demo() -> None:
 
     with open("./cards/AllPrintings.json") as f:
         all_data = json.load(f)
-
-    # # Example: grab a few simple creatures from M21
-    # card_list = []
-    # for set_code, set_data in all_data["data"].items():
-    #     if set_code != "M21":
-    #         continue
-    #     for card_data in set_data["cards"]:
-    #         if "Creature" in card_data.get("types", []):
-    #             card = Card(card_data)
-    #             card_list.append(card)
-    #         if len(card_list) >= 10:
-    #             break
-    #     break
-
-    # # Create two 40-card decks from the sample
-    # deck1 = card_list * 4
-    # deck2 = card_list * 4
-
+        
     ###############################################
     # temporary functions to load a simple deck
 

@@ -137,5 +137,62 @@ def declare_attackers(game: GameState, attackers: list[Card]) -> None:
     game.attackers = legal_attackers
 
 
+def can_block(game: GameState, blocker: Card, attacker: Card) -> bool:
+    if blocker.tapped or not blocker.is_creature():
+        return False
+    # Add more rules (e.g., flying/blocking rules) here
+    return True
+
+
+def declare_blockers(game: GameState, blocking_assignments: Dict[Card, Card]) -> None:
+    defending_player_index = 1 - game.active_player_index
+    defending_player = game.players[defending_player_index]
+
+    for blocker, attacker in blocking_assignments.items():
+        if blocker not in defending_player.battlefield:
+            raise ValueError(f"{blocker.name} is not controlled by the defending player.")
+        if not blocker.is_creature():
+            raise ValueError(f"{blocker.name} is not a creature and can't block.")
+        if blocker.tapped:
+            raise ValueError(f"{blocker.name} is tapped and can't block.")
+        if attacker not in game.attackers:
+            raise ValueError(f"{attacker.name} is not attacking.")
+
+        # Add additional combat rules here (e.g., flying/evasion)
+
+        game.blocking_assignments[blocker] = attacker
+
+####################################
+# phase handlers
+
+
+def beginning_phase(game: GameState) -> None:
+    return None
+
+
+def main_phase(game: GameState) -> None:
+    return None
+
+
+def beginning_of_combat(game: GameState) -> None:
+    return None
+
+
+# def declare_attackers(game: GameState) -> None:
+#     return None
+
+
+# def declare_blockers(game: GameState) -> None:
+#     return None
+
+
 def resolve_combat_damage(game: GameState) -> None:
-    attack(game)
+    return None
+
+
+def end_of_combat(game: GameState) -> None:
+    return None
+
+
+def ending_phase(game: GameState) -> None:
+    return None
