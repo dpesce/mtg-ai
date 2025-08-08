@@ -30,6 +30,35 @@ pip install -r requirements.txt
 
 ---
 
+## Development Setup
+
+Clone the repo and create a virtual environment:
+
+```
+git clone https://github.com/dpesce/mtg-ai.git
+cd mtg-ai
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### CoreSubset data
+
+Unit tests and CI use a tiny slice of MTGJSON instead of the 400 MB *AllPrintings.json*. If you plan to run local demos or add new cards:
+
+```
+# 1) Download the full MTGJSON dump (ignored by Git)
+curl -L https://mtgjson.com/api/v5/AllPrintings.json -o data/AllPrintings.json
+
+# 2) Generate / refresh the slim CoreSubset.json
+python tools/make_core_subset.py
+```
+
+- `tools/make_core_subset.py` copies exactly one printing of every card listed in its `NEEDED_NAMES` set into `data/CoreSubset.json` (≈ few hundred KB).
+- `CoreSubset.json` is committed so CI and tests start instantly.
+- When you add new card names (e.g. in a decklist), append them to `NEEDED_NAMES`, rerun the script, and commit the updated subset.
+
+---
+
 ## High-level roadmap
 
 ✅ Basic game mechanics: lands, creatures, combat

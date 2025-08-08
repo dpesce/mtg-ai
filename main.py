@@ -4,19 +4,32 @@ from mtg_ai.game_state import Player, GameState
 from mtg_ai.game_actions import cast_creature, resolve_combat_damage, get_attackers
 from mtg_ai.game_controller import step_game
 from mtg_ai.agents.simple import NaiveAgent
+from mtg_ai.deck_builder import load_deck_from_file
 
 ###############################################
 
 def run_demo():
-    p1, p2 = Player("Alice", []), Player("Bob", [])
+    deckA = load_deck_from_file(Path("decks/mono_green.txt"))
+    deckB = load_deck_from_file(Path("decks/mono_green.txt"))
+    p1, p2 = Player("Alice", deckA.cards), Player("Bob", deckB.cards)
     game = GameState(p1, p2)
-    agent1, agent2 = NaiveAgent(), NaiveAgent()
+    agent = NaiveAgent()
 
     while not game.is_game_over():
-        current_agent = agent1 if game.get_active_player() is p1 else agent2
-        step_game(game, current_agent)
+        step_game(game, agent)
 
     print("Winner:", game.winner.name)
+
+# def run_demo():
+#     p1, p2 = Player("Alice", []), Player("Bob", [])
+#     game = GameState(p1, p2)
+#     agent1, agent2 = NaiveAgent(), NaiveAgent()
+
+#     while not game.is_game_over():
+#         current_agent = agent1 if game.get_active_player() is p1 else agent2
+#         step_game(game, current_agent)
+
+#     print("Winner:", game.winner.name)
 
 # def run_demo() -> None:
 

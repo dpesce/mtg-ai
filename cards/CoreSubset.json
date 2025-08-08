@@ -1,0 +1,4132 @@
+{
+  "data": {
+    "10E": {
+      "code": "10E",
+      "name": "Tenth Edition",
+      "cards": [
+        {
+          "artist": "Kev Walker",
+          "artistIds": [
+            "f366a0ee-a0cd-466d-ba6a-90058c7a31a6"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 4.0,
+          "edhrecRank": 26880,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "Fortunately, hill giants have large blind spots in which a human can easily hide. Unfortunately, these blind spots are beneath the bottoms of their feet.",
+          "foreignData": [
+            {
+              "flavorText": "Gl\u00fccklicherweise haben H\u00fcgelriesen gro\u00dfe tote Winkel, in denen sich ein Mensch leicht verstecken kann. Leider jedoch befinden sich diese toten Winkel genau unter ihren Fu\u00dfsohlen.",
+              "identifiers": {
+                "multiverseId": "148541",
+                "scryfallId": "da036a4d-8f88-4bb2-8dd2-6505240c0fcc"
+              },
+              "language": "German",
+              "multiverseId": 148541,
+              "name": "H\u00fcgelriese",
+              "type": "Kreatur \u2014 Riese"
+            },
+            {
+              "flavorText": "Afortunadamente, los gigantes de las colinas tienen un punto ciego donde un humano puede f\u00e1cilmente esconderse. Desafortunadamente, ese punto ciego est\u00e1 bajo sus pies.",
+              "identifiers": {
+                "multiverseId": "150528",
+                "scryfallId": "4abd966a-81fd-48c6-8f82-13b98fa89a58"
+              },
+              "language": "Spanish",
+              "multiverseId": 150528,
+              "name": "Gigante de las colinas",
+              "type": "Criatura \u2014 Gigante"
+            },
+            {
+              "flavorText": "Heureusement, il est facile de se cacher du regard d'un g\u00e9ant des collines. Malheureusement, ces cachettes sont toutes sous la plante de leurs pieds.",
+              "identifiers": {
+                "multiverseId": "150145",
+                "scryfallId": "9af3a213-c11c-4ef5-9509-fa6e980e1dc0"
+              },
+              "language": "French",
+              "multiverseId": 150145,
+              "name": "G\u00e9ant des collines",
+              "type": "Cr\u00e9ature : g\u00e9ant"
+            },
+            {
+              "flavorText": "Per fortuna, i giganti delle colline hanno grandi zone cieche in cui un uomo pu\u00f2 nascondersi. Sfortunatamente, queste zone sono sotto ai loro piedi.",
+              "identifiers": {
+                "multiverseId": "148924",
+                "scryfallId": "dca4f7e0-ebda-4daf-85cd-25d9b20f5400"
+              },
+              "language": "Italian",
+              "multiverseId": 148924,
+              "name": "Gigante delle Colline",
+              "type": "Creatura \u2014 Gigante"
+            },
+            {
+              "flavorText": "\u5e78\u904b\u306a\u3053\u3068\u306b\u3001\u4e18\u5de8\u4eba\u306b\u306f\u4eba\u9593\u304c\u7c21\u5358\u306b\u96a0\u308c\u3089\u308c\u308b\u5927\u304d\u306a\u6b7b\u89d2\u304c\u3042\u308b\u3002 \u4e0d\u5e78\u306a\u306e\u306f\u3001\u3053\u306e\u6b7b\u89d2\u304c\u5f7c\u3089\u306e\u8db3\u306e\u88cf\u306e\u4e0b\u306b\u3042\u308b\u3053\u3068\u3060\u3002",
+              "identifiers": {
+                "multiverseId": "148158",
+                "scryfallId": "a4e91307-067d-4e09-9074-35179c93f9a1"
+              },
+              "language": "Japanese",
+              "multiverseId": 148158,
+              "name": "\u4e18\u5de8\u4eba",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u5de8\u4eba"
+            },
+            {
+              "flavorText": "Felizmente, os gigantes da colina t\u00eam grandes pontos cegos, nos quais um ser humano pode se esconder com facilidade. Infelizmente, estes pontos ficam debaixo da sola de seus p\u00e9s.",
+              "identifiers": {
+                "multiverseId": "149762",
+                "scryfallId": "a875230b-5b67-46ef-a86f-24623aaf33bb"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149762,
+              "name": "Gigante da Colina",
+              "type": "Criatura \u2014 Gigante"
+            },
+            {
+              "flavorText": "\u0425\u043e\u0440\u043e\u0448\u043e, \u0447\u0442\u043e \u0435\u0441\u0442\u044c \u0437\u043e\u043d\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043d\u0435 \u043f\u043e\u043f\u0430\u0434\u0430\u044e\u0442 \u0432 \u043f\u043e\u043b\u0435 \u0437\u0440\u0435\u043d\u0438\u044f \u0433\u0438\u0433\u0430\u043d\u0442\u0430 \u0441 \u0445\u043e\u043b\u043c\u043e\u0432 \u0438 \u0433\u0434\u0435 \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u043c\u043e\u0436\u0435\u0442 \u043b\u0435\u0433\u043a\u043e \u043e\u0442 \u043d\u0435\u0433\u043e \u0443\u043a\u0440\u044b\u0442\u044c\u0441\u044f. \u041f\u043b\u043e\u0445\u043e, \u0447\u0442\u043e \u044d\u0442\u0438 \"\u043c\u0435\u0440\u0442\u0432\u044b\u0435\" \u0437\u043e\u043d\u044b \u043d\u0430\u0445\u043e\u0434\u044f\u0442\u0441\u044f \u0443 \u0433\u0438\u0433\u0430\u043d\u0442\u0430 \u043f\u043e\u0434 \u043f\u044f\u0442\u043a\u0430\u043c\u0438.",
+              "identifiers": {
+                "multiverseId": "149379",
+                "scryfallId": "ac21c428-6eac-4cf2-ac18-e309ba5cb75a"
+              },
+              "language": "Russian",
+              "multiverseId": 149379,
+              "name": "\u0413\u0438\u0433\u0430\u043d\u0442 \u0441 \u0425\u043e\u043b\u043c\u043e\u0432",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u0413\u0438\u0433\u0430\u043d\u0442"
+            },
+            {
+              "flavorText": "\u5e78\u8fd0\u5730\uff0c\u5c71\u4e18\u5de8\u4eba\u6709\u7740\u53ef\u8ba9\u4eba\u7c7b\u8f7b\u6613\u8eb2\u85cf\u7684\u5927\u76f2\u70b9\uff1b \u4e0d\u5e78\u5730\uff0c\u8fd9\u4e9b\u76f2\u70b9\u6b63\u4f4d\u4e8e\u5176\u811a\u5e95\u4e0b\u3002",
+              "identifiers": {
+                "multiverseId": "147775",
+                "scryfallId": "cac8551d-40ad-4886-a717-b158ddb7f7bc"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147775,
+              "name": "\u5c71\u4e18\u5de8\u4eba",
+              "type": "\u751f\u7269\uff5e\u5de8\u4eba"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123298",
+            "cardKingdomId": "122930",
+            "cardsphereFoilId": "281",
+            "cardsphereId": "282",
+            "deckboxId": "1952",
+            "mcmId": "16376",
+            "mcmMetaId": "2696",
+            "mtgjsonV4Id": "fc91917e-cc6f-57d7-8645-9f09625041f7",
+            "mtgoFoilId": "27041",
+            "mtgoId": "27040",
+            "multiverseId": "129591",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "14c2be6a-9ca6-4d3a-8dd0-db4ea40799f8",
+            "scryfallIllustrationId": "fd46160d-4dd0-4ab6-b452-cff004f5e6f2",
+            "scryfallOracleId": "342199e0-15b6-4824-83da-25caef2592b3",
+            "tcgplayerProductId": "15162"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{3}{R}",
+          "manaValue": 4.0,
+          "name": "Hill Giant",
+          "number": "212",
+          "originalType": "Creature - Giant",
+          "power": "3",
+          "printings": [
+            "10E",
+            "2ED",
+            "30A",
+            "3ED",
+            "4BB",
+            "4ED",
+            "5ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "CED",
+            "CEI",
+            "DPA",
+            "FBB",
+            "ITP",
+            "LEA",
+            "LEB",
+            "POR",
+            "PS11",
+            "RQS",
+            "SUM"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/558a242529de2028",
+            "cardKingdomFoil": "https://mtgjson.com/links/03b08fad46f07cc1",
+            "cardmarket": "https://mtgjson.com/links/377607fbe608a123",
+            "tcgplayer": "https://mtgjson.com/links/ec5e772bcfd3b2de"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "c690e178-661d-5e17-9b29-a5bf6319a844",
+              "dba0b628-9426-594c-a71a-02c003e7f63b"
+            ]
+          },
+          "subtypes": [
+            "Giant"
+          ],
+          "supertypes": [],
+          "toughness": "3",
+          "type": "Creature \u2014 Giant",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "39f4ab79-50be-53cd-b422-354d0b320126"
+        },
+        {
+          "artist": "Jeff Miracola",
+          "artistIds": [
+            "9b465bde-3656-4495-ace4-af4ce29999ed"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 1.0,
+          "edhrecRank": 15035,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "He raged at the world, at his family, at his life. But mostly he just raged.",
+          "foreignData": [
+            {
+              "flavorText": "Er tobte gegen die Welt, gegen seine Familie, gegen sein Leben. Aber haupts\u00e4chlich tobte er.",
+              "identifiers": {
+                "multiverseId": "148646",
+                "scryfallId": "2674296a-6c37-4878-bdea-aae2b6b75875"
+              },
+              "language": "German",
+              "multiverseId": 148646,
+              "name": "W\u00fctender Goblin",
+              "text": "Eile (Diese Kreatur kann angreifen und {T}, sobald sie unter deine Kontrolle kommt.)",
+              "type": "Kreatur \u2014 Goblin, Berserker"
+            },
+            {
+              "flavorText": "Estaba furioso con su mundo, con su familia, con su vida. Pero principalmente, s\u00f3lo estaba furioso.",
+              "identifiers": {
+                "multiverseId": "150540",
+                "scryfallId": "042fcda6-9b68-4950-bb5a-8f84ce7b2c71"
+              },
+              "language": "Spanish",
+              "multiverseId": 150540,
+              "name": "Trasgo furioso",
+              "text": "Prisa. (Esta criatura puede atacar y {T} tan pronto como entre bajo tu control.)",
+              "type": "Criatura \u2014 Berserker trasgo"
+            },
+            {
+              "flavorText": "Il enrageait contre le monde, contre sa famille, contre lui-m\u00eame. Mais avant tout, il aimait juste \u00eatre enrag\u00e9.",
+              "identifiers": {
+                "multiverseId": "150157",
+                "scryfallId": "7d9236a4-46d0-403f-bebd-f24000d0d616"
+              },
+              "language": "French",
+              "multiverseId": 150157,
+              "name": "Gobelin enrag\u00e9",
+              "text": "C\u00e9l\u00e9rit\u00e9 (Cette cr\u00e9ature peut attaquer et {T} d\u00e8s le tour o\u00f9 elle arrive sous votre contr\u00f4le.)",
+              "type": "Cr\u00e9ature : gobelin et berserker"
+            },
+            {
+              "flavorText": "E' arrabbiato con il mondo, con la propria famiglia e con la vita. Pi\u00f9 che altro \u00e8 arrabbiato e basta.",
+              "identifiers": {
+                "multiverseId": "149029",
+                "scryfallId": "8884d990-9790-429b-82dc-9c680bddc193"
+              },
+              "language": "Italian",
+              "multiverseId": 149029,
+              "name": "Goblin Furioso",
+              "text": "Rapidit\u00e0 (Questa creatura pu\u00f2 attaccare e {T} non appena entra sotto il tuo controllo.)",
+              "type": "Creatura \u2014 Berserker Goblin"
+            },
+            {
+              "flavorText": "\u5f7c\u306f\u4e16\u754c\u306b\u5bfe\u3057\u3066\u6012\u308a\u3001\u5bb6\u65cf\u306b\u5bfe\u3057\u3066\u6012\u308a\u3001\u81ea\u5206\u306e\u4eba\u751f\u306b\u5bfe\u3057\u3066\u6012\u3063\u3066\u3044\u305f\u3002 \u3060\u304c\u3001\u3060\u3044\u305f\u3044\u306f\u7406\u7531\u3082\u306a\u304f\u6012\u3063\u3066\u3044\u305f\u3093\u3060\u3002",
+              "identifiers": {
+                "multiverseId": "148263",
+                "scryfallId": "9dfb0110-55aa-4ba0-a865-51e936f34f0d"
+              },
+              "language": "Japanese",
+              "multiverseId": 148263,
+              "name": "\u6012\u308a\u72c2\u3046\u30b4\u30d6\u30ea\u30f3",
+              "text": "\u901f\u653b \uff08\u3053\u306e\u30af\u30ea\u30fc\u30c1\u30e3\u30fc\u306f\u3001\u3042\u306a\u305f\u306e\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u4e0b\u306b\u306a\u3063\u3066\u3059\u3050\u306b\u653b\u6483\u3057\u305f\u308a{T}\u80fd\u529b\u3092\u4f7f\u3063\u305f\u308a\u3067\u304d\u308b\u3002\uff09",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30b4\u30d6\u30ea\u30f3\u30fb\u72c2\u6226\u58eb"
+            },
+            {
+              "flavorText": "Ele se enfurecia com o mundo, com sua fam\u00edlia, com sua vida. Mas acima de tudo, ele se enfurecia.",
+              "identifiers": {
+                "multiverseId": "149774",
+                "scryfallId": "e7359311-9dd2-4952-ab73-f794af410b06"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149774,
+              "name": "Goblin Enfurecido",
+              "text": "\u00cdmpeto (Esta criatura pode atacar e {T} assim que entra sob seu controle.)",
+              "type": "Criatura \u2014 Goblin Amoque"
+            },
+            {
+              "flavorText": "\u041e\u043d \u0437\u043b\u0438\u043b\u0441\u044f \u043d\u0430 \u043c\u0438\u0440, \u043d\u0430 \u0441\u0435\u043c\u044c\u044e, \u043d\u0430 \u0441\u0432\u043e\u044e \u0436\u0438\u0437\u043d\u044c. \u0410 \u0432\u043e\u043e\u0431\u0449\u0435-\u0442\u043e, \u043e\u043d \u043f\u0440\u043e\u0441\u0442\u043e \u0437\u043b\u0438\u043b\u0441\u044f.",
+              "identifiers": {
+                "multiverseId": "149391",
+                "scryfallId": "c1da3a11-f108-4ac6-a59d-927810e6090b"
+              },
+              "language": "Russian",
+              "multiverseId": 149391,
+              "name": "\u0420\u0430\u0437\u044a\u044f\u0440\u0435\u043d\u043d\u044b\u0439 \u0413\u043e\u0431\u043b\u0438\u043d",
+              "text": "\u0423\u0441\u043a\u043e\u0440\u0435\u043d\u0438\u0435 (\u042d\u0442\u043e \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u043c\u043e\u0436\u0435\u0442 \u0430\u0442\u0430\u043a\u043e\u0432\u0430\u0442\u044c \u0438 {T}, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u043d\u043e \u043f\u043e\u043f\u0430\u0434\u0430\u0435\u0442 \u043f\u043e\u0434 \u0432\u0430\u0448 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c.)",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u0413\u043e\u0431\u043b\u0438\u043d \u0411\u0435\u0440\u0441\u0435\u0440\u043a"
+            },
+            {
+              "flavorText": "\u4ed6\u5bf9\u4e16\u754c\u3001\u5bb6\u5ead\u548c\u4ed6\u7684\u751f\u6d3b\u90fd\u611f\u5230\u6124\u6012\u3002 \u4f46\u5927\u591a\u65f6\u5019\u4ed6\u53ea\u662f\u7eaf\u7cb9\u6124\u6012\u3002",
+              "identifiers": {
+                "multiverseId": "147880",
+                "scryfallId": "b981cb64-4d91-40da-b1ff-921524344219"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147880,
+              "name": "\u6124\u6012\u7cbe\u7075",
+              "text": "\u654f\u6377\uff08\u6b64\u751f\u7269\u53d7\u4f60\u64cd\u63a7\u65f6\u4fbf\u80fd\u653b\u51fb\u4e0e{T}\u3002\uff09",
+              "type": "\u751f\u7269\uff5e\u7cbe\u7075\uff0f\u72c2\u6218\u58eb"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "122942",
+            "cardsphereId": "491",
+            "deckboxId": "5018",
+            "mcmId": "16388",
+            "mcmMetaId": "4466",
+            "mtgjsonFoilVersionId": "5cfbcc15-d710-51d0-b0e8-90e66649839e",
+            "mtgjsonV4Id": "3b077624-5c2e-5de8-91b1-4366d7dc8153",
+            "mtgoFoilId": "27229",
+            "mtgoId": "27228",
+            "multiverseId": "129688",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "181ed588-5b9e-4160-967c-ed927b7e0048",
+            "scryfallIllustrationId": "3f27a894-9e5c-46a7-a433-94f0f3029541",
+            "scryfallOracleId": "30997b43-fc13-41d3-8064-1ccc2cb6fd2b",
+            "tcgplayerProductId": "15266"
+          },
+          "isReprint": true,
+          "keywords": [
+            "Haste"
+          ],
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "alchemy": "Legal",
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{R}",
+          "manaValue": 1.0,
+          "name": "Raging Goblin",
+          "number": "224",
+          "originalText": "Haste",
+          "originalType": "Creature - Goblin Berserker",
+          "power": "1",
+          "printings": [
+            "10E",
+            "6ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "ANB",
+            "ATH",
+            "BRB",
+            "BTD",
+            "DD1",
+            "EVG",
+            "EXO",
+            "M10",
+            "OANA",
+            "P02",
+            "POR",
+            "PSAL",
+            "S99"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/9dcc30107b86953a",
+            "cardmarket": "https://mtgjson.com/links/173758d749d0b657",
+            "tcgplayer": "https://mtgjson.com/links/9335ad7a90339adf"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "nonfoil": [
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "c690e178-661d-5e17-9b29-a5bf6319a844",
+              "dba0b628-9426-594c-a71a-02c003e7f63b",
+              "fdc9f92b-db28-5dfd-95bb-3ded52698ea0"
+            ]
+          },
+          "subtypes": [
+            "Goblin",
+            "Berserker"
+          ],
+          "supertypes": [],
+          "text": "Haste (This creature can attack and {T} as soon as it comes under your control.)",
+          "toughness": "1",
+          "type": "Creature \u2014 Goblin Berserker",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "b91e7385-f4a8-5d1b-ac43-23857284e185",
+          "variations": [
+            "5cfbcc15-d710-51d0-b0e8-90e66649839e"
+          ]
+        },
+        {
+          "artist": "Richard Sardinha",
+          "artistIds": [
+            "a3cce4f0-fbf5-4883-aac7-fb28b993b132"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 6.0,
+          "edhrecRank": 20697,
+          "edhrecSaltiness": 0.4,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "The most terrifying thing about the craw wurm is probably the horrible crashing sound it makes as it speeds through the forest. This noise is so loud it echoes through the trees and seems to come from all directions at once.",
+          "foreignData": [
+            {
+              "flavorText": "Das Schrecklichste am Tatzelwurm ist das furchtbar krachende Ger\u00e4usch, mit dem er durch den Wald bricht. Der L\u00e4rm ist so laut, dass sein Echo von den B\u00e4umen zur\u00fcckgeworfen wird und von \u00fcberall gleichzeitig zu kommen scheint.",
+              "identifiers": {
+                "multiverseId": "148466",
+                "scryfallId": "049af816-bfbd-40ad-8a21-b47488bbccb1"
+              },
+              "language": "German",
+              "multiverseId": 148466,
+              "name": "Tatzelwurm",
+              "type": "Kreatur \u2014 Wurm"
+            },
+            {
+              "flavorText": "Lo m\u00e1s espeluznante de la sierpe drag\u00f3n es probablemente el horrible estr\u00e9pito que hace al moverse velozmente a trav\u00e9s del bosque. Este ruido es tan fuerte que hace eco a trav\u00e9s de los \u00e1rboles y parece venir de todas direcciones al mismo tiempo.",
+              "identifiers": {
+                "multiverseId": "150573",
+                "scryfallId": "2b331f39-99ab-4174-b7a3-630e98acd5a0"
+              },
+              "language": "Spanish",
+              "multiverseId": 150573,
+              "name": "Sierpe drag\u00f3n",
+              "type": "Criatura \u2014 Sierpe"
+            },
+            {
+              "flavorText": "Le plus terrifiant, ce sont les sinistres craquements de la guivre vorace qui chasse dans la for\u00eat. Ils se r\u00e9percutent dans les arbres et semblent venir de partout \u00e0 la fois.",
+              "identifiers": {
+                "multiverseId": "150190",
+                "scryfallId": "e69fca0b-b91b-4e3e-a90e-b3cbffe90ce2"
+              },
+              "language": "French",
+              "multiverseId": 150190,
+              "name": "Guivre vorace",
+              "type": "Cr\u00e9ature : guivre"
+            },
+            {
+              "flavorText": "La cosa pi\u00f9 terrificante del wurm devastatore sono probabilmente i terribili schianti che produce quando si muove rapidamente nella foresta. Il rumore \u00e8 cos\u00ec forte che riecheggia tra gli alberi e sembra venire da tutte le direzioni contemporaneamente.",
+              "identifiers": {
+                "multiverseId": "148849",
+                "scryfallId": "56dd05f3-c985-44ca-9914-21ad3740d6b0"
+              },
+              "language": "Italian",
+              "multiverseId": 148849,
+              "name": "Wurm Devastatore",
+              "type": "Creatura \u2014 Wurm"
+            },
+            {
+              "flavorText": "\u3053\u306e\u30ef\u30fc\u30e0\u306e\u3044\u3061\u3070\u3093\u306e\u6050\u308d\u3057\u3055\u306f\u3001\u6728\u3005\u3092\u7815\u3044\u3066\u68ee\u3092\u9032\u3080\u3068\u304d\u306e\u3059\u3055\u307e\u3058\u3044\u97f3\u306b\u3042\u308b\u3002 \u305d\u306e\u97f3\u306f\u6728\u3005\u306e\u9593\u3067\u6fc0\u3057\u304f\u3053\u3060\u307e\u3057\u3001\u307e\u308b\u3067\u81ea\u5206\u304c\u305d\u306e\u4e2d\u5fc3\u306b\u3044\u308b\u3088\u3046\u306a\u932f\u899a\u3092\u8d77\u3053\u3055\u305b\u308b\u306e\u3060\u3002",
+              "identifiers": {
+                "multiverseId": "148083",
+                "scryfallId": "6c3a13db-7046-4bf1-8819-b963cece776e"
+              },
+              "language": "Japanese",
+              "multiverseId": 148083,
+              "name": "\u5927\u55b0\u3089\u3044\u306e\u30ef\u30fc\u30e0",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30ef\u30fc\u30e0"
+            },
+            {
+              "flavorText": "Provavelmente, o que h\u00e1 de mais aterrador na serpente terrestre de craw \u00e9 o horr\u00edvel som de devasta\u00e7\u00e3o que ela faz ao passar velozmente pela floresta. \u00c9 um som t\u00e3o alto que ecoa pelas \u00e1rvores e parece vir de todos os lados.",
+              "identifiers": {
+                "multiverseId": "149807",
+                "scryfallId": "09c01e73-81e7-4a1a-8e60-6ce3163d09c4"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149807,
+              "name": "Serpente Terrestre de Craw",
+              "type": "Criatura \u2014 Vorme"
+            },
+            {
+              "flavorText": "\u0421\u0430\u043c\u043e\u0435 \u0443\u0436\u0430\u0441\u043d\u043e\u0435 \u044d\u0442\u043e \u0442\u043e, \u0441 \u043a\u0430\u043a\u0438\u043c \u0441\u0442\u0440\u0430\u0448\u043d\u044b\u043c \u0448\u0443\u043c\u043e\u043c \u0437\u043e\u0431\u0430\u0442\u044b\u0439 \u0432\u0443\u0440\u043c \u043f\u0440\u043e\u0434\u0438\u0440\u0430\u0435\u0442\u0441\u044f \u0447\u0435\u0440\u0435\u0437 \u043b\u0435\u0441. \u0428\u0443\u043c \u043e\u0442\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044f \u044d\u0445\u043e\u043c \u043c\u0435\u0436 \u0434\u0435\u0440\u0435\u0432\u044c\u0435\u0432, \u0438 \u043a\u0430\u0436\u0435\u0442\u0441\u044f, \u0447\u0442\u043e \u043e\u043d \u0437\u0432\u0443\u0447\u0438\u0442 \u0441\u0440\u0430\u0437\u0443 \u0441\u043e \u0432\u0441\u0435\u0445 \u0441\u0442\u043e\u0440\u043e\u043d.",
+              "identifiers": {
+                "multiverseId": "149424",
+                "scryfallId": "464491bf-268a-4643-a69e-70f7fb701a36"
+              },
+              "language": "Russian",
+              "multiverseId": 149424,
+              "name": "\u0417\u043e\u0431\u0430\u0442\u044b\u0439 \u0412\u0443\u0440\u043c",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u0412\u0443\u0440\u043c"
+            },
+            {
+              "flavorText": "\u5de8\u722a\u4e9a\u9f99\u6700\u53ef\u6015\u4e4b\u5904\uff0c\u5927\u6982\u4fbf\u662f\u4ed6\u9ad8\u901f\u51b2\u8fc7\u68ee\u6797\u65f6\u6240\u9020\u6210\u7684\u6050\u6016\u58f0\u54cd\u4e86\u3002 \u90a3\u5de8\u5927\u7684\u58f0\u54cd\u5728\u6811\u95f4\u56de\u8361\u4e0d\u6b47\uff0c\u6709\u5982\u540c\u65f6\u4ece\u56db\u9762\u516b\u65b9\u800c\u6765\u3002",
+              "identifiers": {
+                "multiverseId": "147700",
+                "scryfallId": "0318e416-b21d-4ed2-838c-f7982fb9351c"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147700,
+              "name": "\u5de8\u722a\u4e9a\u9f99",
+              "type": "\u751f\u7269\uff5e\u4e9a\u9f99"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123343",
+            "cardKingdomId": "122975",
+            "cardsphereFoilId": "129",
+            "cardsphereId": "130",
+            "deckboxId": "2647",
+            "mcmId": "16421",
+            "mcmMetaId": "1177",
+            "mtgjsonV4Id": "ada04e68-5bec-59bf-8474-7e87e82da1e8",
+            "mtgoFoilId": "27684",
+            "mtgoId": "27683",
+            "multiverseId": "130527",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "da6b8e11-b799-4235-bd8f-c4b55946c769",
+            "scryfallIllustrationId": "296615a8-58e7-4f90-9c56-01d83b85849b",
+            "scryfallOracleId": "6a462a69-3e42-41de-a3aa-a488d9f38d69",
+            "tcgplayerProductId": "15087"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{4}{G}{G}",
+          "manaValue": 6.0,
+          "name": "Craw Wurm",
+          "number": "257",
+          "originalType": "Creature - Wurm",
+          "power": "6",
+          "printings": [
+            "10E",
+            "2ED",
+            "30A",
+            "3ED",
+            "4BB",
+            "4ED",
+            "5ED",
+            "8ED",
+            "9ED",
+            "CED",
+            "CEI",
+            "FBB",
+            "LEA",
+            "LEB",
+            "M10",
+            "SUM"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/6e68c4829a794e44",
+            "cardKingdomFoil": "https://mtgjson.com/links/1743820190fa8f46",
+            "cardmarket": "https://mtgjson.com/links/6d37cfe3f2b78f34",
+            "tcgplayer": "https://mtgjson.com/links/251425bd9b4fa397"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4461ca6a-6da3-57cc-99c9-287fccfb6689",
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "a02f27f7-b774-56d7-b50a-4272f05aa369",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ]
+          },
+          "subtypes": [
+            "Wurm"
+          ],
+          "supertypes": [],
+          "toughness": "4",
+          "type": "Creature \u2014 Wurm",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "93c6c384-3214-5eee-ab55-c3bbcfae5472"
+        },
+        {
+          "artist": "Matt Cavotta",
+          "artistIds": [
+            "2e6a0611-9411-4ba4-98e3-c0e18cbf9f83"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 1.0,
+          "edhrecRank": 3977,
+          "edhrecSaltiness": 0.1,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "foreignData": [
+            {
+              "identifiers": {
+                "multiverseId": "148521",
+                "scryfallId": "a3962c16-57a5-43dc-a57f-d9fae1c483e2"
+              },
+              "language": "German",
+              "multiverseId": 148521,
+              "name": "Riesenwuchs",
+              "text": "Eine Kreatur deiner Wahl erh\u00e4lt +3/+3 bis zum Ende des Zuges.",
+              "type": "Spontanzauber"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "150582",
+                "scryfallId": "dca66ccb-914b-4501-b14d-de5cc4115eeb"
+              },
+              "language": "Spanish",
+              "multiverseId": 150582,
+              "name": "Crecimiento gigante",
+              "text": "La criatura objetivo obtiene +3/+3 hasta el final del turno.",
+              "type": "Instant\u00e1neo"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "150199",
+                "scryfallId": "0e9e6eac-b972-4209-89d7-f619d066763f"
+              },
+              "language": "French",
+              "multiverseId": 150199,
+              "name": "Croissance gigantesque",
+              "text": "La cr\u00e9ature cibl\u00e9e gagne +3/+3 jusqu'\u00e0 la fin du tour.",
+              "type": "\u00c9ph\u00e9m\u00e8re"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "148904",
+                "scryfallId": "ab2c4a5f-3b2c-4b35-b759-f6a769ee29cc"
+              },
+              "language": "Italian",
+              "multiverseId": 148904,
+              "name": "Crescita Gigante",
+              "text": "Una creatura bersaglio prende +3/+3 fino alla fine del turno.",
+              "type": "Istantaneo"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "148138",
+                "scryfallId": "39539e2c-ef72-463e-8e7c-39abf61af2a2"
+              },
+              "language": "Japanese",
+              "multiverseId": 148138,
+              "name": "\u5de8\u5927\u5316",
+              "text": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc\uff11\u4f53\u3092\u5bfe\u8c61\u3068\u3059\u308b\u3002\u305d\u308c\u306f\u30bf\u30fc\u30f3\u7d42\u4e86\u6642\u307e\u3067\uff0b\uff13/\uff0b\uff13\u306e\u4fee\u6574\u3092\u53d7\u3051\u308b\u3002",
+              "type": "\u30a4\u30f3\u30b9\u30bf\u30f3\u30c8"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "149816",
+                "scryfallId": "54cbaa09-20aa-4d03-8adc-0437288e80e7"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149816,
+              "name": "Crescimento Desenfreado",
+              "text": "A criatura alvo recebe +3/+3 at\u00e9 o final do turno.",
+              "type": "M\u00e1gica Instant\u00e2nea"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "149433",
+                "scryfallId": "47f5fb22-67f7-438d-95c3-da7ed63332a8"
+              },
+              "language": "Russian",
+              "multiverseId": 149433,
+              "name": "\u0418\u0441\u043f\u043e\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u0420\u043e\u0441\u0442",
+              "text": "\u0426\u0435\u043b\u0435\u0432\u043e\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u0442 +3/+3 \u0434\u043e \u043a\u043e\u043d\u0446\u0430 \u0445\u043e\u0434\u0430.",
+              "type": "\u041c\u0433\u043d\u043e\u0432\u0435\u043d\u043d\u043e\u0435 \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u0435"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "147755",
+                "scryfallId": "fe3fb2d1-a8b6-4f22-984d-c1d7f54aa01b"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147755,
+              "name": "\u53d8\u5de8\u672f",
+              "text": "\u76ee\u6807\u751f\u7269\u5f97+3/+3\u76f4\u5230\u56de\u5408\u7ed3\u675f\u3002",
+              "type": "\u77ac\u95f4"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123352",
+            "cardKingdomId": "122984",
+            "cardsphereFoilId": "240",
+            "cardsphereId": "241",
+            "deckboxId": "6235",
+            "mcmId": "16430",
+            "mcmMetaId": "2325",
+            "mtgjsonV4Id": "87fda331-bb12-59a7-85f9-e7389e11f1d2",
+            "mtgoFoilId": "27017",
+            "mtgoId": "27016",
+            "multiverseId": "129568",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "d4db271b-b7f2-4a12-b606-2215bab4ac17",
+            "scryfallIllustrationId": "ee1355e2-23a9-4cc5-9543-750100de724e",
+            "scryfallOracleId": "5748ebf1-24e3-499d-ab7c-c2cebd462a24",
+            "tcgplayerProductId": "15142"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "alchemy": "Legal",
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "future": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "standard": "Legal",
+            "standardbrawl": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{G}",
+          "manaValue": 1.0,
+          "name": "Giant Growth",
+          "number": "266",
+          "originalText": "Target creature gets +3/+3 until end of turn.",
+          "originalType": "Instant",
+          "printings": [
+            "10E",
+            "2ED",
+            "30A",
+            "3ED",
+            "4BB",
+            "4ED",
+            "5ED",
+            "6ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "A25",
+            "ATH",
+            "BBD",
+            "BLB",
+            "BRB",
+            "BRO",
+            "BTD",
+            "CED",
+            "CEI",
+            "DD1",
+            "DDD",
+            "DKM",
+            "DPA",
+            "E02",
+            "EVG",
+            "FBB",
+            "FDN",
+            "FNM",
+            "GVL",
+            "ICE",
+            "J21",
+            "J25",
+            "LEA",
+            "LEB",
+            "M10",
+            "M11",
+            "M14",
+            "ME2",
+            "ME3",
+            "ME4",
+            "P06",
+            "PJJT",
+            "PLST",
+            "PRM",
+            "PS11",
+            "PSUS",
+            "RTR",
+            "SLD",
+            "SUM",
+            "WAR",
+            "WC97",
+            "WC99"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/dd62b295d666b3df",
+            "cardKingdomFoil": "https://mtgjson.com/links/fc4e64b155180219",
+            "cardmarket": "https://mtgjson.com/links/3e4022aed375233a",
+            "tcgplayer": "https://mtgjson.com/links/d543b9e0437e5670"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4461ca6a-6da3-57cc-99c9-287fccfb6689",
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "4c711672-8ab4-50e6-863f-03a93d5292ff",
+              "a02f27f7-b774-56d7-b50a-4272f05aa369",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ]
+          },
+          "subtypes": [],
+          "supertypes": [],
+          "text": "Target creature gets +3/+3 until end of turn.",
+          "type": "Instant",
+          "types": [
+            "Instant"
+          ],
+          "uuid": "d15347ac-1e85-5d2a-9979-eef3f15c7376"
+        },
+        {
+          "artist": "D. J. Cleland-Hura",
+          "artistIds": [
+            "87d21070-2432-4167-8aab-5968af1c14f3"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 2.0,
+          "edhrecRank": 7963,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "\"We cannot forget that among all of Dominaria's wonders, a system of life exists, with prey and predators that will never fight wars nor vie for ancient power.\"\n\u2014Jolrael, empress of beasts",
+          "foreignData": [
+            {
+              "flavorText": "\u201eWir d\u00fcrfen nie vergessen, dass es in Dominaria zwischen den ganzen Wundern auch einen Lebenskreislauf mit Raubtieren und Beutetieren gibt, die niemals Kriege austragen oder nach uraltem Wissen streben werden.\" \u2014Jolrael, Herrin der Tiere",
+              "identifiers": {
+                "multiverseId": "148532",
+                "scryfallId": "13abe0e5-d670-4a9c-bd06-c1a579ed322b"
+              },
+              "language": "German",
+              "multiverseId": 148532,
+              "name": "Grizzlyb\u00e4ren",
+              "type": "Kreatur \u2014 B\u00e4r"
+            },
+            {
+              "flavorText": "\"No podemos olvidar que entre todas las maravillas de Dominaria, existe un sistema de vida, con depredadores y presas que nunca luchar\u00e1n en guerras ni desear\u00e1n poderes antiguos.\" \u2014Jolrael, emperatriz de bestias",
+              "identifiers": {
+                "multiverseId": "150584",
+                "scryfallId": "a01bb509-7e94-4b46-b038-eef7cde2ebe1"
+              },
+              "language": "Spanish",
+              "multiverseId": 150584,
+              "name": "Osos pardos",
+              "type": "Criatura \u2014 Oso"
+            },
+            {
+              "flavorText": "\u00ab Parmi les merveilles de Dominaria, il existe un cycle de vie, avec des proies et des pr\u00e9dateurs qui jamais ne feront la guerre ou ne chercheront \u00e0 acqu\u00e9rir le pouvoir. Alors, ne touchez pas aux grizzlis. \u00bb \u2014Jolrael, imp\u00e9ratrice des b\u00eates",
+              "identifiers": {
+                "multiverseId": "150201",
+                "scryfallId": "b171754c-b111-4f01-a501-8dd652d7a285"
+              },
+              "language": "French",
+              "multiverseId": 150201,
+              "name": "Grizzlis",
+              "type": "Cr\u00e9ature : ours"
+            },
+            {
+              "flavorText": "\"Non possiamo dimenticare che, tra tutte le meraviglie di Dominaria, esiste un ecosistema, con prede e predatori che non combatteranno mai guerre n\u00e9 si contenderanno antichi poteri.\" \u2014Jolrael, imperatrice delle bestie",
+              "identifiers": {
+                "multiverseId": "148915",
+                "scryfallId": "8fa3eb2b-b1ac-467f-9582-cb6c057e5370"
+              },
+              "language": "Italian",
+              "multiverseId": 148915,
+              "name": "Orso Grizzly",
+              "type": "Creatura \u2014 Orso"
+            },
+            {
+              "flavorText": "\u30c9\u30df\u30ca\u30ea\u30a2\u306e\u3042\u3089\u3086\u308b\u4e0d\u601d\u8b70\u306e\u4e2d\u3067\u3001\u751f\u547d\u306e\u4ed5\u7d44\u307f\u3053\u305d\u5fd8\u308c\u308b\u3053\u3068\u306f\u3067\u304d\u306a\u3044\u3082\u306e\u3060\u3002\u5f31\u8089\u5f37\u98df\u306e\u95a2\u4fc2\u304c\u8986\u3055\u308c\u308b\u3053\u3068\u3082\u306a\u304f\u3001\u53e4\u6765\u306e\u529b\u306b\u6297\u3046\u3053\u3068\u3082\u306a\u3044\u306e\u3060\u304b\u3089\u3002 \u2015\u2015\u7363\u305f\u3061\u306e\u5973\u5e1d\u30b8\u30e7\u30eb\u30ec\u30a4\u30eb",
+              "identifiers": {
+                "multiverseId": "148149",
+                "scryfallId": "9e219e1e-e2b1-4fac-a93b-b293efd36aec"
+              },
+              "language": "Japanese",
+              "multiverseId": 148149,
+              "name": "\u7070\u8272\u718a",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u718a"
+            },
+            {
+              "flavorText": "\"N\u00e3o podemos nos esquecer que, dentre todas as maravilhas de Domin\u00e1ria, existe um sistema de vida, com presas e predadores que nunca entrar\u00e3o em guerras, nem competir\u00e3o por poderes antigos.\" \u2014 Jolrael, imperatriz das criaturas",
+              "identifiers": {
+                "multiverseId": "149818",
+                "scryfallId": "7f5748d7-dd81-4231-8e80-b5995a3bbe2a"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149818,
+              "name": "Ursos Cinzentos",
+              "type": "Criatura \u2014 Urso"
+            },
+            {
+              "flavorText": "\"\u041c\u044b \u043d\u0435 \u0434\u043e\u043b\u0436\u043d\u044b \u0437\u0430\u0431\u044b\u0432\u0430\u0442\u044c, \u0447\u0442\u043e \u0441\u0440\u0435\u0434\u0438 \u0432\u0441\u0435\u0445 \u0447\u0443\u0434\u0435\u0441 \u0414\u043e\u043c\u0438\u043d\u0430\u0440\u0438\u0438 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0436\u0438\u0437\u043d\u0438 \u0441 \u0445\u0438\u0449\u043d\u0438\u043a\u0430\u043c\u0438 \u0438 \u0434\u043e\u0431\u044b\u0447\u0435\u0439, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0431\u0443\u0434\u0443\u0442 \u0432\u043e\u0435\u0432\u0430\u0442\u044c, \u043d\u0438 \u0441\u043e\u043f\u0435\u0440\u043d\u0438\u0447\u0430\u0442\u044c \u0437\u0430 \u0434\u0440\u0435\u0432\u043d\u044e\u044e \u0432\u043b\u0430\u0441\u0442\u044c\". \u2014 \u0414\u0436\u043e\u043b\u0440\u0435\u0439\u043b, \u043f\u043e\u0432\u0435\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u0438\u0446\u0430 \u0437\u0432\u0435\u0440\u0435\u0439",
+              "identifiers": {
+                "multiverseId": "149435",
+                "scryfallId": "627d05f7-c52a-4e75-a675-0f611ba69858"
+              },
+              "language": "Russian",
+              "multiverseId": 149435,
+              "name": "\u0413\u0440\u0438\u0437\u043b\u0438",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u041c\u0435\u0434\u0432\u0435\u0434\u044c"
+            },
+            {
+              "flavorText": "\u300c\u5343\u4e07\u522b\u5fd8\u8bb0\u4e86\uff0c\u5728\u591a\u660e\u7eb3\u91cc\u4e9a\u8bf8\u822c\u795e\u5947\u4e4b\u4e2d\uff0c\u6709\u4e2a\u751f\u547d\u7684\u7cfb\u7edf\u5b58\u5728\u7740\uff1b\u91cc\u9762\u5305\u62ec\u4e86\u730e\u7269\u4e0e\u730e\u8005\uff0c\u5f7c\u6b64\u4e0d\u4f1a\u4e89\u6218\u6216\u662f\u62a2\u593a\u8fdc\u53e4\u529b\u91cf\u3002\u300d \uff5e\u767e\u517d\u5973\u7687\u88d8\u857e\u5c14",
+              "identifiers": {
+                "multiverseId": "147766",
+                "scryfallId": "fdc964fb-aba5-4757-a982-e307f43be834"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147766,
+              "name": "\u7070\u68d5\u718a",
+              "type": "\u751f\u7269\uff5e\u718a"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123354",
+            "cardKingdomId": "122986",
+            "cardsphereFoilId": "263",
+            "cardsphereId": "264",
+            "deckboxId": "1931",
+            "mcmId": "16432",
+            "mcmMetaId": "2543",
+            "mtgjsonV4Id": "a2e9138a-d3fd-53ab-aa6c-f2c32506e5b4",
+            "mtgoFoilId": "27401",
+            "mtgoId": "27400",
+            "multiverseId": "129586",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "409f9b88-f03e-40b6-9883-68c14c37c0de",
+            "scryfallIllustrationId": "066bfe81-0f53-43da-a074-b2ecc5dcda72",
+            "scryfallOracleId": "14c8f55d-d177-4c25-a931-ebeb9e6062a0",
+            "tcgplayerProductId": "15153"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{1}{G}",
+          "manaValue": 2.0,
+          "name": "Grizzly Bears",
+          "number": "268",
+          "originalType": "Creature - Bear",
+          "power": "2",
+          "printings": [
+            "10E",
+            "2ED",
+            "30A",
+            "3ED",
+            "4BB",
+            "4ED",
+            "5ED",
+            "6ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "CED",
+            "CEI",
+            "FBB",
+            "ITP",
+            "J21",
+            "LEA",
+            "LEB",
+            "POR",
+            "RQS",
+            "S99",
+            "SUM"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/7b23ebcd1c6fb6d1",
+            "cardKingdomFoil": "https://mtgjson.com/links/7f2f92729c108afb",
+            "cardmarket": "https://mtgjson.com/links/2d25f49225eafff2",
+            "tcgplayer": "https://mtgjson.com/links/fc63b8c90bb9c260"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4461ca6a-6da3-57cc-99c9-287fccfb6689",
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ]
+          },
+          "subtypes": [
+            "Bear"
+          ],
+          "supertypes": [],
+          "toughness": "2",
+          "type": "Creature \u2014 Bear",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "b49d7ef1-e841-5647-8590-4857eca7e8bd"
+        },
+        {
+          "artist": "John Avon",
+          "artistIds": [
+            "798f3932-30e0-4420-aa3f-db4d613f89ca"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [],
+          "convertedManaCost": 0.0,
+          "edhrecSaltiness": 0.51,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "foreignData": [
+            {
+              "identifiers": {
+                "multiverseId": "148607",
+                "scryfallId": "52d8f64f-78b1-43f3-a093-d1d103e4b699"
+              },
+              "language": "German",
+              "multiverseId": 148607,
+              "name": "Gebirge",
+              "type": "Standardland \u2014 Gebirge"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "148990",
+                "scryfallId": "cb1a3318-8d18-4c79-99c9-4c543231d557"
+              },
+              "language": "Italian",
+              "multiverseId": 148990,
+              "name": "Montagna",
+              "type": "Terra Base \u2014 Montagna"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "148225",
+                "scryfallId": "a2825ac2-c04e-4887-ab07-4edf05becb44"
+              },
+              "language": "Japanese",
+              "multiverseId": 148225,
+              "name": "\u5c71",
+              "type": "\u57fa\u672c\u571f\u5730 \u2014 \u5c71"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "149926",
+                "scryfallId": "d6b30749-f619-424a-ba84-37dfe039a6a6"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 149926,
+              "name": "Montanha",
+              "type": "Terreno B\u00e1sico \u2014 Montanha"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "149543",
+                "scryfallId": "de0825fa-f141-4688-a5b5-9af5d23a208d"
+              },
+              "language": "Russian",
+              "multiverseId": 149543,
+              "name": "\u0413\u043e\u0440\u0430",
+              "type": "\u0411\u0430\u0437\u043e\u0432\u0430\u044f \u0417\u0435\u043c\u043b\u044f \u2014 \u0413\u043e\u0440\u0430"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "147842",
+                "scryfallId": "000d8ca4-c120-4610-8e77-a6424fb25703"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 147842,
+              "name": "\u5c71\u8109",
+              "type": "\u57fa\u672c\u5730\uff5e\u5c71\u8109"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123453",
+            "cardKingdomId": "192478",
+            "cardsphereFoilId": "409",
+            "cardsphereId": "410",
+            "deckboxId": "6846",
+            "mcmId": "16540",
+            "mtgjsonV4Id": "ed4ba3b4-c532-5918-9c0d-30f6af3220ac",
+            "mtgoFoilId": "27269",
+            "mtgoId": "27268",
+            "multiverseId": "129649",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "a7aae748-27d8-48f8-beb2-8e0192d7cc5c",
+            "scryfallIllustrationId": "2e7578bc-3e5a-4d15-b9af-bcbeef0bb4d9",
+            "scryfallOracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+            "tcgplayerProductId": "15225"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "alchemy": "Legal",
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "future": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "standard": "Legal",
+            "standardbrawl": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaValue": 0.0,
+          "name": "Mountain",
+          "number": "376",
+          "originalText": "R",
+          "originalType": "Basic Land - Mountain",
+          "printings": [
+            "10E",
+            "2ED",
+            "2XM",
+            "30A",
+            "3ED",
+            "40K",
+            "4BB",
+            "4ED",
+            "5ED",
+            "6ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "ACR",
+            "AFR",
+            "AKH",
+            "AKR",
+            "ALA",
+            "ANA",
+            "ANB",
+            "ARC",
+            "ARN",
+            "ATH",
+            "AVR",
+            "BBD",
+            "BFZ",
+            "BLB",
+            "BRB",
+            "BRC",
+            "BRO",
+            "BTD",
+            "C13",
+            "C14",
+            "C15",
+            "C16",
+            "C17",
+            "C18",
+            "C19",
+            "CED",
+            "CEI",
+            "CHK",
+            "CLB",
+            "CLU",
+            "CM2",
+            "CMA",
+            "CMD",
+            "CMM",
+            "CMR",
+            "CST",
+            "DD1",
+            "DD2",
+            "DDE",
+            "DDG",
+            "DDH",
+            "DDI",
+            "DDJ",
+            "DDK",
+            "DDL",
+            "DDN",
+            "DDP",
+            "DDS",
+            "DDT",
+            "DDU",
+            "DFT",
+            "DKM",
+            "DMR",
+            "DMU",
+            "DOM",
+            "DPA",
+            "DSK",
+            "DTK",
+            "E01",
+            "ELD",
+            "EOE",
+            "EVG",
+            "FBB",
+            "FDN",
+            "FIN",
+            "FRF",
+            "G17",
+            "GK1",
+            "GK2",
+            "GN2",
+            "GN3",
+            "GNT",
+            "GRN",
+            "GS1",
+            "H09",
+            "HBG",
+            "HOP",
+            "HOU",
+            "ICE",
+            "IKO",
+            "INR",
+            "INV",
+            "ISD",
+            "ITP",
+            "J14",
+            "J22",
+            "J25",
+            "JMP",
+            "JVC",
+            "KHM",
+            "KLD",
+            "KLR",
+            "KTK",
+            "LCI",
+            "LEA",
+            "LEB",
+            "LRW",
+            "LTR",
+            "M10",
+            "M11",
+            "M12",
+            "M13",
+            "M14",
+            "M15",
+            "M19",
+            "M20",
+            "M21",
+            "MBS",
+            "ME1",
+            "ME3",
+            "MH2",
+            "MH3",
+            "MID",
+            "MIR",
+            "MKM",
+            "MMQ",
+            "MOM",
+            "MRD",
+            "NEO",
+            "NPH",
+            "ODY",
+            "OLEP",
+            "ONE",
+            "ONS",
+            "ORI",
+            "OTJ",
+            "P02",
+            "P23",
+            "PAL00",
+            "PAL01",
+            "PAL03",
+            "PAL04",
+            "PAL05",
+            "PAL06",
+            "PAL99",
+            "PALP",
+            "PANA",
+            "PARL",
+            "PC2",
+            "PCA",
+            "PD2",
+            "PELP",
+            "PF19",
+            "PF20",
+            "PGPX",
+            "PGRU",
+            "PIP",
+            "PL24",
+            "PLST",
+            "PMPS",
+            "PMPS06",
+            "PMPS07",
+            "PMPS08",
+            "PMPS09",
+            "PMPS10",
+            "PMPS11",
+            "POR",
+            "PPP1",
+            "PRM",
+            "PRW2",
+            "PRWK",
+            "PS11",
+            "PSAL",
+            "PSS2",
+            "PSS3",
+            "PSS4",
+            "PTC",
+            "PTK",
+            "PZ2",
+            "RAV",
+            "REX",
+            "RIX",
+            "RNA",
+            "ROE",
+            "RQS",
+            "RTR",
+            "S99",
+            "SCD",
+            "SHM",
+            "SIR",
+            "SLD",
+            "SLP",
+            "SNC",
+            "SOI",
+            "SOM",
+            "SPM",
+            "STX",
+            "SUM",
+            "TD0",
+            "TDM",
+            "THB",
+            "THS",
+            "TMP",
+            "TPR",
+            "TSP",
+            "UGL",
+            "UND",
+            "UNF",
+            "UNH",
+            "USG",
+            "UST",
+            "VOW",
+            "WAR",
+            "WC00",
+            "WC01",
+            "WC02",
+            "WC03",
+            "WC97",
+            "WC98",
+            "WC99",
+            "WHO",
+            "WOE",
+            "XANA",
+            "XLN",
+            "ZEN",
+            "ZNR"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/59a9ba9673385dd8",
+            "cardKingdomFoil": "https://mtgjson.com/links/6d20da44c0e12b8f",
+            "tcgplayer": "https://mtgjson.com/links/1141a7ab225a1969"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "c690e178-661d-5e17-9b29-a5bf6319a844",
+              "dba0b628-9426-594c-a71a-02c003e7f63b",
+              "fdc9f92b-db28-5dfd-95bb-3ded52698ea0"
+            ]
+          },
+          "subtypes": [
+            "Mountain"
+          ],
+          "supertypes": [
+            "Basic"
+          ],
+          "text": "({T}: Add {R}.)",
+          "type": "Basic Land \u2014 Mountain",
+          "types": [
+            "Land"
+          ],
+          "uuid": "c1f98960-ef31-5ec9-af8d-d6d56169047b",
+          "variations": [
+            "3e12f3ab-96ab-5d5a-8bed-92b37ffee9aa",
+            "87d6bcfb-0e75-59f7-be6c-30aa7c344ccb",
+            "47e1bdab-e112-526d-bd9f-7f1cffef7187"
+          ]
+        },
+        {
+          "artist": "Anthony S. Waters",
+          "artistIds": [
+            "f009de11-3c8d-4663-b996-ca0c3e997fad"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [],
+          "convertedManaCost": 0.0,
+          "edhrecSaltiness": 0.38,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "foreignData": [],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "123454",
+            "cardKingdomId": "192394",
+            "cardsphereFoilId": "218",
+            "cardsphereId": "219",
+            "deckboxId": "5431",
+            "mcmId": "16544",
+            "mtgjsonV4Id": "f53637c9-9f4e-5d3c-a11a-c30e8e9a92b4",
+            "mtgoFoilId": "27291",
+            "mtgoId": "27290",
+            "multiverseId": "129559",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "d99d5685-538d-4e6a-809b-3ebeab634363",
+            "scryfallIllustrationId": "ab752bab-e271-453c-94ca-7df6ecb4954e",
+            "scryfallOracleId": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+            "tcgplayerProductId": "15131"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "alchemy": "Legal",
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "future": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "standard": "Legal",
+            "standardbrawl": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaValue": 0.0,
+          "name": "Forest",
+          "number": "380",
+          "originalText": "G",
+          "originalType": "Basic Land - Forest",
+          "printings": [
+            "10E",
+            "2ED",
+            "2XM",
+            "30A",
+            "3ED",
+            "40K",
+            "4BB",
+            "4ED",
+            "5ED",
+            "6ED",
+            "7ED",
+            "8ED",
+            "9ED",
+            "ACR",
+            "AFR",
+            "AKH",
+            "AKR",
+            "ALA",
+            "ANA",
+            "ANB",
+            "ARC",
+            "ATH",
+            "AVR",
+            "BBD",
+            "BFZ",
+            "BLB",
+            "BRB",
+            "BRO",
+            "BTD",
+            "C13",
+            "C14",
+            "C15",
+            "C16",
+            "C17",
+            "C18",
+            "C19",
+            "CED",
+            "CEI",
+            "CHK",
+            "CLB",
+            "CLU",
+            "CM2",
+            "CMA",
+            "CMD",
+            "CMM",
+            "CMR",
+            "CST",
+            "DD1",
+            "DDD",
+            "DDE",
+            "DDG",
+            "DDH",
+            "DDJ",
+            "DDL",
+            "DDM",
+            "DDO",
+            "DDP",
+            "DDR",
+            "DDS",
+            "DDU",
+            "DFT",
+            "DKM",
+            "DMR",
+            "DMU",
+            "DOM",
+            "DPA",
+            "DSK",
+            "DTK",
+            "E01",
+            "ELD",
+            "EOE",
+            "EVG",
+            "FBB",
+            "FDN",
+            "FIN",
+            "FRF",
+            "G17",
+            "GK1",
+            "GK2",
+            "GN2",
+            "GN3",
+            "GNT",
+            "GRN",
+            "GS1",
+            "GVL",
+            "H09",
+            "HBG",
+            "HOP",
+            "HOU",
+            "ICE",
+            "IKO",
+            "INR",
+            "INV",
+            "ISD",
+            "ITP",
+            "J14",
+            "J22",
+            "J25",
+            "JMP",
+            "KHM",
+            "KLD",
+            "KLR",
+            "KTK",
+            "LCI",
+            "LEA",
+            "LEB",
+            "LRW",
+            "LTR",
+            "M10",
+            "M11",
+            "M12",
+            "M13",
+            "M14",
+            "M15",
+            "M19",
+            "M20",
+            "M21",
+            "MBS",
+            "ME1",
+            "ME3",
+            "MH2",
+            "MH3",
+            "MID",
+            "MIR",
+            "MKM",
+            "MMQ",
+            "MOM",
+            "MRD",
+            "NEO",
+            "NPH",
+            "ODY",
+            "OLEP",
+            "ONE",
+            "ONS",
+            "ORI",
+            "OTJ",
+            "P02",
+            "P23",
+            "PAL00",
+            "PAL01",
+            "PAL03",
+            "PAL04",
+            "PAL05",
+            "PAL06",
+            "PAL99",
+            "PALP",
+            "PANA",
+            "PARL",
+            "PC2",
+            "PCA",
+            "PELP",
+            "PF19",
+            "PF20",
+            "PGPX",
+            "PGRU",
+            "PIP",
+            "PL25",
+            "PLST",
+            "PMPS",
+            "PMPS06",
+            "PMPS07",
+            "PMPS08",
+            "PMPS09",
+            "PMPS10",
+            "PMPS11",
+            "POR",
+            "PPP1",
+            "PRM",
+            "PRW2",
+            "PRWK",
+            "PS11",
+            "PSAL",
+            "PSS2",
+            "PSS3",
+            "PSS4",
+            "PTC",
+            "PTK",
+            "PZ2",
+            "RAV",
+            "REX",
+            "RIX",
+            "RNA",
+            "ROE",
+            "RQS",
+            "RTR",
+            "S99",
+            "SCD",
+            "SHM",
+            "SIR",
+            "SLD",
+            "SNC",
+            "SOI",
+            "SOM",
+            "SPM",
+            "STX",
+            "SUM",
+            "TD0",
+            "TD2",
+            "TDM",
+            "THB",
+            "THS",
+            "TMP",
+            "TPR",
+            "TSP",
+            "UGL",
+            "UND",
+            "UNF",
+            "UNH",
+            "USG",
+            "UST",
+            "VOW",
+            "WAR",
+            "WC00",
+            "WC01",
+            "WC02",
+            "WC03",
+            "WC04",
+            "WC97",
+            "WC98",
+            "WC99",
+            "WHO",
+            "WOE",
+            "XANA",
+            "XLN",
+            "ZEN",
+            "ZNR"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/786b0eb752284369",
+            "cardKingdomFoil": "https://mtgjson.com/links/1c9f23d1d4539fea",
+            "tcgplayer": "https://mtgjson.com/links/fb810393659c8691"
+          },
+          "rarity": "common",
+          "setCode": "10E",
+          "sourceProducts": {
+            "foil": [
+              "c5cd29de-5ec9-5e13-b8eb-40e3a9f79f9a",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ],
+            "nonfoil": [
+              "4461ca6a-6da3-57cc-99c9-287fccfb6689",
+              "4831adbb-c0af-5d27-b407-19f2f7805949",
+              "a02f27f7-b774-56d7-b50a-4272f05aa369",
+              "c690e178-661d-5e17-9b29-a5bf6319a844"
+            ]
+          },
+          "subtypes": [
+            "Forest"
+          ],
+          "supertypes": [
+            "Basic"
+          ],
+          "text": "({T}: Add {G}.)",
+          "type": "Basic Land \u2014 Forest",
+          "types": [
+            "Land"
+          ],
+          "uuid": "4a17c998-1a44-5537-b675-b19522d43bee",
+          "variations": [
+            "06ac124d-5c6e-542e-bf11-552ec9cc19cc",
+            "0f0aa930-854b-59fb-bd76-69d987356f90",
+            "4d710f8c-6249-5877-9799-edf65d0c3e68"
+          ]
+        }
+      ]
+    },
+    "2ED": {
+      "code": "2ED",
+      "name": "Unlimited Edition",
+      "cards": [
+        {
+          "artist": "Dan Frazier",
+          "artistIds": [
+            "059bba56-5feb-42e4-8c2e-e2f1e6ba11f9"
+          ],
+          "availability": [
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "white",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 28242,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "The Ogre philosopher Gnerdel believed the purpose of life was to live as high on the food chain as possible. She refused to eat vegetarians, and preferred to live entirely on creatures that preyed on sentient beings.",
+          "foreignData": [],
+          "frameVersion": "1993",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "13105",
+            "cardsphereId": "45709",
+            "deckboxId": "8351",
+            "mcmId": "4941",
+            "mtgjsonV4Id": "3f313d90-1eeb-5e55-93f3-dc922dcc345f",
+            "multiverseId": "801",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "e2e956a7-3ed1-4cbb-a6fd-123453360058",
+            "scryfallIllustrationId": "a7399345-c36e-4a91-a4f5-22a2a0eeffaa",
+            "scryfallOracleId": "83c8a3a6-2e1a-4e26-8847-6d066f42d906",
+            "tcgplayerProductId": "9078"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "oathbreaker": "Legal",
+            "oldschool": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{2}{R}",
+          "manaValue": 3.0,
+          "name": "Gray Ogre",
+          "number": "157",
+          "originalType": "Summon - Ogre",
+          "power": "2",
+          "printings": [
+            "2ED",
+            "30A",
+            "3ED",
+            "4BB",
+            "4ED",
+            "CED",
+            "CEI",
+            "FBB",
+            "LEA",
+            "LEB",
+            "SUM"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/0d3dd066ea152ce1",
+            "tcgplayer": "https://mtgjson.com/links/7f6f2036e358c3e7"
+          },
+          "rarity": "common",
+          "setCode": "2ED",
+          "sourceProducts": {
+            "nonfoil": [
+              "3f7ddeba-52f5-5f8f-a013-309403c8a870",
+              "88f78f27-1c8e-5bec-8c78-e2a75ff2d91f"
+            ]
+          },
+          "subtypes": [
+            "Ogre"
+          ],
+          "supertypes": [],
+          "toughness": "2",
+          "type": "Creature \u2014 Ogre",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "4012dbfb-091e-579c-b5c6-9e0140a62161"
+        }
+      ]
+    },
+    "5ED": {
+      "code": "5ED",
+      "name": "Fifth Edition",
+      "cards": [
+        {
+          "artist": "Justin Hampton",
+          "artistIds": [
+            "9af01712-e56b-4865-80d8-c77a69750077"
+          ],
+          "availability": [
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "white",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 5.0,
+          "edhrecRank": 29148,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "\"The spirit of the flame is the spirit of change.\"\n\u2014Lovisa Coldeyes, Balduvian chieftain",
+          "foreignData": [
+            {
+              "identifiers": {
+                "scryfallId": "a0c4c7c0-8736-4476-afca-c495f1a535d3"
+              },
+              "language": "German",
+              "name": "Flammengeist",
+              "text": "{R}: +1/+0 bis zum Ende des Zuges.",
+              "type": "Beschw\u00f6rung eines Geistes"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "2c0957fb-81aa-4fdd-b9dd-e747d5e3b4aa"
+              },
+              "language": "Spanish",
+              "name": "Esp\u00edritu de la llama"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "adbe753c-502f-43d3-9ce5-81e860caf18a"
+              },
+              "language": "French",
+              "name": "Esprit de flamme"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "b39d3068-cb70-4d31-a857-f4e3fd466367"
+              },
+              "language": "Italian",
+              "name": "Spirito della Fiamma"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "c2cbc598-be09-46eb-acc7-f3ec80e507f9"
+              },
+              "language": "Japanese",
+              "name": "\u706b\u708e\u306e\u7cbe"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "5b5b64f1-0a58-4321-9fe2-ef8dd887ae94"
+              },
+              "language": "Portuguese (Brazil)",
+              "name": "Esp\u00edrito das Chamas"
+            }
+          ],
+          "frameVersion": "1997",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "11141",
+            "cardsphereId": "1289",
+            "deckboxId": "6333",
+            "mcmId": "9601",
+            "mcmMetaId": "2077",
+            "mtgjsonV4Id": "56ca2d13-55c3-5baa-9dc4-a6e02dea4987",
+            "multiverseId": "4050",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "b5e60702-1ca3-413a-a44e-22c8fc074b7f",
+            "scryfallIllustrationId": "ec9a0ee1-f0a2-43af-a7fc-b41e71641a57",
+            "scryfallOracleId": "123bfa86-4265-448f-97cd-2c0614212862",
+            "tcgplayerProductId": "2149"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{4}{R}",
+          "manaValue": 5.0,
+          "name": "Flame Spirit",
+          "number": "229",
+          "originalText": "oo\nR +1/+0 until end of turn",
+          "originalType": "Summon - Spirit",
+          "power": "2",
+          "printings": [
+            "5ED",
+            "6ED",
+            "ICE",
+            "ME2"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/1912640ca349d53d",
+            "cardmarket": "https://mtgjson.com/links/71d3c85cff10d39e",
+            "tcgplayer": "https://mtgjson.com/links/18d799fce055169f"
+          },
+          "rarity": "uncommon",
+          "setCode": "5ED",
+          "sourceProducts": {
+            "nonfoil": [
+              "93389a2e-9a5e-5ef4-9afe-60898199b905",
+              "ec6e6678-3869-57ab-ab9a-d210e16fbaa9"
+            ]
+          },
+          "subtypes": [
+            "Elemental",
+            "Spirit"
+          ],
+          "supertypes": [],
+          "text": "{R}: This creature gets +1/+0 until end of turn.",
+          "toughness": "3",
+          "type": "Creature \u2014 Elemental Spirit",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "f524f67e-bf21-59fb-b6b6-d4a009c973d1"
+        }
+      ]
+    },
+    "6ED": {
+      "code": "6ED",
+      "name": "Classic Sixth Edition",
+      "cards": [
+        {
+          "artist": "Richard Kane Ferguson",
+          "artistIds": [
+            "191620ed-2361-444e-96a6-1fe7ce32ef3b"
+          ],
+          "availability": [
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "white",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 12541,
+          "edhrecSaltiness": 0.5,
+          "finishes": [
+            "nonfoil"
+          ],
+          "foreignData": [
+            {
+              "identifiers": {
+                "scryfallId": "184f3d65-9ba1-4387-9560-f4dbff3747e9"
+              },
+              "language": "German",
+              "name": "Pl\u00fcnderung",
+              "text": "Zerst\u00f6re ein Artefakt oder ein Land Deiner Wahl. Dieses kann nicht regeneriert werden.",
+              "type": "Hexerei"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "b11743b5-6624-4f3b-ab8c-61b0c8fe2b3b"
+              },
+              "language": "Spanish",
+              "name": "Saqueo"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "72578379-9b78-4aa1-b365-9942004ac932"
+              },
+              "language": "French",
+              "name": "Pillage"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "6583285d-ae84-4f62-80c9-4e3e6a6991f9"
+              },
+              "language": "Italian",
+              "name": "Saccheggio"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "6491bddf-a96d-4d20-86bf-276a6fe6565d"
+              },
+              "language": "Japanese",
+              "name": "\u7565\u596a"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "f483e030-6a49-4546-89b4-02281a617f97"
+              },
+              "language": "Portuguese (Brazil)",
+              "name": "Pilhagem"
+            }
+          ],
+          "frameVersion": "1997",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "37188",
+            "cardsphereId": "1823",
+            "deckboxId": "6026",
+            "mcmId": "11041",
+            "mtgjsonV4Id": "b1bc633e-a667-5f22-a2c3-54ad168bbce4",
+            "multiverseId": "14755",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "d04eeaba-7db8-49e8-b775-fbe9c89413fd",
+            "scryfallIllustrationId": "c1991111-873c-4bdf-a720-b3fb4f1d28f5",
+            "scryfallOracleId": "0b137853-7cb9-424b-8285-12938991eafb",
+            "tcgplayerProductId": "2683"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{1}{R}{R}",
+          "manaValue": 3.0,
+          "name": "Pillage",
+          "number": "198",
+          "originalText": "Destroy target artifact or land. It can't be regenerated.",
+          "originalType": "Sorcery",
+          "printings": [
+            "6ED",
+            "7ED",
+            "A25",
+            "ALL",
+            "DKM",
+            "ME2",
+            "MH1",
+            "PAL00",
+            "PD2",
+            "PLST",
+            "PRM",
+            "WC97",
+            "WC99"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/6bbd225fd1ef95dd",
+            "tcgplayer": "https://mtgjson.com/links/68e73649c1834903"
+          },
+          "rarity": "uncommon",
+          "setCode": "6ED",
+          "sourceProducts": {
+            "nonfoil": [
+              "45c579b9-6951-59e1-8d30-f44a600f2a56",
+              "55e22afb-ad7d-52cd-ab52-056e3a9705b0"
+            ]
+          },
+          "subtypes": [],
+          "supertypes": [],
+          "text": "Destroy target artifact or land. It can't be regenerated.",
+          "type": "Sorcery",
+          "types": [
+            "Sorcery"
+          ],
+          "uuid": "a17d2332-a3ce-5bf3-bcb9-8a70b4fa4ddf"
+        }
+      ]
+    },
+    "7ED": {
+      "code": "7ED",
+      "name": "Seventh Edition",
+      "cards": [
+        {
+          "artist": "Arnie Swekel",
+          "artistIds": [
+            "af10ecf2-eb82-4100-97b2-6c236b0fa644"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "white",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 2.0,
+          "edhrecRank": 24705,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "He's smart for a goblin. He can do *two* things: hit *and* run.",
+          "foreignData": [
+            {
+              "flavorText": "F\u00fcr einen Goblin ist er gewitzt. Er kann zwei Dinge tun: zuschlagen und wegrennen.",
+              "identifiers": {
+                "multiverseId": "182832",
+                "scryfallId": "bec54b30-b5e0-425e-93d3-769da9fefcad"
+              },
+              "language": "German",
+              "multiverseId": 182832,
+              "name": "Goblin-Pl\u00fcnderer",
+              "text": "Der Goblin-Pl\u00fcnderer kann nicht blocken.",
+              "type": "Kreatur \u2014 Goblin"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "f8d75b0e-936b-48c6-bb67-093cd5b447b2"
+              },
+              "language": "Spanish",
+              "name": "Incursor trasgo"
+            },
+            {
+              "flavorText": "C'est un gobelin intelligent. Il peut faire deux choses : attaquer et fuir.",
+              "identifiers": {
+                "multiverseId": "184248",
+                "scryfallId": "6b4f05ec-3202-4658-8bb1-7d113c12451a"
+              },
+              "language": "French",
+              "multiverseId": 184248,
+              "name": "Pillard gobelin",
+              "text": "Le Pillard gobelin ne peut pas bloquer.",
+              "type": "Cr\u00e9ature : gobelin"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "648d0320-ede6-427c-8207-2de40043b2e5"
+              },
+              "language": "Japanese",
+              "name": "\u30b4\u30d6\u30ea\u30f3\u306e\u7565\u596a\u8005"
+            },
+            {
+              "identifiers": {
+                "scryfallId": "17463ae2-5510-4442-89ff-9b693b6eac98"
+              },
+              "language": "Portuguese (Brazil)",
+              "name": "Goblin Salteador"
+            }
+          ],
+          "frameVersion": "1997",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "49191",
+            "cardsphereId": "2194",
+            "deckboxId": "15515",
+            "mcmId": "2954",
+            "mcmMetaId": "2430",
+            "mtgjsonV4Id": "39f86401-6d4a-54ff-8b0e-1583fe53c403",
+            "mtgoFoilId": "15573",
+            "mtgoId": "15572",
+            "multiverseId": "13122",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "3315d75d-08dc-456c-a8e7-fe3136bf1a6b",
+            "scryfallIllustrationId": "a6c8f0a6-22c3-4925-ae2d-f65a5571e71d",
+            "scryfallOracleId": "7f11c830-fced-40db-8c02-b3c54f3e4372",
+            "tcgplayerProductId": "2931"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{1}{R}",
+          "manaValue": 2.0,
+          "name": "Goblin Raider",
+          "number": "192",
+          "originalText": "Goblin Raider can't block.",
+          "originalType": "Creature - Goblin",
+          "power": "2",
+          "printings": [
+            "7ED",
+            "8ED",
+            "9ED",
+            "P02",
+            "USG"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/a601e3e269179191",
+            "cardmarket": "https://mtgjson.com/links/c769c693f66dab54",
+            "tcgplayer": "https://mtgjson.com/links/12c09e534ae879b7"
+          },
+          "rarity": "common",
+          "setCode": "7ED",
+          "sourceProducts": {
+            "nonfoil": [
+              "278bd604-ec95-54c4-a96f-393701ad9722",
+              "338f1f46-3973-5b8b-aafa-ddc9f478609f",
+              "49b42259-471a-53ca-882b-53fa55afc7af",
+              "51bcc9aa-14b9-5bdf-87a4-e152f29f9475"
+            ]
+          },
+          "subtypes": [
+            "Goblin",
+            "Warrior"
+          ],
+          "supertypes": [],
+          "text": "This creature can't block.",
+          "toughness": "2",
+          "type": "Creature \u2014 Goblin Warrior",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "7fc1b09a-429b-567b-a677-3371063281f9",
+          "variations": [
+            "9cf619d6-b382-5803-8c09-6f80c8cf8666"
+          ]
+        }
+      ]
+    },
+    "9ED": {
+      "code": "9ED",
+      "name": "Ninth Edition",
+      "cards": [
+        {
+          "artist": "Christopher Moeller",
+          "artistIds": [
+            "21e10012-06ae-44f2-b38d-3824dd2e73d4"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "white",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 2.0,
+          "edhrecRank": 15755,
+          "edhrecSaltiness": 0.15,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "\"My tales of war are the stories most asked for around the fires at night, but they're the ones I care least to tell.\"",
+          "foreignData": [
+            {
+              "flavorText": "\u201eAm Lagerfeuer soll ich immer meine alten Kriegsgeschichten erz\u00e4hlen, obwohl ich viel lieber anderes berichten will.\"",
+              "identifiers": {
+                "multiverseId": "98515",
+                "scryfallId": "00a5d093-e45c-4550-a4cf-84a80418093c"
+              },
+              "language": "German",
+              "multiverseId": 98515,
+              "name": "Elfenkrieger",
+              "type": "Kreatur \u2014 Elf, Krieger"
+            },
+            {
+              "flavorText": "\"Mis an\u00e9cdotas de guerra son las que m\u00e1s se piden alrededor de una fogata en la noche, pero son las que menos me interesa contar.\"",
+              "identifiers": {
+                "multiverseId": "99955",
+                "scryfallId": "78bb0201-4c89-4398-8cc7-fca0804945ff"
+              },
+              "language": "Spanish",
+              "multiverseId": 99955,
+              "name": "Guerrero \u00e9lfico",
+              "type": "Criatura \u2014 Guerrero elfo"
+            },
+            {
+              "flavorText": "\u00ab Mes r\u00e9cits de guerre sont les histoires de feu de camp les plus populaires, mais je n'aime gu\u00e8re les raconter. \u00bb",
+              "identifiers": {
+                "multiverseId": "98155",
+                "scryfallId": "73a3c774-a3d1-4a8f-bc5f-d39523c3dd5f"
+              },
+              "language": "French",
+              "multiverseId": 98155,
+              "name": "Guerrier elfe",
+              "type": "Cr\u00e9ature : elfe et guerrier"
+            },
+            {
+              "flavorText": "\"I miei racconti di guerra sono i pi\u00f9 richiesti intorno al fuoco serale, ma sono anche quelli che racconto meno volentieri.\"",
+              "identifiers": {
+                "multiverseId": "98875",
+                "scryfallId": "122db5a9-1758-4f5b-bbec-0535c5fceff9"
+              },
+              "language": "Italian",
+              "multiverseId": 98875,
+              "name": "Guerriero Elfico",
+              "type": "Creatura \u2014 Guerriero Elfo"
+            },
+            {
+              "flavorText": "\u591c\u306b\u711a\u304d\u706b\u3092\u56f2\u3080\u3068\u3001\u7686\u304c\u79c1\u306b\u6226\u3063\u3066\u304d\u305f\u6226\u4e89\u306e\u8a71\u3092\u305b\u304c\u3080\u304c\u3001\u79c1\u306b\u3068\u3063\u3066\u306f\u4e00\u756a\u8a71\u3057\u305f\u304f\u306a\u3044\u3053\u3068\u306a\u3093\u3060\u3002",
+              "identifiers": {
+                "multiverseId": "99235",
+                "scryfallId": "c8d06080-2c1a-428d-84ae-ddd5806be8dd"
+              },
+              "language": "Japanese",
+              "multiverseId": 99235,
+              "name": "\u30a8\u30eb\u30d5\u306e\u6226\u58eb",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30a8\u30eb\u30d5\u30fb\u6226\u58eb"
+            },
+            {
+              "flavorText": "\"Meus contos de guerra s\u00e3o as hist\u00f3rias mais pedidas \u00e0 noite em volta da fogueira, mas s\u00e3o as que menos gosto de contar.\"",
+              "identifiers": {
+                "multiverseId": "99595",
+                "scryfallId": "87ce408e-432b-481b-998e-808dcef6d67d"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 99595,
+              "name": "Guerreiro \u00c9lfico",
+              "type": "Criatura \u2014 Guerreiro Elfo"
+            },
+            {
+              "flavorText": "\"\u0421\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0432\u043e\u0442 \u043e \u0447\u0435\u043c \u0447\u0430\u0449\u0435 \u0432\u0441\u0435\u0433\u043e \u043c\u0435\u043d\u044f \u043f\u0440\u043e\u0441\u044f\u0442 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u0430\u0442\u044c, \u043a\u043e\u0433\u0434\u0430 \u043c\u044b \u043d\u043e\u0447\u044c\u044e \u0441\u0438\u0434\u0438\u043c \u0443 \u043a\u043e\u0441\u0442\u0440\u0430, \u043d\u043e \u043e \u043d\u0438\u0445-\u0442\u043e \u043c\u043d\u0435 \u043c\u0435\u043d\u044c\u0448\u0435 \u0432\u0441\u0435\u0433\u043e \u0445\u043e\u0447\u0435\u0442\u0441\u044f \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c\".",
+              "identifiers": {
+                "multiverseId": "109866",
+                "scryfallId": "062dc5b3-9eab-44d2-96a3-9d64237cbc31"
+              },
+              "language": "Russian",
+              "multiverseId": 109866,
+              "name": "\u042d\u043b\u044c\u0444\u0438\u0439\u0441\u043a\u0438\u0439 \u0432\u043e\u0438\u043d",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u042d\u043b\u044c\u0444 \u0412\u043e\u0438\u043d"
+            },
+            {
+              "flavorText": "\u300c\u6700\u591a\u4eba\u60f3\u542c\u7684\u8425\u706b\u6545\u4e8b\u4fbf\u662f\u6211\u7684\u6218\u573a\u7ecf\u5386\uff0c\u4f46\u90a3\u4e5f\u662f\u6211\u6700\u4e0d\u60f3\u63d0\u7684\u3002\u300d",
+              "identifiers": {
+                "multiverseId": "97795",
+                "scryfallId": "b77e1f84-815d-497f-9dce-2bd40978c60f"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 97795,
+              "name": "\u5730\u7cbe\u52c7\u58eb",
+              "type": "\u751f\u7269\uff5e\u5730\u7cbe\uff0f\u6218\u58eb"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "117752",
+            "cardsphereId": "3512",
+            "deckboxId": "4118",
+            "mcmId": "12340",
+            "mcmMetaId": "1772",
+            "mtgjsonV4Id": "bea41adc-44ba-59a3-af38-e2d69c0ee703",
+            "mtgoFoilId": "22736",
+            "mtgoId": "22735",
+            "multiverseId": "83451",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "c18e79e9-39fc-426b-b64f-f20f6077a532",
+            "scryfallIllustrationId": "cc96626b-f91e-45a1-817f-48632f51cc18",
+            "scryfallOracleId": "da587161-da7e-48ae-8af6-7f02ee71afd8",
+            "tcgplayerProductId": "12636"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{G}{G}",
+          "manaValue": 2.0,
+          "name": "Elvish Warrior",
+          "number": "240",
+          "originalType": "Creature - Elf Warrior",
+          "power": "2",
+          "printings": [
+            "9ED",
+            "DD1",
+            "DPA",
+            "EVG",
+            "MOR",
+            "ONS",
+            "PLST",
+            "PS11",
+            "PSAL"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/3f47ab3588d7c171",
+            "cardmarket": "https://mtgjson.com/links/f560d6feac6a24c5",
+            "tcgplayer": "https://mtgjson.com/links/caf6aefae5abbe35"
+          },
+          "rarity": "common",
+          "setCode": "9ED",
+          "sourceProducts": {
+            "nonfoil": [
+              "3f67a892-d10f-5057-a715-ca0067aa0cc5",
+              "ab8d4986-a9b9-5102-a7c1-2b5e6e21a637",
+              "ddd25f25-6f92-549a-bc78-a2096c076b2a"
+            ]
+          },
+          "subtypes": [
+            "Elf",
+            "Warrior"
+          ],
+          "supertypes": [],
+          "toughness": "3",
+          "type": "Creature \u2014 Elf Warrior",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "f82559db-bc3b-5bf8-ac14-788da23af3a7",
+          "variations": [
+            "85e29f85-3549-5146-9f0c-39805ead2e23"
+          ]
+        }
+      ]
+    },
+    "BBD": {
+      "code": "BBD",
+      "name": "Battlebond",
+      "cards": [
+        {
+          "artist": "David Rapoza",
+          "artistIds": [
+            "c5a2318d-5d04-499f-b121-57dee5a9dfe6"
+          ],
+          "availability": [
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 27700,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "The only livestock that will survive for long in the Smelting District, ember beasts serve many functions\u2014none of them willingly.",
+          "foreignData": [
+            {
+              "flavorText": "\u7cbe\u932c\u5730\u533a\u3067\u751f\u304d\u6c38\u3089\u3048\u308b\u552f\u4e00\u306e\u5bb6\u755c\u3067\u3042\u308b\u304f\u3059\u3076\u308a\u7363\u306f\u3001\u6570\u591a\u304f\u306e\u5f79\u5272\u3092\u3053\u306a\u3057\u3066\u3044\u308b\u3002\u3069\u306e\u500b\u4f53\u3082\u4e57\u308a\u6c17\u3067\u306f\u306a\u3044\u304c\u3002",
+              "identifiers": {
+                "multiverseId": "446399",
+                "scryfallId": "0bdeb21b-f64c-42a1-9f9c-2fd664619468"
+              },
+              "language": "Japanese",
+              "multiverseId": 446399,
+              "name": "\u304f\u3059\u3076\u308a\u7363",
+              "text": "\u304f\u3059\u3076\u308a\u7363\u306f\u5358\u72ec\u3067\u306f\u653b\u6483\u3082\u30d6\u30ed\u30c3\u30af\u3082\u3067\u304d\u306a\u3044\u3002",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30d3\u30fc\u30b9\u30c8"
+            },
+            {
+              "flavorText": "\u7070\u70ec\u517d\u662f\u552f\u4e00\u80fd\u5728\u77ff\u77f3\u63d0\u70bc\u533a\u957f\u671f\u5b58\u6d3b\u7684\u7272\u53e3\uff0c\u7528\u9014\u5f88\u591a\uff0c\u4f46\u90fd\u975e\u5176\u6240\u613f\u3002",
+              "identifiers": {
+                "multiverseId": "446655",
+                "scryfallId": "11771b70-1ade-440e-af00-0155fe763e23"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 446655,
+              "name": "\u7070\u70ec\u517d",
+              "text": "\u7070\u70ec\u517d\u4e0d\u80fd\u5355\u72ec\u8fdb\u884c\u653b\u51fb\u6216\u963b\u6321\u3002",
+              "type": "\u751f\u7269 \uff5e\u91ce\u517d"
+            }
+          ],
+          "frameVersion": "2015",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "219524",
+            "cardKingdomId": "219252",
+            "cardsphereFoilId": "54977",
+            "cardsphereId": "54976",
+            "deckboxId": "39018",
+            "mcmId": "359002",
+            "mcmMetaId": "1775",
+            "mtgjsonV4Id": "689101b4-1df4-5a80-a7e7-eff0014f23b5",
+            "multiverseId": "446143",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "b5d53c2b-32fe-4b92-bff1-e7416c0acd7c",
+            "scryfallIllustrationId": "cec12d82-0807-49c7-8512-e7e51258ea64",
+            "scryfallOracleId": "58edb282-a124-47bc-b123-1c34b6804f48",
+            "tcgplayerProductId": "167910"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "premodern": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{2}{R}",
+          "manaValue": 3.0,
+          "name": "Ember Beast",
+          "number": "175",
+          "originalText": "Ember Beast can't attack or block alone.",
+          "originalType": "Creature \u2014 Beast",
+          "power": "3",
+          "printings": [
+            "BBD",
+            "CN2",
+            "DMR",
+            "GTC",
+            "ODY"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/1493d747d84619f5",
+            "cardKingdomFoil": "https://mtgjson.com/links/015c2ae9c8e32deb",
+            "cardmarket": "https://mtgjson.com/links/b0d168d158999762",
+            "tcgplayer": "https://mtgjson.com/links/24ad641e6770094c"
+          },
+          "rarity": "common",
+          "rulings": [
+            {
+              "date": "2022-12-08",
+              "text": "Ember Beast can\u2019t attack or block unless another creature is also assigned to attack or block at the same time. Notably, two Ember Beasts can attack or block together."
+            },
+            {
+              "date": "2022-12-08",
+              "text": "Once Ember Beast has been declared as an attacker or blocker, it doesn\u2019t matter what happens to the other creature(s)."
+            },
+            {
+              "date": "2022-12-08",
+              "text": "Other creatures assigned to attack alongside Ember Beast don\u2019t have to attack the same player or planeswalker. Other creatures assigned to block alongside Ember Beast don\u2019t have to block the same creature as Ember Beast."
+            }
+          ],
+          "setCode": "BBD",
+          "sourceProducts": {
+            "foil": [
+              "7483f37d-039c-5f4a-ae7c-b2a191d6f5fd"
+            ],
+            "nonfoil": [
+              "7483f37d-039c-5f4a-ae7c-b2a191d6f5fd"
+            ]
+          },
+          "subtypes": [
+            "Beast"
+          ],
+          "supertypes": [],
+          "text": "This creature can't attack or block alone.",
+          "toughness": "4",
+          "type": "Creature \u2014 Beast",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "49b5d0b4-a96b-5397-ac92-c4ddfb8615af"
+        }
+      ]
+    },
+    "BFZ": {
+      "code": "BFZ",
+      "name": "Battle for Zendikar",
+      "cards": [
+        {
+          "artist": "Matt Stewart",
+          "artistIds": [
+            "20871267-2d8a-41d5-b03a-be3d557c5734"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 5.0,
+          "edhrecRank": 20878,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "It knows nothing of Eldrazi or Planeswalkers, just that there are new intruders in its territory.",
+          "foreignData": [
+            {
+              "flavorText": "Er wei\u00df nichts von Eldrazi oder Planeswalkern. Er wei\u00df nur, dass es neue Eindringlinge in seinem Revier gibt.",
+              "identifiers": {
+                "multiverseId": "402967",
+                "scryfallId": "e907ff5d-4850-49ed-ae44-3f3baccbf962"
+              },
+              "language": "German",
+              "multiverseId": 402967,
+              "name": "Gebietstreuer Baloth",
+              "text": "Landung \u2014 Immer wenn ein Land unter deiner Kontrolle ins Spiel kommt, erh\u00e4lt der Gebietstreue Baloth +2/+2 bis zum Ende des Zuges.",
+              "type": "Kreatur \u2014 Bestie"
+            },
+            {
+              "flavorText": "No sabe nada de los Eldrazi ni de los planeswalkers. Solo entiende que hay intrusos nuevos en su territorio.",
+              "identifiers": {
+                "multiverseId": "405060",
+                "scryfallId": "6c526641-919c-4a7f-b424-cf69d5701c3d"
+              },
+              "language": "Spanish",
+              "multiverseId": 405060,
+              "name": "B\u00e1loth territorial",
+              "text": "Aterrizaje \u2014 Siempre que una tierra entre al campo de batalla bajo tu control, el B\u00e1loth territorial obtiene +2/+2 hasta el final del turno.",
+              "type": "Criatura \u2014 Bestia"
+            },
+            {
+              "flavorText": "Il ne conna\u00eet ni les Eldrazi, ni les Planeswalkers. Il sait simplement que des intrus se trouvent sur son territoire.",
+              "identifiers": {
+                "multiverseId": "403266",
+                "scryfallId": "5e9db8de-de6f-4a3d-a4a9-c53157286f5a"
+              },
+              "language": "French",
+              "multiverseId": 403266,
+              "name": "Baloth territorial",
+              "text": "Toucheterre \u2014 \u00c0 chaque fois qu'un terrain arrive sur le champ de bataille sous votre contr\u00f4le, le Baloth territorial gagne +2/+2 jusqu'\u00e0 la fin du tour.",
+              "type": "Cr\u00e9ature : b\u00eate"
+            },
+            {
+              "flavorText": "Non sa nulla di Eldrazi o Planeswalker, sa solo che ci sono nuovi intrusi nel suo territorio.",
+              "identifiers": {
+                "multiverseId": "403565",
+                "scryfallId": "411575cd-36f4-4021-bf6a-0739f70a3a55"
+              },
+              "language": "Italian",
+              "multiverseId": 403565,
+              "name": "Baloth Territoriale",
+              "text": "Terraferma \u2014 Ogniqualvolta una terra entra nel campo di battaglia sotto il tuo controllo, il Baloth Territoriale prende +2/+2 fino alla fine del turno.",
+              "type": "Creatura \u2014 Bestia"
+            },
+            {
+              "flavorText": "\u30a8\u30eb\u30c9\u30e9\u30fc\u30b8\u3068\u304b\u30d7\u30ec\u30a4\u30f3\u30ba\u30a6\u30a9\u30fc\u30ab\u30fc\u3068\u304b\u308f\u304b\u308b\u306f\u305a\u3082\u306a\u304b\u3063\u305f\u304c\u3001\u7e04\u5f35\u308a\u306b\u65b0\u3057\u3044\u4fb5\u5165\u8005\u304c\u73fe\u308c\u305f\u3053\u3068\u306b\u306f\u6c17\u3065\u3044\u3066\u3044\u305f\u3002",
+              "identifiers": {
+                "multiverseId": "403864",
+                "scryfallId": "af7dd938-dc66-44ca-94c5-c336059df844"
+              },
+              "language": "Japanese",
+              "multiverseId": 403864,
+              "name": "\u9818\u5730\u306e\u30d9\u30a4\u30ed\u30b9",
+              "text": "\u4e0a\u9678 \u2015 \u571f\u5730\u304c\uff11\u3064\u3042\u306a\u305f\u306e\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u4e0b\u3067\u6226\u5834\u306b\u51fa\u308b\u305f\u3073\u3001\u30bf\u30fc\u30f3\u7d42\u4e86\u6642\u307e\u3067\u3001\u9818\u5730\u306e\u30d9\u30a4\u30ed\u30b9\u306f\uff0b\uff12/\uff0b\uff12\u306e\u4fee\u6574\u3092\u53d7\u3051\u308b\u3002",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30d3\u30fc\u30b9\u30c8"
+            },
+            {
+              "flavorText": "\uadf8\uac83\uc740 \uc5d8\ub4dc\ub77c\uc9c0\ub098 \ud50c\ub808\uc778\uc988\uc6cc\ucee4\uc5d0 \ub300\ud574\uc11c\ub294 \uc544\ub294 \uac8c \uc5c6\uc9c0\ub9cc, \uc601\uc5ed\uc5d0 \uc0c8\ub85c\uc6b4 \uce68\uc785\uc790\uac00 \uc788\ub2e4\ub294 \uac74 \ud655\uc2e4\ud788 \uc548\ub2e4.",
+              "identifiers": {
+                "multiverseId": "404163",
+                "scryfallId": "fc57b910-81cc-4e7b-a70b-1b9eb0ba194b"
+              },
+              "language": "Korean",
+              "multiverseId": 404163,
+              "name": "\uc601\uc5ed\uc744 \uc9c0\ud0a4\ub294 \ubc1c\ub85c\uc2a4",
+              "text": "\ub300\uc9c0\ub825 \u2014 \ub300\uc9c0\uac00 \ub2f9\uc2e0\uc758 \uc870\uc885\ud558\uc5d0 \uc804\uc7a5\uc5d0 \ub4e4\uc5b4\uc62c \ub54c\ub9c8\ub2e4, \uc601\uc5ed\uc744 \uc9c0\ud0a4\ub294 \ubc1c\ub85c\uc2a4\ub294 \ud134\uc885\ub8cc\uae4c\uc9c0 +2/+2\ub97c \ubc1b\ub294\ub2e4.",
+              "type": "\uc0dd\ubb3c \u2014 \uc57c\uc218"
+            },
+            {
+              "flavorText": "Ele n\u00e3o sabe nada sobre Planeswalkers nem Eldrazi. S\u00f3 sabe que h\u00e1 novos intrusos em seu territ\u00f3rio.",
+              "identifiers": {
+                "multiverseId": "404462",
+                "scryfallId": "2f33c2aa-f11e-4f7b-87c6-44d47504170e"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 404462,
+              "name": "Baloth Territorial",
+              "text": "Aterragem \u2014 Toda vez que um terreno entra no campo de batalha sob seu controle, Baloth Territorial recebe +2/+2 at\u00e9 o final do turno.",
+              "type": "Criatura \u2014 Besta"
+            },
+            {
+              "flavorText": "\u041e\u043d \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0437\u043d\u0430\u0435\u0442 \u043d\u0438 \u043e\u0431 \u042d\u043b\u044c\u0434\u0440\u0430\u0437\u0438, \u043d\u0438 \u043e Planeswalker-\u0430\u0445. \u0418 \u0442\u0435 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u2014 \u043b\u0438\u0448\u044c \u043d\u043e\u0432\u044b\u0435 \u043d\u0435\u0437\u0432\u0430\u043d\u044b\u0435 \u0433\u043e\u0441\u0442\u0438 \u0432 \u0435\u0433\u043e \u0443\u0433\u043e\u0434\u044c\u044f\u0445.",
+              "identifiers": {
+                "multiverseId": "404761",
+                "scryfallId": "62b6f9ec-46e3-4810-9d0f-42f6056585c5"
+              },
+              "language": "Russian",
+              "multiverseId": 404761,
+              "name": "\u0422\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0411\u0430\u043b\u043e\u0442",
+              "text": "\u0417\u0435\u043c\u043b\u0435\u043f\u0430\u0434 \u2014 \u041a\u0430\u0436\u0434\u044b\u0439 \u0440\u0430\u0437, \u043a\u043e\u0433\u0434\u0430 \u0437\u0435\u043c\u043b\u044f \u0432\u044b\u0445\u043e\u0434\u0438\u0442 \u043d\u0430 \u043f\u043e\u043b\u0435 \u0431\u0438\u0442\u0432\u044b \u043f\u043e\u0434 \u0432\u0430\u0448\u0438\u043c \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0435\u043c, \u0422\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0411\u0430\u043b\u043e\u0442 \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u0442 +2/+2 \u0434\u043e \u043a\u043e\u043d\u0446\u0430 \u0445\u043e\u0434\u0430.",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u0417\u0432\u0435\u0440\u044c"
+            },
+            {
+              "flavorText": "\u5b83\u624d\u4e0d\u7ba1\u662f\u5965\u672d\u5947\u6216\u662f\u9e4f\u6d1b\u5ba2\uff0c\u53ea\u77e5\u9053\u9886\u5730\u5185\u6709\u5165\u4fb5\u8005\u3002",
+              "identifiers": {
+                "multiverseId": "402369",
+                "scryfallId": "3073f638-3656-43ea-b56a-a8f7353a8920"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 402369,
+              "name": "\u636e\u5730\u5df4\u6d1b\u897f",
+              "text": "\u5730\u843d\uff5e\u6bcf\u5f53\u4e00\u4e2a\u5730\u5728\u4f60\u7684\u64cd\u63a7\u4e0b\u8fdb\u6218\u573a\u65f6\uff0c\u636e\u5730\u5df4\u6d1b\u897f\u5f97+2/+2\u76f4\u5230\u56de\u5408\u7ed3\u675f\u3002",
+              "type": "\u751f\u7269\uff5e\u91ce\u517d"
+            },
+            {
+              "flavorText": "\u7260\u624d\u4e0d\u7ba1\u662f\u5967\u672d\u5947\u6216\u662f\u9d6c\u6d1b\u5ba2\uff0c\u53ea\u77e5\u9053\u9818\u5730\u5167\u6709\u5165\u4fb5\u8005\u3002",
+              "identifiers": {
+                "multiverseId": "402668",
+                "scryfallId": "76ab6d96-84fb-43e9-ba97-3121a33dc6ec"
+              },
+              "language": "Chinese Traditional",
+              "multiverseId": 402668,
+              "name": "\u64da\u5730\u5df4\u6d1b\u897f",
+              "text": "\u5730\u843d\uff5e\u6bcf\u7576\u4e00\u500b\u5730\u5728\u4f60\u7684\u64cd\u63a7\u4e0b\u9032\u6230\u5834\u6642\uff0c\u64da\u5730\u5df4\u6d1b\u897f\u5f97+2/+2\u76f4\u5230\u56de\u5408\u7d50\u675f\u3002",
+              "type": "\u751f\u7269\uff5e\u91ce\u7378"
+            }
+          ],
+          "frameVersion": "2015",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "203001",
+            "cardKingdomId": "202678",
+            "cardsphereFoilId": "6883",
+            "cardsphereId": "6884",
+            "deckboxId": "29914",
+            "mcmId": "284913",
+            "mcmMetaId": "10937",
+            "mtgjsonV4Id": "10844dcc-c5af-5b02-8ffd-cae3af46ea91",
+            "mtgoFoilId": "58474",
+            "mtgoId": "58473",
+            "multiverseId": "402070",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "0c3d4afc-5bb7-4159-9a11-f9c989dd9043",
+            "scryfallIllustrationId": "f02c5b1e-e683-4375-8351-d01c03935e44",
+            "scryfallOracleId": "f772e767-a931-4891-94eb-d92a8ca7f8c1",
+            "tcgplayerProductId": "105696"
+          },
+          "isReprint": true,
+          "keywords": [
+            "Landfall"
+          ],
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{4}{G}",
+          "manaValue": 5.0,
+          "name": "Territorial Baloth",
+          "number": "196",
+          "originalText": "Landfall \u2014 Whenever a land enters the battlefield under your control, Territorial Baloth gets +2/+2 until end of turn.",
+          "originalType": "Creature \u2014 Beast",
+          "power": "4",
+          "printings": [
+            "BFZ",
+            "DDP",
+            "PLST",
+            "ZEN"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/d72acf53dc9359a3",
+            "cardKingdomFoil": "https://mtgjson.com/links/ec2abbb12e9fa5a9",
+            "cardmarket": "https://mtgjson.com/links/0061dcaec3092c80",
+            "tcgplayer": "https://mtgjson.com/links/eaccb992c294b128"
+          },
+          "rarity": "common",
+          "rulings": [
+            {
+              "date": "2024-11-08",
+              "text": "A landfall ability doesn't trigger if a permanent already on the battlefield becomes a land."
+            },
+            {
+              "date": "2024-11-08",
+              "text": "A landfall ability doesn't trigger if a permanent already on the battlefield becomes a land."
+            },
+            {
+              "date": "2024-11-08",
+              "text": "A landfall ability triggers whenever a land you control enters for any reason. It triggers whenever you play a land, as well as whenever a spell or ability puts a land onto the battlefield under your control."
+            },
+            {
+              "date": "2024-11-08",
+              "text": "A landfall ability triggers whenever a land you control enters for any reason. It triggers whenever you play a land, as well as whenever a spell or ability puts a land onto the battlefield under your control."
+            },
+            {
+              "date": "2024-11-08",
+              "text": "Whenever a land you control enters, each landfall ability of the permanents you control will trigger. You can put them \u00a0\u00a0on the stack in any order. The last ability you put on the stack will be the first one to resolve (As a result, you can have those abilities resolve in the order of your choosing.)."
+            },
+            {
+              "date": "2024-11-08",
+              "text": "Whenever a land you control enters, each landfall ability of the permanents you control will trigger. You can put them \u00a0\u00a0on the stack in any order. The last ability you put on the stack will be the first one to resolve (As a result, you can have those abilities resolve in the order of your choosing.)."
+            }
+          ],
+          "setCode": "BFZ",
+          "sourceProducts": {
+            "foil": [
+              "37e28375-f5ba-51e8-8e11-b6830a33b669",
+              "508def12-08d0-5800-bc48-3615e04bed1e"
+            ],
+            "nonfoil": [
+              "37e28375-f5ba-51e8-8e11-b6830a33b669",
+              "92de7cd9-e3d7-5399-a511-a930d38a1c53",
+              "df4abe32-43a3-5e35-8809-3b9be9a54825"
+            ]
+          },
+          "subtypes": [
+            "Beast"
+          ],
+          "supertypes": [],
+          "text": "Landfall \u2014 Whenever a land you control enters, this creature gets +2/+2 until end of turn.",
+          "toughness": "4",
+          "type": "Creature \u2014 Beast",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "9aec098c-3cbd-5812-b191-7476a953220d"
+        }
+      ]
+    },
+    "DDI": {
+      "code": "DDI",
+      "name": "Duel Decks: Venser vs. Koth",
+      "cards": [
+        {
+          "artist": "Pete Venters",
+          "artistIds": [
+            "d54c4a1a-c0c5-4834-84db-125d341f3ad8"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 4.0,
+          "duelDeck": "b",
+          "edhrecRank": 28802,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "He experiences every emotion with passion and repays every slight with vengeance.",
+          "foreignData": [
+            {
+              "flavorText": "\u611f\u60c5\u306b\u306f\u60c5\u71b1\u304c\u5bbf\u308a\u3001\u4fae\u8fb1\u306b\u306f\u5fa9\u8b90\u304c\u4f34\u3046\u3002",
+              "identifiers": {
+                "multiverseId": "300760",
+                "scryfallId": "1385da88-7000-4b17-b5db-9ff507adab2d"
+              },
+              "language": "Japanese",
+              "multiverseId": 300760,
+              "name": "\u30f4\u30a1\u30eb\u30b7\u30e7\u30af\u306e\u72c2\u6226\u58eb",
+              "text": "\u901f\u653b",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u4eba\u9593\u30fb\u72c2\u6226\u58eb"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "186736",
+            "cardsphereId": "15652",
+            "deckboxId": "19531",
+            "mcmId": "253595",
+            "mcmMetaId": "6443",
+            "mtgjsonV4Id": "cd16a5bb-7354-5dd2-b30d-d1b1de592b09",
+            "mtgoFoilId": "43759",
+            "mtgoId": "43758",
+            "multiverseId": "270846",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "1dd6e25f-e58e-4ff8-83f3-b01d5f783632",
+            "scryfallIllustrationId": "5bb3421d-6af2-42e3-817b-35a24c63d91b",
+            "scryfallOracleId": "694f7e51-7b8b-4f00-bd77-a52eded4aaa1",
+            "tcgplayerProductId": "58124"
+          },
+          "isReprint": true,
+          "isStarter": true,
+          "keywords": [
+            "Haste"
+          ],
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{3}{R}",
+          "manaValue": 4.0,
+          "name": "Vulshok Berserker",
+          "number": "53",
+          "originalText": "Haste",
+          "originalType": "Creature \u2014 Human Berserker",
+          "power": "3",
+          "printings": [
+            "DDI",
+            "M11",
+            "MRD"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/c812ee34d83126d5",
+            "cardmarket": "https://mtgjson.com/links/c7b975b007deb2b8",
+            "tcgplayer": "https://mtgjson.com/links/f7561338d4fc8eac"
+          },
+          "rarity": "common",
+          "setCode": "DDI",
+          "sourceProducts": {
+            "nonfoil": [
+              "3e9f6a81-4e2f-5da4-8913-ce471678baa4"
+            ]
+          },
+          "subtypes": [
+            "Human",
+            "Berserker"
+          ],
+          "supertypes": [],
+          "text": "Haste (This creature can attack and {T} as soon as it comes under your control.)",
+          "toughness": "2",
+          "type": "Creature \u2014 Human Berserker",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "451f4727-9a03-53f6-a53c-a7c8c98962e9"
+        }
+      ]
+    },
+    "DDK": {
+      "code": "DDK",
+      "name": "Duel Decks: Sorin vs. Tibalt",
+      "cards": [
+        {
+          "artist": "Mark Zug",
+          "artistIds": [
+            "48e2b98c-5467-4671-bd42-4c3746115117"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "R"
+          ],
+          "colors": [
+            "R"
+          ],
+          "convertedManaCost": 4.0,
+          "duelDeck": "b",
+          "edhrecRank": 17034,
+          "edhrecSaltiness": 0.12,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "\"The day is mine! I sent three such creatures against my foe, then watched as my magefire popped her soldiers like overripe spleenfruits.\"\n\u2014Dobruk the Unstable, pyromancer",
+          "foreignData": [
+            {
+              "flavorText": "\u300c\u3082\u3089\u3063\u305f\u305c\uff01 \u3053\u3044\u3064\u3089\u3092\u4e09\u5339\u6575\u306b\u9001\u308a\u8fbc\u3093\u3067\u304b\u3089\u9b54\u6cd5\u706b\u3092\u53e9\u304d\u8fbc\u3093\u3060\u3093\u3060\u304c\u3001\u5175\u58eb\u304c\u306f\u3058\u3051\u308b\u69d8\u306f\u719f\u308c\u904e\u304e\u305f\u813e\u81d3\u679c\u307f\u305f\u3044\u3060\u3063\u305f\u305c\uff01\u300d\u2015\u2015\u7d05\u84ee\u8853\u58eb\u3001\u4e0d\u5b89\u5b9a\u306a\u30c9\u30d6\u30eb\u30af",
+              "identifiers": {
+                "multiverseId": "368572",
+                "scryfallId": "7e566f14-c54e-4c57-89d8-9b06a4b0525d"
+              },
+              "language": "Japanese",
+              "multiverseId": 368572,
+              "name": "\u77f3\u70ad\u711a\u304d",
+              "text": "\u77f3\u70ad\u711a\u304d\u304c\u6226\u5834\u306b\u51fa\u305f\u3068\u304d\u3001\u305d\u308c\u304c\u3042\u306a\u305f\u306e\u624b\u672d\u304b\u3089\u5531\u3048\u305f\u3082\u306e\u3067\u3042\u308b\u5834\u5408\u3001\u3042\u306a\u305f\u306e\u30de\u30ca\u30fb\u30d7\u30fc\u30eb\u306b{R}{R}{R}\u3092\u52a0\u3048\u308b\u3002",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30a8\u30ec\u30e1\u30f3\u30bf\u30eb"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "189454",
+            "cardsphereId": "15429",
+            "deckboxId": "20921",
+            "mcmId": "260846",
+            "mcmMetaId": "8343",
+            "mtgjsonV4Id": "36a862e3-f63b-5169-b110-a8f152c012c0",
+            "mtgoFoilId": "48182",
+            "mtgoId": "48181",
+            "multiverseId": "368533",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "eea8624b-10fb-40ed-b771-90cc73abe676",
+            "scryfallIllustrationId": "6a44a3b9-f6de-488e-8a73-91ffdb53a6ea",
+            "scryfallOracleId": "7f3f7fb0-da18-467b-bf57-2ded458fda4d",
+            "tcgplayerProductId": "67845"
+          },
+          "isReprint": true,
+          "isStarter": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "predh": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{3}{R}",
+          "manaValue": 4.0,
+          "name": "Coal Stoker",
+          "number": "49",
+          "originalText": "When Coal Stoker enters the battlefield, if you cast it from your hand, add {R}{R}{R} to your mana pool.",
+          "originalType": "Creature \u2014 Elemental",
+          "power": "3",
+          "printings": [
+            "DDK",
+            "DMR",
+            "TSP",
+            "TSR"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/a638eac6a03f2393",
+            "cardmarket": "https://mtgjson.com/links/94a623719fc4a588",
+            "tcgplayer": "https://mtgjson.com/links/5eb43b03cbf2200f"
+          },
+          "rarity": "common",
+          "rulings": [
+            {
+              "date": "2022-12-08",
+              "text": "Coal Stoker's ability isn't a mana ability. It uses the stack and can be responded to."
+            },
+            {
+              "date": "2022-12-08",
+              "text": "If a nontoken creature enters the battlefield as a copy of this creature, the copy's enters-the-battlefield ability will still trigger as long as you cast the spell that became that nontoken creature from your hand."
+            },
+            {
+              "date": "2022-12-08",
+              "text": "If a token is created that's a copy of Coal Stoker, the token wasn't cast, and Coal Stoker's ability won't trigger. Similarly, if an effect copies Coal Stoker while it's on the stack, the copy becomes a token, but the copy was created on the stack and not cast from your hand, so the ability won't trigger in that case either."
+            }
+          ],
+          "setCode": "DDK",
+          "sourceProducts": {
+            "nonfoil": [
+              "5d871def-7934-5389-93b4-a22c584e01cc"
+            ]
+          },
+          "subtypes": [
+            "Elemental"
+          ],
+          "supertypes": [],
+          "text": "When this creature enters, if you cast it from your hand, add {R}{R}{R}.",
+          "toughness": "3",
+          "type": "Creature \u2014 Elemental",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "35d0286d-9cd1-5d60-8540-c233ae9032f6"
+        }
+      ]
+    },
+    "DPA": {
+      "code": "DPA",
+      "name": "Duels of the Planeswalkers",
+      "cards": [
+        {
+          "artist": "Jesper Ejsing",
+          "artistIds": [
+            "a5f8354a-8b51-4e59-96b2-0e3aeae4fa1d"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 2.0,
+          "edhrecRank": 8784,
+          "edhrecSaltiness": 0.31,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "Bears aren't always as strong and as mean as you imagine. Some are even stronger and meaner.",
+          "foreignData": [],
+          "frameVersion": "2003",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "131234",
+            "cardsphereId": "15827",
+            "deckboxId": "23563",
+            "mcmId": "240501",
+            "mtgjsonV4Id": "9d42a0dd-d4ce-5f3a-9347-84ab2d0c6d94",
+            "mtgoId": "41726",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "479daf7e-892d-42b7-bb5c-115ed530645e",
+            "scryfallIllustrationId": "0bb0db79-2039-4f8b-a8ac-d7c952f07ba5",
+            "scryfallOracleId": "ec49dfcf-d16d-4621-af4b-4a6f09043221",
+            "tcgplayerProductId": "79376"
+          },
+          "isReprint": true,
+          "isStarter": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{1}{G}",
+          "manaValue": 2.0,
+          "name": "Runeclaw Bear",
+          "number": "82",
+          "power": "2",
+          "printings": [
+            "DPA",
+            "J21",
+            "M10",
+            "M11",
+            "M12",
+            "M15",
+            "PLST",
+            "PS11"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/80788008defaed01",
+            "tcgplayer": "https://mtgjson.com/links/d11f4fa67f42d16d"
+          },
+          "rarity": "common",
+          "setCode": "DPA",
+          "sourceProducts": {
+            "nonfoil": [
+              "3dc9a690-8698-50c2-b4ae-01183ad994ee"
+            ]
+          },
+          "subtypes": [
+            "Bear"
+          ],
+          "supertypes": [],
+          "toughness": "2",
+          "type": "Creature \u2014 Bear",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "81c6a432-01fd-57cb-a9c2-0faa5dbf459a"
+        }
+      ]
+    },
+    "FUT": {
+      "code": "FUT",
+      "name": "Future Sight",
+      "cards": [
+        {
+          "artist": "Vance Kovacs",
+          "artistIds": [
+            "b5516011-4722-4fc8-8542-102cecc52b71"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 20973,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "foreignData": [
+            {
+              "identifiers": {
+                "multiverseId": "144977",
+                "scryfallId": "dae4609f-be7c-4592-abea-386546662cba"
+              },
+              "language": "German",
+              "multiverseId": 144977,
+              "name": "Nessischer Renner",
+              "type": "Kreatur \u2014 Zentaur, Krieger"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145301",
+                "scryfallId": "625d6239-de56-4777-96c1-7aaef91708a7"
+              },
+              "language": "Spanish",
+              "multiverseId": 145301,
+              "name": "Cazador nessiano",
+              "type": "Criatura \u2014 Guerrero centauro"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145382",
+                "scryfallId": "d8cbe60b-82bd-4bbd-b0cd-702bfe404bd3"
+              },
+              "language": "French",
+              "multiverseId": 145382,
+              "name": "Coursier nessian",
+              "type": "Cr\u00e9ature : centaure et guerrier"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "144896",
+                "scryfallId": "76b880e0-1766-41f9-8b23-8afd7f3d54f4"
+              },
+              "language": "Italian",
+              "multiverseId": 144896,
+              "name": "Corsiere Nessian",
+              "type": "Creatura \u2014 Guerriero Centauro"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145463",
+                "scryfallId": "d947fdac-c3d5-4cd3-852e-c1b20a30939d"
+              },
+              "language": "Japanese",
+              "multiverseId": 145463,
+              "name": "\u30cd\u30b7\u30a2\u30f3\u306e\u72e9\u731f\u8005",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30b1\u30f3\u30bf\u30a6\u30eb\u30b9\u30fb\u6226\u58eb"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145139",
+                "scryfallId": "ba90a231-8576-440e-8b7d-3d635a856657"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 145139,
+              "name": "Centauro-Ca\u00e7ador Nessiano",
+              "type": "Criatura \u2014 Guerreiro Centauro"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145058",
+                "scryfallId": "6c70b41e-d8bc-4796-830e-40f5fccf386d"
+              },
+              "language": "Russian",
+              "multiverseId": 145058,
+              "name": "\u041d\u0435\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0420\u044b\u0441\u0430\u043a",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u041a\u0435\u043d\u0442\u0430\u0432\u0440 \u0412\u043e\u0438\u043d"
+            },
+            {
+              "identifiers": {
+                "multiverseId": "145220",
+                "scryfallId": "b06f644e-8bc0-41f8-b3fe-e0f5e72d8564"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 145220,
+              "name": "\u5948\u897f\u5b89\u9a8f\u9a6c",
+              "type": "\u751f\u7269\uff5e\u534a\u4eba\u9a6c\uff0f\u6218\u58eb"
+            }
+          ],
+          "frameVersion": "future",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "122665",
+            "cardKingdomId": "122485",
+            "cardsphereFoilId": "18752",
+            "cardsphereId": "18753",
+            "deckboxId": "3190",
+            "mcmId": "15140",
+            "mcmMetaId": "9069",
+            "mtgjsonV4Id": "9c3859c9-207b-56de-9721-dbb3ca598e8d",
+            "mtgoFoilId": "26839",
+            "mtgoId": "26838",
+            "multiverseId": "136138",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "88b18b70-f656-4426-a3e5-69cf61fdaad1",
+            "scryfallIllustrationId": "8dd8225d-7939-426d-acad-32adacf165d1",
+            "scryfallOracleId": "e876d1fc-3acd-41a3-a34b-2bfa83204393",
+            "tcgplayerProductId": "14947"
+          },
+          "isFullArt": true,
+          "isTimeshifted": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{2}{G}",
+          "manaValue": 3.0,
+          "name": "Nessian Courser",
+          "number": "148",
+          "originalType": "Creature - Centaur Warrior",
+          "power": "3",
+          "printings": [
+            "FUT",
+            "THS"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/6f316b2070ea16be",
+            "cardKingdomFoil": "https://mtgjson.com/links/b2565679145ef761",
+            "cardmarket": "https://mtgjson.com/links/02b43f48e9e6700a",
+            "tcgplayer": "https://mtgjson.com/links/90f63aada88425b5"
+          },
+          "rarity": "common",
+          "setCode": "FUT",
+          "sourceProducts": {
+            "foil": [
+              "d8b268d0-0431-515c-89b1-b21af3c467fc",
+              "e6e772ad-c2d8-5030-891b-897766e58924"
+            ],
+            "nonfoil": [
+              "624d9e34-1b31-5066-bc0f-14eab4265b5a",
+              "758f515c-322c-5e0b-8e76-cc095dda0188",
+              "e6e772ad-c2d8-5030-891b-897766e58924"
+            ]
+          },
+          "subtypes": [
+            "Centaur",
+            "Warrior"
+          ],
+          "supertypes": [],
+          "toughness": "3",
+          "type": "Creature \u2014 Centaur Warrior",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "ea92cd99-0f10-58bd-ae3a-08b518ffce2a"
+        }
+      ]
+    },
+    "JMP": {
+      "code": "JMP",
+      "name": "Jumpstart",
+      "cards": [
+        {
+          "artist": "Filip Burburan",
+          "artistIds": [
+            "66082c3b-a623-4d34-be51-2475214b85d3"
+          ],
+          "availability": [
+            "arena",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G",
+            "W"
+          ],
+          "colors": [
+            "G",
+            "W"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 18223,
+          "finishes": [
+            "nonfoil"
+          ],
+          "flavorText": "\"Alone, it's a fortification. At the head of its troops, it's a battering ram.\"\n\u2014Skerk Hobnett, wilderness guide",
+          "foreignData": [],
+          "frameVersion": "2015",
+          "hasFoil": false,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomId": "234707",
+            "cardsphereId": "68306",
+            "deckboxId": "51460",
+            "mcmId": "472379",
+            "mcmMetaId": "273096",
+            "mtgArenaId": "72514",
+            "mtgjsonV4Id": "1027fb47-9191-5a80-9e8f-3fbaeca063de",
+            "multiverseId": "489435",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "b78765aa-f952-47f5-b6fc-8aca93fc4104",
+            "scryfallIllustrationId": "926cef91-5a6d-4548-b9b8-f18cead0a8c5",
+            "scryfallOracleId": "abc49dc3-03b3-48a4-afe1-5fc435b65d0f",
+            "tcgplayerProductId": "215946"
+          },
+          "isReprint": true,
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{1}{G}{W}",
+          "manaValue": 3.0,
+          "name": "Ironroot Warlord",
+          "number": "452",
+          "power": "*",
+          "printings": [
+            "JMP",
+            "M20"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/fa431880aef1b450",
+            "cardmarket": "https://mtgjson.com/links/817baaa9081e4e30",
+            "tcgplayer": "https://mtgjson.com/links/71c20df3418254c5"
+          },
+          "rarity": "uncommon",
+          "rulings": [
+            {
+              "date": "2019-07-12",
+              "text": "As long as Ironroot Warlord is on the battlefield, its first ability will count itself, so its power will be at least 1."
+            },
+            {
+              "date": "2019-07-12",
+              "text": "The ability that defines Ironroot Warlord\u2019s power works in all zones, not just the battlefield."
+            }
+          ],
+          "setCode": "JMP",
+          "sourceProducts": {
+            "nonfoil": [
+              "ca9092e8-a921-5e37-ab9d-4b0f76bb0d01"
+            ]
+          },
+          "subtypes": [
+            "Treefolk",
+            "Soldier"
+          ],
+          "supertypes": [],
+          "text": "Ironroot Warlord's power is equal to the number of creatures you control.\n{3}{G}{W}: Create a 1/1 white Soldier creature token.",
+          "toughness": "5",
+          "type": "Creature \u2014 Treefolk Soldier",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "24c3b9c0-1d99-5422-b8b3-4f06757ef303"
+        }
+      ]
+    },
+    "M10": {
+      "code": "M10",
+      "name": "Magic 2010",
+      "cards": [
+        {
+          "artist": "Vance Kovacs",
+          "artistIds": [
+            "b5516011-4722-4fc8-8542-102cecc52b71"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 3.0,
+          "edhrecRank": 17895,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "\"The centaurs are truly free. Never will they be tamed by temptation or controlled by fear. They live in total harmony, a feat not yet achieved by our kind.\"\n\u2014Ramal, sage of Westgate",
+          "foreignData": [
+            {
+              "flavorText": "\u201eZentauren kennen die wahre Freiheit. Nie wird die Versuchung sie z\u00e4hmen oder die Furcht sie \u00fcbermannen. Sie leben in vollkommener Harmonie, was wir noch lange nicht erreicht haben.\" \u2014Ramal, Weiser aus Westtor",
+              "identifiers": {
+                "multiverseId": "199727",
+                "scryfallId": "9e03ef1a-76ac-4357-8706-5340e7dfaa87"
+              },
+              "language": "German",
+              "multiverseId": 199727,
+              "name": "Zentauren-Renner",
+              "type": "Kreatur \u2014 Zentaur, Krieger"
+            },
+            {
+              "flavorText": "\"Los centauros son realmente libres. Nunca ser\u00e1n dominados por la tentaci\u00f3n o controlados por el miedo. Viven en completa armon\u00eda, algo todav\u00eda no logrado por nuestra gente.\" \u2014Ramal, sabio del Port\u00f3n Occidental",
+              "identifiers": {
+                "multiverseId": "200723",
+                "scryfallId": "51d08184-9f54-43e6-8d62-2f003356f34c"
+              },
+              "language": "Spanish",
+              "multiverseId": 200723,
+              "name": "Cazador centauro",
+              "type": "Criatura \u2014 Guerrero centauro"
+            },
+            {
+              "flavorText": "\u00ab Les centaures sont v\u00e9ritablement libres. Il ne seront jamais apprivois\u00e9s par la tentation ou contr\u00f4l\u00e9s par la peur. Ils vivent en parfaite harmonie, un exploit que nous sommes encore loin d'accomplir. \u00bb \u2014Ramal, sage de Portorient",
+              "identifiers": {
+                "multiverseId": "199478",
+                "scryfallId": "252a7049-ad0c-4b27-87c6-38c2c59b0e4e"
+              },
+              "language": "French",
+              "multiverseId": 199478,
+              "name": "Coursier centaure",
+              "type": "Cr\u00e9ature : centaure et guerrier"
+            },
+            {
+              "flavorText": "\"I centauri sono realmente liberi. Non saranno mai domati dalla tentazione n\u00e9 controllati dalla paura. Vivono in totale armonia, un'impresa non ancora realizzata dalla nostra gente.\" \u2014Ramal, saggio di Westgate",
+              "identifiers": {
+                "multiverseId": "200474",
+                "scryfallId": "6dac0038-fa9d-4685-b4e0-1df9d66cfa0e"
+              },
+              "language": "Italian",
+              "multiverseId": 200474,
+              "name": "Corsiera Centaura",
+              "type": "Creatura \u2014 Guerriero Centauro"
+            },
+            {
+              "flavorText": "\u300c\u30b1\u30f3\u30bf\u30a6\u30eb\u30b9\u306f\u771f\u306b\u81ea\u7531\u3060\u3002 \u8a98\u60d1\u306b\u8ca0\u3051\u308b\u3053\u3068\u3082\u306a\u3051\u308c\u3070\u3001\u6050\u6016\u306b\u64cd\u3089\u308c\u308b\u3053\u3068\u3082\u306a\u3044\u3002 \u5f7c\u3089\u306e\u751f\u304d\u69d8\u306f\u3001\u6211\u3089\u306e\u985e\u304c\u307e\u3060\u9054\u3057\u3066\u3044\u306a\u3044\u5b8c\u5168\u306a\u8abf\u548c\u3092\u6210\u3057\u3066\u3044\u308b\u3002\u300d \u2015\u2015\u897f\u9580\u306e\u8ce2\u8005\u3001\u30e9\u30de\u30fc\u30eb",
+              "identifiers": {
+                "multiverseId": "199976",
+                "scryfallId": "7813c3e2-ed81-4e6b-9ec6-061cfd6280ce"
+              },
+              "language": "Japanese",
+              "multiverseId": 199976,
+              "name": "\u30b1\u30f3\u30bf\u30a6\u30eb\u30b9\u306e\u72e9\u731f\u8005",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30b1\u30f3\u30bf\u30a6\u30eb\u30b9\u30fb\u6226\u58eb"
+            },
+            {
+              "flavorText": "\"Os centauros s\u00e3o verdadeiramente livres. N\u00e3o s\u00e3o domados pela tenta\u00e7\u00e3o nem controlados pelo medo. Vivem em total harmonia \u2014 um feito ainda n\u00e3o alcan\u00e7ado por nossa ra\u00e7a.\" \u2014Ramal, s\u00e1bio de Port\u00e3o Oeste",
+              "identifiers": {
+                "multiverseId": "199229",
+                "scryfallId": "b1999f64-7f0f-4b3a-a977-165002b8eaea"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 199229,
+              "name": "Centaura-Ca\u00e7adora",
+              "type": "Criatura \u2014 Centauro Guerreiro"
+            },
+            {
+              "flavorText": "\u00ab\u041a\u0435\u043d\u0442\u0430\u0432\u0440\u044b \u043f\u043e-\u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u043c\u0443 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u044b. \u0418\u0445 \u043d\u0435\u043b\u044c\u0437\u044f \u043d\u0438 \u0443\u043a\u0440\u043e\u0442\u0438\u0442\u044c \u0441\u043e\u0431\u043b\u0430\u0437\u043d\u043e\u043c, \u043d\u0438 \u043f\u043e\u0434\u0447\u0438\u043d\u0438\u0442\u044c \u0441\u0442\u0440\u0430\u0445\u043e\u043c. \u041e\u043d\u0438 \u0436\u0438\u0432\u0443\u0442 \u0432 \u043f\u043e\u043b\u043d\u043e\u0439 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u0438, \u0434\u043e \u0441\u0438\u0445 \u043f\u043e\u0440 \u043d\u0435 \u0432\u0435\u0434\u043e\u043c\u043e\u0439 \u0442\u0430\u043a\u0438\u043c, \u043a\u0430\u043a \u043c\u044b\u00bb. \u2014 \u0420\u0430\u043c\u0430\u043b\u044c, \u043c\u0443\u0434\u0440\u0435\u0446 \u0438\u0437 \u0412\u0435\u0441\u0442\u0433\u0435\u0439\u0442\u0430",
+              "identifiers": {
+                "multiverseId": "200225",
+                "scryfallId": "473d0253-3488-48a3-8b6d-72c898604196"
+              },
+              "language": "Russian",
+              "multiverseId": 200225,
+              "name": "\u0411\u044b\u0441\u0442\u0440\u043e\u043d\u043e\u0433\u0438\u0439 \u041a\u0435\u043d\u0442\u0430\u0432\u0440",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u041a\u0435\u043d\u0442\u0430\u0432\u0440 \u0412\u043e\u0438\u043d"
+            },
+            {
+              "flavorText": "\u300c\u534a\u4eba\u9a6c\u4eab\u6709\u771f\u6b63\u7684\u81ea\u7531\u3002 \u4ed6\u4eec\u6c38\u8fdc\u4e0d\u4f1a\u56e0\u8bf1\u60d1\u800c\u88ab\u9a6f\u670d\uff0c\u4e5f\u4e0d\u4f1a\u56e0\u6050\u60e7\u800c\u906d\u63a7\u5236\u3002 \u751f\u6d3b\u5728\u5b8c\u5168\u7684\u548c\u8c10\u4e2d\uff0c\u8fd9\u662f\u6211\u4eec\u65cf\u7c7b\u5c1a\u672a\u8fbe\u5230\u7684\u5883\u754c\u3002\u300d \uff5e\u897f\u95e8\u667a\u8005\u62c9\u9ed8",
+              "identifiers": {
+                "multiverseId": "200972",
+                "scryfallId": "d1548c33-d0d0-443b-81db-ad622498dc95"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 200972,
+              "name": "\u534a\u4eba\u9a8f\u9a6c",
+              "type": "\u751f\u7269\uff5e\u534a\u4eba\u9a6c\uff0f\u6218\u58eb"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "127418",
+            "cardKingdomId": "127177",
+            "cardsphereFoilId": "25793",
+            "cardsphereId": "25794",
+            "deckboxId": "15851",
+            "mcmId": "21218",
+            "mcmMetaId": "10645",
+            "mtgjsonV4Id": "22af8eda-831d-56c1-bdbf-f2a0ea9af25b",
+            "mtgoFoilId": "32726",
+            "mtgoId": "32725",
+            "multiverseId": "189883",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "03354b67-7df2-4b4b-a996-a37550e58561",
+            "scryfallIllustrationId": "a4cf897d-8da5-4d63-97dc-d717b4392acb",
+            "scryfallOracleId": "2f5bf099-2e01-4e1c-9ebf-0ce0ac66939e",
+            "tcgplayerProductId": "32571"
+          },
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "brawl": "Legal",
+            "commander": "Legal",
+            "duel": "Legal",
+            "gladiator": "Legal",
+            "historic": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "pauper": "Legal",
+            "paupercommander": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "predh": "Legal",
+            "timeless": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{2}{G}",
+          "manaValue": 3.0,
+          "name": "Centaur Courser",
+          "number": "172",
+          "originalType": "Creature \u2014 Centaur Warrior",
+          "power": "3",
+          "printings": [
+            "M10",
+            "M13",
+            "M15",
+            "M19",
+            "M20",
+            "PLST"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/a6c085256f54b31b",
+            "cardKingdomFoil": "https://mtgjson.com/links/861b235a6378e756",
+            "cardmarket": "https://mtgjson.com/links/84232264014208cc",
+            "tcgplayer": "https://mtgjson.com/links/9f6c6da0d732ace7"
+          },
+          "rarity": "common",
+          "setCode": "M10",
+          "sourceProducts": {
+            "foil": [
+              "a948412d-a2f1-5dd6-ae6c-2238a42ad663",
+              "f52aeac6-933a-55e2-a973-36421c155ea1"
+            ],
+            "nonfoil": [
+              "030f3a40-04f3-59d1-984b-e582c5d52bf8",
+              "1a6607af-f789-5b4c-a17a-999f1184dcda",
+              "2a5fa0ac-5190-5c8d-b5bf-b7840b2c41b6",
+              "f52aeac6-933a-55e2-a973-36421c155ea1"
+            ]
+          },
+          "subtypes": [
+            "Centaur",
+            "Warrior"
+          ],
+          "supertypes": [],
+          "toughness": "3",
+          "type": "Creature \u2014 Centaur Warrior",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "a5cf3057-7e30-51ca-884c-7598b045e0eb"
+        }
+      ]
+    },
+    "M14": {
+      "code": "M14",
+      "name": "Magic 2014",
+      "cards": [
+        {
+          "artist": "Svetlin Velinov",
+          "artistIds": [
+            "ffd063ae-c097-4f26-b2e6-b1e2137708bc"
+          ],
+          "availability": [
+            "mtgo",
+            "paper"
+          ],
+          "boosterTypes": [
+            "default"
+          ],
+          "borderColor": "black",
+          "colorIdentity": [
+            "G"
+          ],
+          "colors": [
+            "G"
+          ],
+          "convertedManaCost": 2.0,
+          "edhrecRank": 11849,
+          "edhrecSaltiness": 0.25,
+          "finishes": [
+            "nonfoil",
+            "foil"
+          ],
+          "flavorText": "\"And all this time I thought *we* were tracking *it*.\"\n\u2014Juruk, Kalonian tracker",
+          "foreignData": [
+            {
+              "flavorText": "\u201eDabei dachten wir die ganze Zeit, wir w\u00e4ren die Verfolger.\"\u2014Juruk, kalonischer Spurensucher",
+              "identifiers": {
+                "multiverseId": "371447",
+                "scryfallId": "b2ad0526-bcbc-45a7-8e99-23cad051f39d"
+              },
+              "language": "German",
+              "multiverseId": 371447,
+              "name": "Kalonischer Keiler",
+              "type": "Kreatur \u2014 Bestie"
+            },
+            {
+              "flavorText": "\"Y yo que pensaba que durante todo este tiempo, nosotros lo est\u00e1bamos siguiendo a \u00e9l.\"\u2014Juruk, rastreador kaloniano",
+              "identifiers": {
+                "multiverseId": "373190",
+                "scryfallId": "307dc107-b6f5-4faf-af84-89255f52151a"
+              },
+              "language": "Spanish",
+              "multiverseId": 373190,
+              "name": "Colmilludo kaloniano",
+              "type": "Criatura \u2014 Bestia"
+            },
+            {
+              "flavorText": "\u00ab Dire que pendant tout ce temps, j'ai cru que nous \u00e9tions apr\u00e8s lui. \u00bb\u2014Juruk, traqueur kalonien",
+              "identifiers": {
+                "multiverseId": "371696",
+                "scryfallId": "7ca79bb7-7f75-4bbe-87dc-5525e074a78c"
+              },
+              "language": "French",
+              "multiverseId": 371696,
+              "name": "Terrocorne kalonien",
+              "type": "Cr\u00e9ature : b\u00eate"
+            },
+            {
+              "flavorText": "\"E per tutto questo tempo ho creduto fossimo noi a seguire lui.\"\u2014Juruk, battipista di Kalonia",
+              "identifiers": {
+                "multiverseId": "371945",
+                "scryfallId": "e718f61a-52a9-409e-bcda-3059ab49e223"
+              },
+              "language": "Italian",
+              "multiverseId": 371945,
+              "name": "Zannuto di Kalonia",
+              "type": "Creatura \u2014 Bestia"
+            },
+            {
+              "flavorText": "\u300c\u4ffa\u306f\u3066\u3063\u304d\u308a\u4ffa\u9054\u304c\u3042\u3044\u3064\u3092\u8ffd\u3044\u304b\u3051\u3066\u3044\u308b\u3082\u306e\u3068\u601d\u3044\u8fbc\u3093\u3067\u3044\u305f\u3088\u3002\u300d\u2015\u2015\u30ab\u30ed\u30cb\u30a2\u306e\u8ffd\u8de1\u8005\u3001\u30b8\u30e5\u30e9\u30af",
+              "identifiers": {
+                "multiverseId": "372194",
+                "scryfallId": "b15319f2-ffe2-4ceb-8f3d-5efcffc26f37"
+              },
+              "language": "Japanese",
+              "multiverseId": 372194,
+              "name": "\u30ab\u30ed\u30cb\u30a2\u306e\u5927\u7259\u7363",
+              "type": "\u30af\u30ea\u30fc\u30c1\u30e3\u30fc \u2014 \u30d3\u30fc\u30b9\u30c8"
+            },
+            {
+              "flavorText": "\"\uc6b0\ub9ac\uac00 \ub140\uc11d\uc744 \ucd94\uc801\ud558\ub294 \uac70 \uc544\ub2c8\uc5c8\ub098?\"\u2014\uce7c\ub85c\ub2c8\uc544\uc758 \uc0ac\ub0e5\uafbc \uc8fc\ub8e8\ud06c",
+              "identifiers": {
+                "multiverseId": "372443",
+                "scryfallId": "44725640-8c90-4776-988c-ce2b1ecf77bd"
+              },
+              "language": "Korean",
+              "multiverseId": 372443,
+              "name": "\uce7c\ub85c\ub2c8\uc544\uc758 \uc5c4\ub2c8\uc57c\uc218",
+              "type": "\uc0dd\ubb3c \u2014 \uc57c\uc218"
+            },
+            {
+              "flavorText": "\"E todo esse tempo eu pensei que n\u00f3s estiv\u00e9ssemos rastreando ele.\"\u2014 Juruk, rastreador kaloniano",
+              "identifiers": {
+                "multiverseId": "372692",
+                "scryfallId": "5e1c6823-35f1-4354-b139-1d8174960233"
+              },
+              "language": "Portuguese (Brazil)",
+              "multiverseId": 372692,
+              "name": "Javali Kaloniano",
+              "type": "Criatura \u2014 Besta"
+            },
+            {
+              "flavorText": "\u00ab\u0410 \u044f-\u0442\u043e \u0434\u0443\u043c\u0430\u043b, \u044d\u0442\u043e \u043c\u044b \u043d\u0430 \u043d\u0435\u0433\u043e \u043e\u0445\u043e\u0442\u0438\u043c\u0441\u044f\u00bb.\u2014 \u0414\u0436\u0443\u0440\u0443\u043a, \u043a\u0430\u043b\u043e\u043d\u0441\u043a\u0438\u0439 \u043e\u0445\u043e\u0442\u043d\u0438\u043a",
+              "identifiers": {
+                "multiverseId": "372941",
+                "scryfallId": "2e63c86e-c2b6-4bc5-b55e-e1c4ce2b8a1b"
+              },
+              "language": "Russian",
+              "multiverseId": 372941,
+              "name": "\u041a\u0430\u043b\u043e\u043d\u0441\u043a\u0438\u0439 \u041a\u043b\u044b\u043a\u0430\u0447",
+              "type": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u2014 \u0417\u0432\u0435\u0440\u044c"
+            },
+            {
+              "flavorText": "\u300c\u4e00\u76f4\u4ee5\u6765\uff0c\u6211\u90fd\u4ee5\u4e3a\u662f\u6211\u4eec\u5728\u8ffd\u730e\u5b83\u3002\u300d\uff5e\u5361\u9686\u5c3c\u4e9a\u8ffd\u730e\u4eba\u88d8\u9c81",
+              "identifiers": {
+                "multiverseId": "370949",
+                "scryfallId": "273765a5-92fe-4415-ad7c-d7ae5cdd7605"
+              },
+              "language": "Chinese Simplified",
+              "multiverseId": 370949,
+              "name": "\u5361\u9686\u5c3c\u4e9a\u957f\u7259\u91ce\u732a",
+              "type": "\u751f\u7269\uff5e\u91ce\u517d"
+            },
+            {
+              "flavorText": "\u300c\u4e00\u76f4\u4ee5\u4f86\uff0c\u6211\u90fd\u4ee5\u70ba\u662f\u6211\u5011\u5728\u8ffd\u7375\u5b83\u3002\u300d\uff5e\u5361\u9686\u5c3c\u4e9e\u8ffd\u7375\u4eba\u88d8\u9b6f",
+              "identifiers": {
+                "multiverseId": "371198",
+                "scryfallId": "76a4004b-479a-49bd-bb68-df85f662d9a6"
+              },
+              "language": "Chinese Traditional",
+              "multiverseId": 371198,
+              "name": "\u5361\u9686\u5c3c\u4e9e\u9577\u7259\u91ce\u8c6c",
+              "type": "\u751f\u7269\uff5e\u91ce\u7378"
+            }
+          ],
+          "frameVersion": "2003",
+          "hasFoil": true,
+          "hasNonFoil": true,
+          "identifiers": {
+            "cardKingdomFoilId": "190826",
+            "cardKingdomId": "190502",
+            "cardsphereFoilId": "27994",
+            "cardsphereId": "27995",
+            "deckboxId": "21569",
+            "mcmId": "262356",
+            "mcmMetaId": "208171",
+            "mtgjsonV4Id": "3b609c88-c34c-52bb-b0e7-3f476a3993e0",
+            "mtgoFoilId": "49388",
+            "mtgoId": "49387",
+            "multiverseId": "370700",
+            "scryfallCardBackId": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+            "scryfallId": "135946fc-fe67-401f-821d-d7145c63f030",
+            "scryfallIllustrationId": "05a11f22-a954-44f3-a9bd-1393c6918d3c",
+            "scryfallOracleId": "df7f697e-6886-4897-a024-61ae225c1b34",
+            "tcgplayerProductId": "69165"
+          },
+          "language": "English",
+          "layout": "normal",
+          "legalities": {
+            "commander": "Legal",
+            "duel": "Legal",
+            "legacy": "Legal",
+            "modern": "Legal",
+            "oathbreaker": "Legal",
+            "penny": "Legal",
+            "pioneer": "Legal",
+            "vintage": "Legal"
+          },
+          "manaCost": "{G}{G}",
+          "manaValue": 2.0,
+          "name": "Kalonian Tusker",
+          "number": "182",
+          "originalType": "Creature \u2014 Beast",
+          "power": "3",
+          "printings": [
+            "M14"
+          ],
+          "purchaseUrls": {
+            "cardKingdom": "https://mtgjson.com/links/df4f217f86be97d4",
+            "cardKingdomFoil": "https://mtgjson.com/links/c31375c5aaacd0dc",
+            "cardmarket": "https://mtgjson.com/links/08391b3e4d1c1130",
+            "tcgplayer": "https://mtgjson.com/links/5c7e092515f10ea6"
+          },
+          "rarity": "uncommon",
+          "setCode": "M14",
+          "sourceProducts": {
+            "foil": [
+              "663c7163-bf40-5983-b60e-d2435dc6b049",
+              "bef6b6e1-0a89-5b8d-b04b-64683af2b06b"
+            ],
+            "nonfoil": [
+              "20b9c793-01c3-5dc8-a4cd-adff58df3a50",
+              "25de3429-4bc2-516d-9e22-ab0956de2a19",
+              "4cb30e00-f0fb-5aa6-a66b-0343a250e881",
+              "5f85f3ee-c427-59d1-a507-5b816c1b1d8f",
+              "653f7c5c-f5b5-5427-b9db-a026949f8f04",
+              "a2f5a996-8718-537a-adb0-271e5c70a94f",
+              "b16b81eb-812f-5f44-8776-ac8196bc7a9d",
+              "bef6b6e1-0a89-5b8d-b04b-64683af2b06b",
+              "e289f5b8-f18a-5b14-9dae-f5a7103a1b42",
+              "e75417fa-9a5b-5a72-852b-22d04990b176",
+              "f6a6ea25-c806-542a-82e5-5c4ad645c32e"
+            ]
+          },
+          "subtypes": [
+            "Beast"
+          ],
+          "supertypes": [],
+          "toughness": "3",
+          "type": "Creature \u2014 Beast",
+          "types": [
+            "Creature"
+          ],
+          "uuid": "5fbfd623-4b13-5e03-a56e-2bba50102607"
+        }
+      ]
+    }
+  }
+}
