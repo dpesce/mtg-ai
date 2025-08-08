@@ -1,17 +1,17 @@
+from typing import List, Dict
 import unittest
 from mtg_ai.game_state import GameState, Player
 from mtg_ai.game_controller import _phase_handlers
 from mtg_ai.agent import AttackAgent, BlockAgent
-from mtg_ai import game_actions as GA
 
 
 class DummyAgents(AttackAgent, BlockAgent):
     """Attack with nothing, block with nothing."""
 
-    def choose_attackers(self, game):
+    def choose_attackers(self, game: GameState) -> List:
         return []
 
-    def choose_blockers(self, game):
+    def choose_blockers(self, game: GameState) -> Dict:
         return {}
 
 

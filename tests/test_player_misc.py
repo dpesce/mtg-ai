@@ -3,7 +3,7 @@ from mtg_ai.card import Card
 from mtg_ai.game_state import Player, GameState
 
 
-def _dummy_card():
+def _dummy_card() -> Card:
     return Card({"name": "X", "uuid": "1", "types": ["Creature"], "power": "1", "toughness": "1"})
 
 

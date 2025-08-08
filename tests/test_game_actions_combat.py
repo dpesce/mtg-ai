@@ -4,7 +4,7 @@ from mtg_ai.game_state import GameState, Player
 from mtg_ai import game_actions as GA
 
 
-def _basic_creature(name: str, power: int, toughness: int):
+def _basic_creature(name: str, power: int, toughness: int) -> Card:
     return Card(
         {
             "name": name,
