@@ -1,4 +1,87 @@
-.coverage
-coverage.xml
-htmlcov/
 mtgai/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+pip-wheel-metadata/
+share/python-wheels/
+wheelhouse/
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version     # pyenv
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE/editor directories
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Cython debug symbols
+cython_debug/
+
+# Type checker caches
+.mypy_cache/
+.dmypy.json
+
+# fig folder (generated figures, etc.)
+fig/
+
+# site-packages directories (if accidentally committed)
+site-packages/
+
+# Log files
+*.log
