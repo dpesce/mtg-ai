@@ -117,66 +117,64 @@ def declare_attackers(game: GameState, attackers: list[Card]) -> None:
     game.attackers = legal_attackers
 
 
-def declare_blockers(game: GameState, blocking_assignments: Dict[Card, Card]) -> None:
-    defending_player_index = 1 - game.active_player_index
-    defending_player = game.players[defending_player_index]
-
-    for blocker, attacker in blocking_assignments.items():
-        if blocker not in defending_player.battlefield:
-            raise ValueError(f"{blocker.name} is not controlled by the defending player.")
-        if not blocker.is_creature():
-            raise ValueError(f"{blocker.name} is not a creature and can't block.")
-        if blocker.tapped:
-            raise ValueError(f"{blocker.name} is tapped and can't block.")
+def declare_blockers(game: GameState, assignments: Dict[Card, list[Card]]) -> None:
+    defending_player = game.get_opponent()
+    for attacker, blockers in assignments.items():
         if attacker not in game.attackers:
             raise ValueError(f"{attacker.name} is not attacking.")
 
-        # Add additional combat rules here (e.g., flying/evasion)
+        for blocker in blockers:
+            if blocker not in defending_player.battlefield:
+                raise ValueError(f"{blocker.name} not controlled by defender.")
+            if not blocker.is_creature():
+                raise ValueError(f"{blocker.name} is not a creature.")
+            if blocker.tapped:
+                raise ValueError(f"{blocker.name} is tapped.")
+            # Prevent one blocker from blocking two attackers
+            for prev in game.blocking_assignments.values():
+                if blocker in prev:
+                    raise ValueError(f"{blocker.name} already blocking something.")
 
-        game.blocking_assignments[blocker] = attacker
+        # Order is preserved as passed-in
+        game.blocking_assignments[attacker] = list(blockers)
 
 
 def resolve_combat_damage(game: GameState) -> None:
-    player = game.get_active_player()
-    opponent = game.get_opponent()
+    attacker_controller = game.get_active_player()
+    defender_controller = game.get_opponent()
 
-    total_damage = 0
-    unblocked_attackers = set(game.attackers)
+    total_unblocked = 0
 
-    # Tap attackers
-    for attacker in game.attackers:
-        attacker.tapped = True
+    for attacker in list(game.attackers):
+        blockers = game.blocking_assignments.get(attacker, [])
+        if not blockers:  # unblocked
+            total_unblocked += attacker.power or 0
+            continue
 
-    # Handle blocking
-    for blocker, attacker in game.blocking_assignments.items():
-        if blocker.toughness is None or attacker.power is None:
-            continue  # Skip edge cases
+        remaining_power = attacker.power or 0
+        for blocker in blockers:
+            lethal = blocker.toughness or 0
+            if remaining_power >= lethal:
+                # Blocker dies
+                defender_controller.battlefield.remove(blocker)
+                blocker.zone = "graveyard"
+                defender_controller.graveyard.append(blocker)
+            # Simultaneous damage to attacker
+            remaining_power -= lethal
+            if (
+                blocker.power is not None
+                and attacker.toughness is not None
+                and blocker.power >= attacker.toughness
+            ):
+                attacker_controller.battlefield.remove(attacker)
+                attacker.zone = "graveyard"
+                attacker_controller.graveyard.append(attacker)
+                break  # attacker gone, no more assignment
 
-        # Simple 1v1 blocker: attacker and blocker destroy each other if power ≥ toughness
-        if attacker.power >= blocker.toughness:
-            opponent.battlefield.remove(blocker)
-            blocker.zone = "graveyard"
-            opponent.graveyard.append(blocker)
-        if (blocker.power is not None) and (attacker.toughness is not None) and blocker.power >= attacker.toughness:
-            player.battlefield.remove(attacker)
-            attacker.zone = "graveyard"
-            player.graveyard.append(attacker)
-
-        # Remove from unblocked list
-        unblocked_attackers.discard(attacker)
-
-    # Deal damage from unblocked attackers
-    for attacker in unblocked_attackers:
-        if attacker.power:
-            total_damage += attacker.power
-
-    opponent.life_total -= total_damage
-    print(f"{player.name} deals {total_damage} unblocked damage to {opponent.name}!")
+    defender_controller.life_total -= total_unblocked
+    game.attackers.clear()
+    game.blocking_assignments.clear()
     game.check_winner()
-
-    # Cleanup
-    game.attackers = []
-    game.blocking_assignments = {}
 
 
 def end_of_combat(game: GameState) -> None:

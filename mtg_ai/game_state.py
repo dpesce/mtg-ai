@@ -108,7 +108,7 @@ class GameState:
         self.winner: Optional[Player] = None
 
         self.attackers: List[Card] = []
-        self.blocking_assignments: Dict[Card, Card] = {}
+        self.blocking_assignments: Dict[Card, list[Card]] = {}
 
     def next_phase(self) -> None:
         for player in self.players:

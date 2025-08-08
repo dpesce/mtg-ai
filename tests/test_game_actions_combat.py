@@ -43,9 +43,9 @@ class CombatPipelineTest(unittest.TestCase):
         GA.declare_attackers(self.game, [self.a1, self.a2])
         self.assertEqual(set(self.game.attackers), {self.a1, self.a2})
 
-        # 2. declare blockers (block B1→A1, let A2 through)
-        GA.declare_blockers(self.game, {self.b1: self.a1})
-        self.assertEqual(self.game.blocking_assignments[self.b1], self.a1)
+        # 2. declare blockers (block B1 → A1, let A2 through)
+        GA.declare_blockers(self.game, {self.a1: [self.b1]})
+        self.assertEqual(self.game.blocking_assignments[self.a1], [self.b1])
 
         # 3. resolve damage
         GA.resolve_combat_damage(self.game)
