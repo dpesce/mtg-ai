@@ -81,6 +81,29 @@ def get_attackers(player: Player) -> list:
     ]
 
 
+def can_block(game: GameState, blocker: Card, attacker: Card) -> bool:
+    if blocker.tapped or not blocker.is_creature():
+        return False
+    # Add more rules (e.g., flying/blocking rules) here
+    return True
+
+
+####################################
+# phase handlers
+
+
+def beginning_phase(game: GameState) -> None:
+    return None
+
+
+def precombat_main_phase(game: GameState) -> None:
+    return None
+
+
+def beginning_of_combat(game: GameState) -> None:
+    return None
+
+
 def declare_attackers(game: GameState, attackers: list[Card]) -> None:
     player = game.get_active_player()
     legal_attackers = []
@@ -92,13 +115,6 @@ def declare_attackers(game: GameState, attackers: list[Card]) -> None:
             print(f"{creature.name} is not a valid attacker.")
 
     game.attackers = legal_attackers
-
-
-def can_block(game: GameState, blocker: Card, attacker: Card) -> bool:
-    if blocker.tapped or not blocker.is_creature():
-        return False
-    # Add more rules (e.g., flying/blocking rules) here
-    return True
 
 
 def declare_blockers(game: GameState, blocking_assignments: Dict[Card, Card]) -> None:
@@ -118,29 +134,6 @@ def declare_blockers(game: GameState, blocking_assignments: Dict[Card, Card]) ->
         # Add additional combat rules here (e.g., flying/evasion)
 
         game.blocking_assignments[blocker] = attacker
-
-####################################
-# phase handlers
-
-
-def beginning_phase(game: GameState) -> None:
-    return None
-
-
-def main_phase(game: GameState) -> None:
-    return None
-
-
-def beginning_of_combat(game: GameState) -> None:
-    return None
-
-
-# def declare_attackers(game: GameState) -> None:
-#     return None
-
-
-# def declare_blockers(game: GameState) -> None:
-#     return None
 
 
 def resolve_combat_damage(game: GameState) -> None:
@@ -187,6 +180,10 @@ def resolve_combat_damage(game: GameState) -> None:
 
 
 def end_of_combat(game: GameState) -> None:
+    return None
+
+
+def postcombat_main_phase(game: GameState) -> None:
     return None
 
 

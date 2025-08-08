@@ -7,13 +7,13 @@ PhaseHandler = Callable[[GameState, AttackAgent, BlockAgent], None]
 
 _phase_handlers: Dict[str, PhaseHandler] = {
     "BEGINNING": lambda g, a, b: GA.beginning_phase(g),
-    "MAIN1": lambda g, a, b: GA.main_phase(g),
+    "MAIN1": lambda g, a, b: GA.precombat_main_phase(g),
     "BEGINNING_OF_COMBAT": lambda g, a, b: GA.beginning_of_combat(g),
     "DECLARE_ATTACKERS": lambda g, a, b: GA.declare_attackers(g, a.choose_attackers(g)),
     "DECLARE_BLOCKERS": lambda g, a, b: GA.declare_blockers(g, b.choose_blockers(g)),
     "COMBAT_DAMAGE": lambda g, a, b: GA.resolve_combat_damage(g),
     "END_OF_COMBAT": lambda g, a, b: GA.end_of_combat(g),
-    "MAIN2": lambda g, a, b: GA.main_phase(g),
+    "MAIN2": lambda g, a, b: GA.postcombat_main_phase(g),
     "ENDING": lambda g, a, b: GA.ending_phase(g),
 }
 
