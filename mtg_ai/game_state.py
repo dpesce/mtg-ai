@@ -45,6 +45,7 @@ class Player:
             "G": 0,  # Green
             "C": 0,  # Colorless
         }
+        self.lands_played_this_turn: int = 0
 
     def draw_card(self, game: "GameState") -> None:
         if not self.library:
@@ -55,10 +56,16 @@ class Player:
         self.hand.append(card)
 
     def play_land(self, card: Card) -> None:
-        if card in self.hand and card.is_land():
-            self.hand.remove(card)
-            card.zone = "battlefield"
-            self.battlefield.append(card)
+        if card not in self.hand or not card.is_land():
+            return
+
+        if self.lands_played_this_turn >= 1:
+            raise ValueError(f"{self.name} has already played a land this turn.")
+
+        self.hand.remove(card)
+        card.zone = "battlefield"
+        self.battlefield.append(card)
+        self.lands_played_this_turn += 1
 
     def tap_land_for_mana(self, land: Card) -> bool:
         if land.tapped or not land.is_land():
@@ -117,6 +124,7 @@ class GameState:
         self.turn_number += 1
         self.active_player_index = 1 - self.active_player_index
         player = self.get_active_player()
+        player.lands_played_this_turn = 0
         player.draw_card(self)
 
         # Reset summoning sickness and untap cards
