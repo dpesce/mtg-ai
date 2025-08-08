@@ -1,6 +1,6 @@
 from typing import Dict
-from core.card import Card
-from core.game_state import Player, GameState
+from .card import Card
+from .game_state import Player, GameState
 import re
 
 
@@ -135,3 +135,7 @@ def declare_attackers(game: GameState, attackers: list[Card]) -> None:
             print(f"{creature.name} is not a valid attacker.")
 
     game.attackers = legal_attackers
+
+
+def resolve_combat_damage(game: GameState) -> None:
+    attack(game)

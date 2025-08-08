@@ -1,5 +1,5 @@
 from typing import List, Dict, Optional
-from core.card import Card
+from .card import Card
 import random
 
 phases = [

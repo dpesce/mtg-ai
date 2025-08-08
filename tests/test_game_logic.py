@@ -1,7 +1,7 @@
 import unittest
-from core.card import Card
-from core.game_state import Player, GameState
-from core.game_actions import (
+from mtg_ai.card import Card
+from mtg_ai.game_state import Player, GameState
+from mtg_ai.game_actions import (
     cast_creature,
     parse_mana_cost,
     can_pay_mana_cost,
