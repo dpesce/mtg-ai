@@ -147,29 +147,26 @@ def resolve_combat_damage(game: GameState) -> None:
 
     for attacker in list(game.attackers):
         blockers = game.blocking_assignments.get(attacker, [])
-        if not blockers:  # unblocked
+        if not blockers:                 # ── unblocked
             total_unblocked += attacker.power or 0
             continue
 
+        # --- attacker ➜ blockers (sequential lethal assignment) ---
         remaining_power = attacker.power or 0
         for blocker in blockers:
             lethal = blocker.toughness or 0
             if remaining_power >= lethal:
-                # Blocker dies
                 defender_controller.battlefield.remove(blocker)
                 blocker.zone = "graveyard"
                 defender_controller.graveyard.append(blocker)
-            # Simultaneous damage to attacker
             remaining_power -= lethal
-            if (
-                blocker.power is not None
-                and attacker.toughness is not None
-                and blocker.power >= attacker.toughness
-            ):
-                attacker_controller.battlefield.remove(attacker)
-                attacker.zone = "graveyard"
-                attacker_controller.graveyard.append(attacker)
-                break  # attacker gone, no more assignment
+
+        # --- blockers ➜ attacker (sum of their power) -------------
+        total_blocker_power = sum(b.power or 0 for b in blockers)
+        if attacker.toughness is not None and total_blocker_power >= attacker.toughness:
+            attacker_controller.battlefield.remove(attacker)
+            attacker.zone = "graveyard"
+            attacker_controller.graveyard.append(attacker)
 
     defender_controller.life_total -= total_unblocked
     game.attackers.clear()
