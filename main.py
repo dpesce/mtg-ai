@@ -1,7 +1,7 @@
 import json
 from mtg_ai.card import Card
 from mtg_ai.game_state import Player, GameState
-from mtg_ai.game_actions import cast_creature, attack, get_attackers
+from mtg_ai.game_actions import cast_creature, resolve_combat_damage, get_attackers
 
 ###############################################
 
@@ -12,7 +12,7 @@ def run_demo() -> None:
 
     with open("./cards/AllPrintings.json") as f:
         all_data = json.load(f)
-        
+
     ###############################################
     # temporary functions to load a simple deck
 
@@ -71,7 +71,7 @@ def run_demo() -> None:
         elif game.phase == "COMBAT":
             attackers = get_attackers(player)
             if attackers:
-                attack(game, attackers)
+                resolve_combat_damage(game)
             game.next_phase()
 
         elif game.phase == "MAIN2":

@@ -6,7 +6,7 @@ from mtg_ai.game_actions import (
     parse_mana_cost,
     can_pay_mana_cost,
     get_attackers,
-    attack,
+    resolve_combat_damage,
 )
 
 # Sample MTGJSON-style cards
@@ -178,7 +178,7 @@ class TestMagicGameLogic(unittest.TestCase):
                 card.summoning_sick = False
 
         game.attackers = get_attackers(self.player)
-        attack(game)
+        resolve_combat_damage(game)
 
         self.assertEqual(self.opponent.life_total, 18)  # Grizzly Bears does 2
 

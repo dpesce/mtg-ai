@@ -1,7 +1,7 @@
 from typing import Callable, Dict
 from .agent import AttackAgent, BlockAgent
 from .game_state import GameState
-import mtg_ai.game_actions as GA
+from . import game_actions as GA
 
 PhaseHandler = Callable[[GameState, AttackAgent, BlockAgent], None]
 

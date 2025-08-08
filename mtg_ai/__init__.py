@@ -6,7 +6,6 @@ from .game_actions import (
     cast_creature,
     count_untapped_lands,
     get_attackers,
-    attack,
     declare_attackers,
     resolve_combat_damage,
 )
@@ -20,7 +19,6 @@ __all__ = [
     "cast_creature",
     "count_untapped_lands",
     "get_attackers",
-    "attack",
     "declare_attackers",
     "resolve_combat_damage",
 ]

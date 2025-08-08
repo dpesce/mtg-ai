@@ -90,13 +90,13 @@ class Player:
 
 
 class GameState:
-    def __init__(self, player1: Player, player2: Player, linelength: int = 80):
+    def __init__(self, player1: Player, player2: Player, line_length: int = 80):
         self.players = [player1, player2]
         self.active_player_index = 0
         self.turn_number = 1
         self.phase = "BEGINNING"
         self.stack: List = []
-        self.linelength = linelength
+        self.line_length = line_length
 
         self.winner: Optional[Player] = None
 
@@ -152,29 +152,29 @@ class GameState:
         ########################
         # Player 1's field
 
-        strout = "*" * self.linelength + "\n"
+        strout = "*" * self.line_length + "\n"
         strout += (
-            (f"* Turn {self.turn_number} | Phase: {self.phase}").ljust(self.linelength - 1)
+            (f"* Turn {self.turn_number} | Phase: {self.phase}").ljust(self.line_length - 1)
             + "*"
             + "\n"
         )
-        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
-        strout += (f"* Active player: {p1.name}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Life total: {p1.life_total}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Cards in hand: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Cards in library: {len(p1.library)}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += "* " + "-" * (self.line_length - 4) + " *" + "\n"
+        strout += (f"* Active player: {p1.name}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Life total: {p1.life_total}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Cards in hand: {len(p1.hand)}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Cards in library: {len(p1.library)}").ljust(self.line_length - 1) + "*" + "\n"
         strout += (
-            (f"* Cards in graveyard: {len(p1.graveyard)}").ljust(self.linelength - 1) + "*" + "\n"
+            (f"* Cards in graveyard: {len(p1.graveyard)}").ljust(self.line_length - 1) + "*" + "\n"
         )
-        strout += (f"* Cards in exile: {len(p1.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (f"* Cards in exile: {len(p1.hand)}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += "* " + "-" * (self.line_length - 4) + " *" + "\n"
         strout += (
-            (f"* Cards on battlefield: {len(p1.battlefield)}").ljust(self.linelength - 1)
+            (f"* Cards on battlefield: {len(p1.battlefield)}").ljust(self.line_length - 1)
             + "*"
             + "\n"
         )
 
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
 
         strland = "* "
         strcrea = "* "
@@ -189,33 +189,33 @@ class GameState:
                 if card.tapped:
                     strcrea += "(T)"
                 strcrea += " "
-        strland = strland.ljust(self.linelength - 1) + "*" + "\n"
-        strcrea = strcrea.ljust(self.linelength - 1) + "*" + "\n"
+        strland = strland.ljust(self.line_length - 1) + "*" + "\n"
+        strcrea = strcrea.ljust(self.line_length - 1) + "*" + "\n"
         strout += strland
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
         strout += strcrea
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
-        strout += "*" * self.linelength + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
+        strout += "*" * self.line_length + "\n"
 
         ########################
         # Player 2's field
 
-        strout += (f"* Opposing player: {p2.name}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Life total: {p2.life_total}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Cards in hand: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += (f"* Cards in library: {len(p2.library)}").ljust(self.linelength - 1) + "*" + "\n"
+        strout += (f"* Opposing player: {p2.name}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Life total: {p2.life_total}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Cards in hand: {len(p2.hand)}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += (f"* Cards in library: {len(p2.library)}").ljust(self.line_length - 1) + "*" + "\n"
         strout += (
-            (f"* Cards in graveyard: {len(p2.graveyard)}").ljust(self.linelength - 1) + "*" + "\n"
+            (f"* Cards in graveyard: {len(p2.graveyard)}").ljust(self.line_length - 1) + "*" + "\n"
         )
-        strout += (f"* Cards in exile: {len(p2.hand)}").ljust(self.linelength - 1) + "*" + "\n"
-        strout += "* " + "-" * (self.linelength - 4) + " *" + "\n"
+        strout += (f"* Cards in exile: {len(p2.hand)}").ljust(self.line_length - 1) + "*" + "\n"
+        strout += "* " + "-" * (self.line_length - 4) + " *" + "\n"
         strout += (
-            (f"* Cards on battlefield: {len(p2.battlefield)}").ljust(self.linelength - 1)
+            (f"* Cards on battlefield: {len(p2.battlefield)}").ljust(self.line_length - 1)
             + "*"
             + "\n"
         )
 
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
 
         strland = "* "
         strcrea = "* "
@@ -230,13 +230,13 @@ class GameState:
                 if card.tapped:
                     strcrea += "(T)"
                 strcrea += " "
-        strland = strland.ljust(self.linelength - 1) + "*" + "\n"
-        strcrea = strcrea.ljust(self.linelength - 1) + "*" + "\n"
+        strland = strland.ljust(self.line_length - 1) + "*" + "\n"
+        strcrea = strcrea.ljust(self.line_length - 1) + "*" + "\n"
         strout += strland
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
         strout += strcrea
-        strout += "* ".ljust(self.linelength - 1) + "*" + "\n"
-        strout += "*" * self.linelength + "\n"
+        strout += "* ".ljust(self.line_length - 1) + "*" + "\n"
+        strout += "*" * self.line_length + "\n"
 
         return strout
 
