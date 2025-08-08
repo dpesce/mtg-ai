@@ -26,10 +26,10 @@ jobs:
         pip install coverage mypy flake8
 
     - name: Run Flake8
-      run: flake8 core tests
+      run: flake8 mtg_ai tests
 
     - name: Run Mypy
-      run: mypy core tests
+      run: mypy mtg_ai tests
 
     - name: Run Unit Tests and Coverage
       run: |
