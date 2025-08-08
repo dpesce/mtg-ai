@@ -1,6 +1,7 @@
 from typing import Dict
 from .card import Card
 from .game_state import Player, GameState
+from .agent import CastAgent
 import re
 
 
@@ -34,6 +35,21 @@ def can_pay_mana_cost(player: Player, mana_cost: str) -> bool:
     # Sum remaining pool for generic payment
     remaining = sum(pool.values())
     return remaining >= required.get("generic", 0)
+
+
+def auto_tap_for_cost(player: "Player", mana_cost: str) -> bool:
+    """
+    Greedy tap until cost met.  Returns True if successfully satisfied.
+    Simplified: treats any untapped land producing one generic mana if colorless.
+    """
+    if can_pay_mana_cost(player, mana_cost):
+        return True
+
+    for land in [c for c in player.battlefield if c.is_land() and not c.tapped]:
+        player.tap_land_for_mana(land)
+        if can_pay_mana_cost(player, mana_cost):
+            return True
+    return False
 
 
 def cast_creature(player: Player, card: Card) -> bool:
@@ -89,15 +105,24 @@ def can_block(game: GameState, blocker: Card, attacker: Card) -> bool:
 
 
 ####################################
-# phase handlers
+# phase handling
+
+
+def _execute_casts(game: GameState, agent: CastAgent) -> None:
+    player = game.get_active_player()
+    for card in agent.choose_casts(game):
+        if card not in player.hand:
+            continue
+        if card.mana_cost and auto_tap_for_cost(player, card.mana_cost):
+            cast_creature(player, card)
 
 
 def beginning_phase(game: GameState) -> None:
     return None
 
 
-def precombat_main_phase(game: GameState) -> None:
-    return None
+def precombat_main_phase(game: GameState, cast_agent: CastAgent) -> None:
+    _execute_casts(game, cast_agent)
 
 
 def beginning_of_combat(game: GameState) -> None:
@@ -178,8 +203,8 @@ def end_of_combat(game: GameState) -> None:
     return None
 
 
-def postcombat_main_phase(game: GameState) -> None:
-    return None
+def postcombat_main_phase(game: GameState, cast_agent: CastAgent) -> None:
+    _execute_casts(game, cast_agent)
 
 
 def ending_phase(game: GameState) -> None:
