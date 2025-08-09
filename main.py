@@ -21,7 +21,7 @@ def run_demo() -> None:
     agent1 = NaiveAgent()
     agent2 = NaiveAgent()
 
-    # Start of game: shuffle, draw opening hands, set phase to BEGINNING,
+    # Start of game: shuffle, draw opening hands, set phase to UNTAP,
     # and skip starting player’s first draw by default.
     game.start_game()
 

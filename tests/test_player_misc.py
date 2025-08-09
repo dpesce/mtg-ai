@@ -19,3 +19,21 @@ class PlayerUtilityTest(unittest.TestCase):
         p.mana_pool["G"] = 3
         p.reset_mana_pool()
         self.assertTrue(all(v == 0 for v in p.mana_pool.values()))
+
+    def test_starting_player_skips_first_draw(self) -> None:
+        p1, p2 = Player("A", []), Player("B", [])
+        game = GameState(p1, p2)
+        # give each a 1-card library so a draw would change hand size
+        p1.library = [Card({"name": "X", "uuid": "x", "types": ["Creature"], "power": "1", "toughness": "1"})]
+        p2.library = []
+        game.start_game(opening_hand_size=0, skip_first_draw=True)
+
+        # UNTAP
+        from mtg_ai.game_controller import step_game
+        from mtg_ai.agents.simple import NaiveAgent
+        a = NaiveAgent()
+        step_game(game, a, a)  # UNTAP -> UPKEEP
+        step_game(game, a, a)  # UPKEEP -> DRAW
+        step_game(game, a, a)  # DRAW (skipped) -> MAIN1
+
+        self.assertEqual(len(p1.hand), 0)  # no draw because skip_first_draw

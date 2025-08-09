@@ -25,7 +25,9 @@ class DummyAgent(FullAgent):
 class PhaseRegistryTest(unittest.TestCase):
     def test_every_phase_has_handler(self) -> None:
         expected_phases = [
-            "BEGINNING",
+            "UNTAP",
+            "UPKEEP",
+            "DRAW",
             "MAIN1",
             "BEGINNING_OF_COMBAT",
             "DECLARE_ATTACKERS",

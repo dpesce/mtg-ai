@@ -188,7 +188,7 @@ class TestMagicGameLogic(unittest.TestCase):
         current_turn = game.turn_number
         game.next_phase()
         self.assertEqual(game.turn_number, current_turn + 1)
-        self.assertEqual(game.phase, "BEGINNING")
+        self.assertEqual(game.phase, "UNTAP")
 
     def test_play_land_moves_card(self) -> None:
         land = self.land.copy()

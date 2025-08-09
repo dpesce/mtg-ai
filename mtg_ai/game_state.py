@@ -3,7 +3,9 @@ from .card import Card
 import random
 
 phases = [
-    "BEGINNING",
+    "UNTAP",
+    "UPKEEP",
+    "DRAW",
     "MAIN1",
     "BEGINNING_OF_COMBAT",
     "DECLARE_ATTACKERS",
@@ -11,7 +13,7 @@ phases = [
     "COMBAT_DAMAGE",
     "END_OF_COMBAT",
     "MAIN2",
-    "ENDING"
+    "ENDING",
 ]
 
 phase_step_map = {
@@ -154,9 +156,8 @@ class GameState:
             self.players[0].draw_card(self)
             self.players[1].draw_card(self)
 
-        # Enable first-player draw skipping at BEGINNING of turn 1
         self.skip_first_draw = skip_first_draw
-        self.phase = "BEGINNING"
+        self.phase = "UNTAP"
 
     def next_phase(self) -> None:
         for player in self.players:
@@ -165,7 +166,8 @@ class GameState:
         if idx < len(phases) - 1:
             self.phase = phases[idx + 1]
         else:
-            self.phase = "BEGINNING"
+            # End of turn → next player's UNTAP
+            self.phase = "UNTAP"
             self.next_turn()
 
     def next_turn(self) -> None:
@@ -173,16 +175,6 @@ class GameState:
         self.active_player_index = 1 - self.active_player_index
         player = self.get_active_player()
         player.lands_played_this_turn = 0
-
-        # Reset summoning sickness and untap cards
-        for card in player.battlefield:
-            if card.is_creature():
-                card.summoning_sick = False
-            card.tapped = False
-
-        # Reset mana pool at the beginning of the turn
-        for p in self.players:
-            p.reset_mana_pool()
 
     def get_active_player(self) -> Player:
         return self.players[self.active_player_index]

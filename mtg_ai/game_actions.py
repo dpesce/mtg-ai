@@ -117,10 +117,30 @@ def _execute_casts(game: GameState, agent: CastAgent) -> None:
             cast_creature(player, card)
 
 
-def beginning_phase(game: GameState) -> None:
+def untap_step(game: GameState) -> None:
     """
-    Draw one card for the active player at the beginning of their turn.
-    The very first active player skips this draw if game.skip_first_draw is True.
+    Untap permanents and clear summoning sickness for the active player.
+    """
+    player = game.get_active_player()
+    for card in player.battlefield:
+        # Untap everything
+        card.tapped = False
+        # Summoning sickness clears at the start of your turn
+        if card.is_creature():
+            card.summoning_sick = False
+
+
+def upkeep_step(game: GameState) -> None:
+    """
+    Placeholder for future upkeep triggers. No-op for now.
+    """
+    return None
+
+
+def draw_step(game: GameState) -> None:
+    """
+    Draw one card for the active player unless it's turn 1 and
+    game.skip_first_draw is True.
     """
     player = game.get_active_player()
     if game.turn_number == 1 and game.skip_first_draw:

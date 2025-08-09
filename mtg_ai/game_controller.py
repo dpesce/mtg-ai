@@ -7,7 +7,9 @@ from . import game_actions as GA
 PhaseHandler = Callable[[GameState, FullAgent, FullAgent], None]
 
 _phase_handlers: Dict[str, PhaseHandler] = {
-    "BEGINNING": lambda g, a, d: GA.beginning_phase(g),
+    "UNTAP": lambda g, a, d: GA.untap_step(g),
+    "UPKEEP": lambda g, a, d: GA.upkeep_step(g),
+    "DRAW": lambda g, a, d: GA.draw_step(g),
     "MAIN1": lambda g, a, d: GA.precombat_main_phase(g, a),
     "BEGINNING_OF_COMBAT": lambda g, a, d: GA.beginning_of_combat(g),
     "DECLARE_ATTACKERS": lambda g, a, d: GA.declare_attackers(g, a.choose_attackers(g)),
