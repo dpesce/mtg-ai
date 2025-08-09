@@ -162,6 +162,7 @@ def declare_attackers(game: GameState, attackers: list[Card]) -> None:
 
     for creature in attackers:
         if creature in player.battlefield and creature.is_creature() and not creature.tapped and not creature.summoning_sick:
+            creature.tapped = True
             legal_attackers.append(creature)
         else:
             print(f"{creature.name} is not a valid attacker.")
@@ -211,7 +212,7 @@ def resolve_combat_damage(game: GameState) -> None:
                 defender_controller.battlefield.remove(blocker)
                 blocker.zone = "graveyard"
                 defender_controller.graveyard.append(blocker)
-            remaining_power -= lethal
+            remaining_power = max(0, remaining_power - lethal)
 
         # --- blockers ➜ attacker (sum of their power) -------------
         total_blocker_power = sum(b.power or 0 for b in blockers)

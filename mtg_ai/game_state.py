@@ -17,7 +17,9 @@ phases = [
 ]
 
 phase_step_map = {
-    "BEGINNING": "Beginning phase",
+    "UNTAP": "Untap step",
+    "UPKEEP": "Upkeep step",
+    "DRAW": "Draw step",
     "MAIN1": "Precombat main phase",
     "BEGINNING_OF_COMBAT": "Beginning of combat",
     "DECLARE_ATTACKERS": "Declare attackers",
@@ -102,7 +104,7 @@ class GameState:
         self.players = [player1, player2]
         self.active_player_index = 0
         self.turn_number = 1
-        self.phase = "BEGINNING"
+        self.phase = "UNTAP"
         self.stack: List = []
         self.line_length = line_length
 
