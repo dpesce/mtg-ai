@@ -29,11 +29,12 @@ class MainPhaseCastingIntegration(unittest.TestCase):
         p1.hand.append(bear)
         p1.battlefield.extend([forest1, forest2])
 
-        agent = NaiveAgent()
+        atk = NaiveAgent()
+        dfn = NaiveAgent()
 
         # --- simulate MAIN1 only ---
         game.phase = "MAIN1"
-        step_game(game, agent)          # controller will invoke casting
+        step_game(game, atk, dfn)          # controller will invoke casting
 
         # --- checks ---
         self.assertIn(bear, p1.battlefield)

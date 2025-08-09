@@ -32,7 +32,6 @@ class Player:
         self.name = name
         self.life_total: int = 20
         self.library: List[Card] = deck.copy()
-        random.shuffle(self.library)
         self.hand: List[Card] = []
         self.battlefield: List[Card] = []
         self.graveyard: List[Card] = []
@@ -105,10 +104,59 @@ class GameState:
         self.stack: List = []
         self.line_length = line_length
 
+        self.skip_first_draw: bool = True
         self.winner: Optional[Player] = None
 
         self.attackers: List[Card] = []
         self.blocking_assignments: Dict[Card, list[Card]] = {}
+
+    def shuffle_library(self, player: "Player", *, seed: Optional[int] = None) -> None:
+        """
+        Shuffle a single player's library in-place.
+        If `seed` is provided, shuffling is deterministic (useful for tests).
+        """
+        rng = random.Random(seed) if seed is not None else random
+        rng.shuffle(player.library)
+
+    def shuffle_both_libraries(
+        self,
+        *,
+        seed_active: Optional[int] = None,
+        seed_opponent: Optional[int] = None,
+    ) -> None:
+        """
+        Convenience: shuffle both players' libraries.
+        Seeds allow deterministic but independent shuffles if desired.
+        """
+        self.shuffle_library(self.players[0], seed=seed_active)
+        self.shuffle_library(self.players[1], seed=seed_opponent)
+
+    def start_game(
+        self,
+        opening_hand_size: int = 7,
+        skip_first_draw: bool = True,
+        *,
+        shuffle_active_seed: Optional[int] = None,
+        shuffle_opponent_seed: Optional[int] = None,
+    ) -> None:
+        """
+        Prepare game start: shuffle libraries, draw opening hands, and set phase to BEGINNING.
+        The active player at turn 1 skips their beginning-phase draw if `skip_first_draw` is True.
+        """
+        # Shuffle each player's library (single-player shuffle, called twice)
+        self.shuffle_both_libraries(
+            seed_active=shuffle_active_seed,
+            seed_opponent=shuffle_opponent_seed,
+        )
+
+        # Draw opening hands
+        for _ in range(opening_hand_size):
+            self.players[0].draw_card(self)
+            self.players[1].draw_card(self)
+
+        # Enable first-player draw skipping at BEGINNING of turn 1
+        self.skip_first_draw = skip_first_draw
+        self.phase = "BEGINNING"
 
     def next_phase(self) -> None:
         for player in self.players:
@@ -125,7 +173,6 @@ class GameState:
         self.active_player_index = 1 - self.active_player_index
         player = self.get_active_player()
         player.lands_played_this_turn = 0
-        player.draw_card(self)
 
         # Reset summoning sickness and untap cards
         for card in player.battlefield:

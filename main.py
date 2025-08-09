@@ -1,24 +1,49 @@
-import json
-from mtg_ai.card import Card
-from mtg_ai.game_state import Player, GameState
-from mtg_ai.game_actions import cast_creature, resolve_combat_damage, get_attackers
+from mtg_ai.game_state import GameState, Player
 from mtg_ai.game_controller import step_game
-from mtg_ai.agents.simple import NaiveAgent
+from mtg_ai.agents import NaiveAgent
 from mtg_ai.deck_builder import load_deck_from_file
+from pathlib import Path
 
 ###############################################
 
-def run_demo():
-    deckA = load_deck_from_file(Path("decks/mono_green.txt"))
-    deckB = load_deck_from_file(Path("decks/mono_green.txt"))
-    p1, p2 = Player("Alice", deckA.cards), Player("Bob", deckB.cards)
-    game = GameState(p1, p2)
-    agent = NaiveAgent()
 
+def run_demo() -> None:
+    # Build decks (sample lists under decks/)
+    deckA = load_deck_from_file(Path("decks/mono_green.txt"))
+    deckB = load_deck_from_file(Path("decks/mono_red.txt"))
+
+    # Players
+    p1 = Player("Alice", deckA.cards)
+    p2 = Player("Bob", deckB.cards)
+    game = GameState(p1, p2)
+
+    # Agents
+    agent1 = NaiveAgent()
+    agent2 = NaiveAgent()
+
+    # Start of game: shuffle, draw opening hands, set phase to BEGINNING,
+    # and skip starting player’s first draw by default.
+    game.start_game()
+
+    # Main loop
     while not game.is_game_over():
-        step_game(game, agent)
+        active_agent = agent1 if game.get_active_player() is p1 else agent2
+        defending_agent = agent2 if active_agent is agent1 else agent1
+        step_game(game, active_agent, defending_agent)
 
     print("Winner:", game.winner.name)
+
+# def run_demo():
+#     deckA = load_deck_from_file(Path("decks/mono_green.txt"))
+#     deckB = load_deck_from_file(Path("decks/mono_green.txt"))
+#     p1, p2 = Player("Alice", deckA.cards), Player("Bob", deckB.cards)
+#     game = GameState(p1, p2)
+#     agent = NaiveAgent()
+
+#     while not game.is_game_over():
+#         step_game(game, agent)
+
+#     print("Winner:", game.winner.name)
 
 # def run_demo():
 #     p1, p2 = Player("Alice", []), Player("Bob", [])

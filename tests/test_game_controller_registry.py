@@ -41,12 +41,13 @@ class PhaseRegistryTest(unittest.TestCase):
     def test_handler_executes_without_error(self) -> None:
         """Call each handler once to ensure type-compatible invocation."""
         game = GameState(Player("A", []), Player("B", []))
-        agent = DummyAgent()
+        atk = DummyAgent()
+        dfn = DummyAgent()
 
         for phase, handler in _phase_handlers.items():
             game.phase = phase
             # Should run without raising
-            handler(game, agent)
+            handler(game, atk, dfn)
 
 
 if __name__ == "__main__":

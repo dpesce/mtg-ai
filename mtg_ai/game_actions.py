@@ -118,7 +118,14 @@ def _execute_casts(game: GameState, agent: CastAgent) -> None:
 
 
 def beginning_phase(game: GameState) -> None:
-    return None
+    """
+    Draw one card for the active player at the beginning of their turn.
+    The very first active player skips this draw if game.skip_first_draw is True.
+    """
+    player = game.get_active_player()
+    if game.turn_number == 1 and game.skip_first_draw:
+        return
+    player.draw_card(game)
 
 
 def precombat_main_phase(game: GameState, cast_agent: CastAgent) -> None:
